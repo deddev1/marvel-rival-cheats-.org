@@ -50,16 +50,16 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'ESP & wallhack',
 				paragraphs: [
-					'See players, enemy forces, bosses, and loot drops through walls with distance readouts.',
-					'Use filters so the overlay stays clear in contested zones, high-traffic zones, and extraction run chaos.',
+					'See players, enemy forces, bosses, and ability cooldowns through walls with distance readouts.',
+					'Use filters so the overlay stays clear in contested lanes, high-traffic lanes, and ranked match chaos.',
 				],
-				list: ['Player boxes & distance', 'Carcass and exfil markers', 'Boss and juvenile filters'],
+				list: ['Player boxes & distance', 'Carcass and objective markers', 'Boss and juvenile filters'],
 			},
 			{
 				h2: 'Aimbot & soft aim',
 				paragraphs: [
 					'Aim help you can tune to feel natural.',
-					'Set FOV, smoothness, and bone priority per weapon before you drop in.',
+					'Set FOV, smoothness, and bone priority per weapon before you queue in.',
 				],
 				list: ['Smooth aim strength', 'FOV and bone priority', 'Hotkeys mid-match'],
 			},
@@ -67,9 +67,9 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				h2: 'Radar',
 				paragraphs: [
 					'A simple 2D radar for threats outside your view.',
-					'Spot flanks near exfil and loot zones without filling the whole screen.',
+					'Spot flanks near objective and health pack zones without filling the whole screen.',
 				],
-				list: ['Nearby enemy cues', 'Adjustable range', 'Works in PvP & PvE'],
+				list: ['Nearby enemy cues', 'Adjustable range', 'Works in PvP & team fight'],
 			},
 			{
 				h2: 'Explore related topics',
@@ -77,14 +77,14 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 					'Most {game} cheat sites cover ESP, aimbot, radar, setup, and status on separate pages. Use these guides next:',
 				],
 				list: [
-					'<a href="/marathon-esp/">ESP & wallhack guide</a>',
-					'<a href="/marathon-aimbot/">Aimbot & soft aim</a>',
-					'<a href="/marathon-radar-hack/">2D radar overlay</a>',
+					'<a href="/marvel-rivals-esp/">ESP & wallhack guide</a>',
+					'<a href="/marvel-rivals-aimbot/">Aimbot & soft aim</a>',
+					'<a href="/marvel-rivals-radar-hack/">2D radar overlay</a>',
 					'<a href="/setup/">Setup guide</a>',
 					'<a href="/updates/">Live status</a>',
-					'<a href="/blog/">Marathon Intel blog</a>',
-					'<a href="https://store.steampowered.com/app/3065800/news/" target="_blank" rel="noopener noreferrer">Official Steam patch notes</a>',
-					'<a href="https://marathondb.gg/" target="_blank" rel="noopener noreferrer">Marathon Wiki</a>',
+					'<a href="/blog/">Marvel Rivals Intel blog</a>',
+					'<a href="https://store.steampowered.com/app/2767030/news/" target="_blank" rel="noopener noreferrer">Official Steam patch notes</a>',
+					'<a href="https://marvelrivals.fandom.com/wiki/Marvel_Rivals_Wiki" target="_blank" rel="noopener noreferrer">Marvel Rivals Wiki</a>',
 				],
 			},
 			{
@@ -92,7 +92,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				paragraphs: [
 					'We rebuild after big {game} or {antiCheat} patches.',
 					'Check Status before you play after a patch day.',
-					'Verify official changes on <a href="https://store.steampowered.com/app/3065800/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://marathondb.gg/" target="_blank" rel="noopener noreferrer">Marathon Wiki</a> before you tune overlays.',
+					'Verify official changes on <a href="https://store.steampowered.com/app/2767030/news/" target="_blank" rel="noopener noreferrer">Steam patch notes</a> and the <a href="https://marvelrivals.fandom.com/wiki/Marvel_Rivals_Wiki" target="_blank" rel="noopener noreferrer">Marvel Rivals Wiki</a> before you tune overlays.',
 				],
 				list: ['Status on the Status page', 'Setup guide included', 'Email support with your order ID'],
 			},
@@ -141,18 +141,18 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Status',
 		intro: brandCopy.statusIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Marathon Cheats overview',
+		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'In-game look',
 		sections: [
 			{
 				h2: 'Current status',
 				paragraphs: [
-					'As of 13 Aug 2026 the package is online for Marathon on Windows PC. We post a new note here when a game or BattlEye patch needs a rebuild.',
-					'If Status is green, you can run. If we are rebuilding, wait for the next note.',
+					'As of 13 Aug 2026 the package is online for Marvel Rivals on Windows PC. We post a new note here when a game or NetEase Anti-Cheat patch needs a rebuild.',
+					'If Status is green, you can match. If we are rebuilding, wait for the next note.',
 				],
 				list: [
-					'Check this page before every run after a patch',
+					'Check this page before every match after a patch',
 					'Monthly and lifetime licenses get rebuilds while active',
 					'No cheat stays undetected forever — status first, then play',
 				],
@@ -174,7 +174,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 	hacks: page({
 		title: brandSeo.previewTitle,
 		description: brandSeo.previewDescription,
-		h1: 'Marathon Cheats',
+		h1: 'Marvel Rivals Cheats',
 		intro: brandCopy.previewIntro,
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'View features',
@@ -184,24 +184,24 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'What you get',
 				paragraphs: [
-					'One license for Marathon on Windows PC — built for PvP and PvE extraction runs.',
+					'One license for Marvel Rivals on Windows PC — built for PvP and team fight ranked matches.',
 				],
 				list: [
 					'ESP / wallhack with distance',
 					'Soft aim & aimbot profiles',
 					'2D radar for flanks',
-					'BattlEye rebuilds after patches',
+					'NetEase Anti-Cheat rebuilds after patches',
 				],
 			},
 			{
-				h2: 'Built for Marathon runs',
+				h2: 'Built for Marvel Rivals matches',
 				paragraphs: [
-					'Read runners and UESC forces before you push, mark loot drops worth the risk, and stay aware near exfil and loot zones. Tune soft aim per weapon for high-traffic zones and long-range ambushes.',
+					'Read heroes and enemy team before you push, mark ability cooldowns worth the risk, and stay aware near objective and health pack zones. Tune soft aim per weapon for high-traffic lanes and long-range ambushes.',
 				],
 				list: [
-					'<a href="/marathon-esp/">ESP guide</a>',
-					'<a href="/marathon-aimbot/">Aimbot controls</a>',
-					'<a href="/marathon-radar-hack/">Radar overlay</a>',
+					'<a href="/marvel-rivals-esp/">ESP guide</a>',
+					'<a href="/marvel-rivals-aimbot/">Aimbot controls</a>',
+					'<a href="/marvel-rivals-radar-hack/">Radar overlay</a>',
 					'<a href="/updates/">Live status</a>',
 				],
 			},
@@ -216,25 +216,25 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 		],
 	}),
-	'marathon-esp': page({
-		title: 'Marathon ESP | {brand}',
+	'marvel-rivals-esp': page({
+		title: 'Marvel Rivals ESP | {brand}',
 		description:
-			'Marathon ESP and wallhack for Marathon on Windows PC — player boxes, distance, loot filters, and clear overlays in runs.',
+			'Marvel Rivals ESP and wallhack for Marvel Rivals on Windows PC — player boxes, distance, loot filters, and clear overlays in matches.',
 		h1: 'ESP',
-		intro: 'See players and loot drops through walls during Marathon runs. Part of the same {brand} license.',
+		intro: 'See players and ability cooldowns through walls during Marvel Rivals matches. Part of the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Marathon Cheats overview',
+		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/',
-		galleryTitle: 'ESP in run',
+		galleryTitle: 'ESP in match',
 		sections: [
 			{
 				h2: 'What ESP shows',
-				paragraphs: ['Boxes, distance, and filters for players, enemy forces, bosses, and loot drops.'],
+				paragraphs: ['Boxes, distance, and filters for players, enemy forces, bosses, and ability cooldowns.'],
 				list: ['Player ESP', 'Loot markers', 'Boss and juvenile filters'],
 			},
 			{
 				h2: 'When to use it',
-				paragraphs: ['Clear high-traffic zones, and extraction runs without flooding the screen.'],
+				paragraphs: ['Clear high-traffic lanes, and ranked matches without flooding the screen.'],
 				list: ['Tune opacity', 'Filter noise', 'Pair with radar'],
 			},
 			{
@@ -248,26 +248,26 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 		],
 	}),
-	'marathon-aimbot': page({
-		title: 'Marathon Aimbot | {brand}',
+	'marvel-rivals-aimbot': page({
+		title: 'Marvel Rivals Aimbot | {brand}',
 		description:
-			'Marathon Aimbot and soft aim for Marathon on Windows PC — FOV, smoothness, and bone priority you can tune per weapon.',
+			'Marvel Rivals Aimbot and soft aim for Marvel Rivals on Windows PC — FOV, smoothness, and bone priority you can tune per weapon.',
 		h1: 'Aimbot',
-		intro: 'Soft aim and aim assist you can tune for Marathon. Included in the same {brand} license.',
+		intro: 'Soft aim and aim assist you can tune for Marvel Rivals. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Marathon Cheats overview',
+		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'Aimbot view',
 		sections: [
 			{
 				h2: 'Controls',
-				paragraphs: ['Set FOV, smoothness, and bone priority before you drop in.'],
+				paragraphs: ['Set FOV, smoothness, and bone priority before you queue in.'],
 				list: ['Soft aim strength', 'Bone priority', 'Hotkeys mid-match'],
 			},
 			{
 				h2: 'Play styles',
-				paragraphs: ['Keep settings subtle for longer runs. Raise strength only when you accept more risk.'],
-				list: ['Legit soft aim', 'Per-weapon profiles', 'Works with ESP'],
+				paragraphs: ['Keep settings subtle for longer matches. Raise strength only when you accept more risk.'],
+				list: ['Legit soft aim', 'Per-hero profiles', 'Works with ESP'],
 			},
 			{
 				h2: 'Next steps',
@@ -281,26 +281,26 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		],
 	}),
 	radar: page({
-		title: 'Marathon Radar | {brand}',
+		title: 'Marvel Rivals Radar | {brand}',
 		description:
-			'Marathon 2D radar for Marathon on Windows PC — flank cues near exfil and loot zones without filling the whole screen.',
+			'Marvel Rivals 2D radar for Marvel Rivals on Windows PC — flank cues near objective and health pack zones without filling the whole screen.',
 		h1: 'Radar',
 		intro: 'A simple 2D radar for threats outside your view. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Marathon Cheats overview',
+		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/',
 		galleryTitle: 'Radar overlay',
 		sections: [
 			{
 				h2: 'What it shows',
-				paragraphs: ['Nearby enemy cues with adjustable range for rival runners and UESC patrols.'],
+				paragraphs: ['Nearby enemy cues with adjustable range for enemy heroes and AI.'],
 				list: ['Flank awareness', 'Nest approaches', 'Adjustable range'],
 			},
 			{
 				h2: 'With ESP',
 				paragraphs: ['Use radar for threats you cannot see yet. Use ESP when you push.'],
 				list: [
-					'<a href="/marathon-esp/">ESP guide</a>',
+					'<a href="/marvel-rivals-esp/">ESP guide</a>',
 					'<a href="/">Full product</a>',
 					'<a href="/pricing/">Store</a>',
 				],

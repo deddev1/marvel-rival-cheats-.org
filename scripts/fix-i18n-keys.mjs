@@ -8,21 +8,21 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = path.resolve(ROOT, '..', 'amansand');
 
 const UI_REPLACEMENTS = [
-	['Marathon Cheats', 'Marathon Cheats'],
-	['marathon cheats', 'marathon cheats'],
-	['Marathon Cheats', 'Marathon Cheats'],
-	['Marathon', 'Marathon'],
-	['Marathon', 'Marathon'],
-	['Call of Duty', 'Marathon'],
-	['Marathon PC', 'Marathon PC'],
-	['for Marathon', 'for Marathon'],
-	['Marathon ', 'Marathon '],
-	['marathon ', 'marathon '],
-	['BattlEye maintenance', 'BattlEye maintenance'],
-	['BattlEye', 'BattlEye'],
-	['BattlEye', 'BattlEye'],
+	['Marvel Rivals Cheats', 'Marvel Rivals Cheats'],
+	['marvel rivals cheats', 'marvel rivals cheats'],
+	['Marvel Rivals Cheats', 'Marvel Rivals Cheats'],
+	['Marvel Rivals', 'Marvel Rivals'],
+	['Marvel Rivals', 'Marvel Rivals'],
+	['Call of Duty', 'Marvel Rivals'],
+	['Marvel Rivals PC', 'Marvel Rivals PC'],
+	['for Marvel Rivals', 'for Marvel Rivals'],
+	['Marvel Rivals ', 'Marvel Rivals '],
+	['marvel-rivals ', 'marvel-rivals '],
+	['NetEase Anti-Cheat maintenance', 'NetEase Anti-Cheat maintenance'],
+	['NetEase Anti-Cheat', 'NetEase Anti-Cheat'],
+	['NetEase Anti-Cheat', 'NetEase Anti-Cheat'],
 	['operatorEsp', 'dinoEsp'],
-	['extractFight', 'ambushFight'],
+	['objectiveFight', 'ambushFight'],
 	['alMazrah', 'survivalIsland'],
 	['players', 'players'],
 	['operator', 'player'],
@@ -30,12 +30,12 @@ const UI_REPLACEMENTS = [
 	['Operator', 'Player'],
 	['Al Mazrah', 'Verdansk'],
 	['Verdansk', 'Verdansk'],
-	['loot run', 'loot run'],
-	['extract', 'extract'],
-	['marathoncheats.org', 'marathoncheats.org'],
-	['Trucos Marathon', 'Trucos Marathon'],
-	['Triches Marathon', 'Triches Marathon'],
-	['Cheats Marathon', 'Cheats Marathon'],
+	['ranked match', 'ranked match'],
+	['objective', 'objective'],
+	['marvelrivals.org', 'marvelrivals.org'],
+	['Trucos Marvel Rivals', 'Trucos Marvel Rivals'],
+	['Triches Marvel Rivals', 'Triches Marvel Rivals'],
+	['Cheats Marvel Rivals', 'Cheats Marvel Rivals'],
 ];
 
 function apply(content) {
@@ -54,16 +54,16 @@ for (const file of ['ui-strings-part1.mjs', 'ui-strings-part2.mjs']) {
 
 // Fix pages-en eac key
 let pagesEn = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), 'utf8');
-pagesEn = pagesEn.replace(/\teac: \{/, "\t'battleye': {");
-pagesEn = pagesEn.replace(/Marathon Marathon/g, 'Marathon');
-pagesEn = pagesEn.replace(/for Marathon Marathon/g, 'for Marathon');
+pagesEn = pagesEn.replace(/\teac: \{/, "\t'neac': {");
+pagesEn = pagesEn.replace(/Marvel Rivals Marvel Rivals/g, 'Marvel Rivals');
+pagesEn = pagesEn.replace(/for Marvel Rivals Marvel Rivals/g, 'for Marvel Rivals');
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-en.mjs'), pagesEn);
 
 // Fix pages-i18n
 let pagesI18n = await readFile(path.join(ROOT, 'scripts/i18n-data/pages-i18n.mjs'), 'utf8');
 pagesI18n = apply(pagesI18n);
-pagesI18n = pagesI18n.replace(/'battleye'/g, "'battleye'");
-pagesI18n = pagesI18n.replace(/eac:/g, "'battleye':");
+pagesI18n = pagesI18n.replace(/'neac'/g, "'neac'");
+pagesI18n = pagesI18n.replace(/eac:/g, "'neac':");
 await writeFile(path.join(ROOT, 'scripts/i18n-data/pages-i18n.mjs'), pagesI18n);
 
 // Fix generate-i18n pages count

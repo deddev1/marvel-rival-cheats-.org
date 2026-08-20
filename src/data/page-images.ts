@@ -2,7 +2,7 @@ import { siteConfig } from './site';
 import { pageIds, type PageId } from './i18n/routing';
 import { pageSitemapImageLabels } from './brand-sitemap';
 
-const shot = (n: number) => `/images/marathon-screenshot-${String(n).padStart(2, '0')}.webp`;
+const shot = (n: number) => `/images/marvel-rivals-screenshot-${String(n).padStart(2, '0')}.webp`;
 
 /** Rotating product screenshots for FAQ / review detail URLs. */
 export const crawlPhotoPool = [
@@ -19,9 +19,9 @@ export const crawlPhotoPool = [
  * Prefer compressed WebP screenshots so Google can fetch them quickly.
  */
 export const pageImageSrcById: Record<PageId, string> = {
-	home: '/images/marathon-cheats-hero-1024w.webp',
-	'marathon-esp': shot(2),
-	'marathon-aimbot': shot(4),
+	home: '/images/marvel-rivals-cheats-hero-1024w.webp',
+	'marvel-rivals-esp': shot(2),
+	'marvel-rivals-aimbot': shot(4),
 	features: shot(5),
 	pricing: shot(7),
 	setup: shot(2),
@@ -31,7 +31,7 @@ export const pageImageSrcById: Record<PageId, string> = {
 	undetected: shot(3),
 	wallhack: shot(3),
 	radar: shot(6),
-	battleye: shot(4),
+	neac: shot(4),
 	'cheats-2026': shot(1),
 	hacks: shot(7),
 	'cheat-download': shot(7),

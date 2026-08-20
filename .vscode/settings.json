@@ -3,7 +3,7 @@
   "remote.autoForwardPortsSource": "hybrid",
   "remote.portsAttributes": {
     "5173": {
-      "label": "Marathon Cheats",
+      "label": "Marvel Rivals Cheats",
       "onAutoForward": "openBrowser",
       "protocol": "http"
     }

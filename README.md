@@ -1,12 +1,12 @@
-# Marathon Cheats — Marketing Site
+# Marvel Rivals Cheats — Marketing Site
 
-Static Astro 7 site for [marathoncheats.org](https://marathoncheats.org). Primary SEO keyword: **marathon cheats** (secondary: marathon cheats, marathon aimbot, marathon ESP).
+Static Astro 7 site for [marvelrivals.org](https://marvelrivals.org). Primary SEO keyword: **marvel rivals cheats** (secondary: marvel rivals hacks, marvel rivals aimbot, marvel rivals ESP).
 
 ## Stack
 
 - Astro 7 + Tailwind CSS 4 + TypeScript
 - 22-locale i18n (English at root, `/es/`, `/fr/`, …)
-- Cloudflare Pages deployment with `functions/_middleware.js`
+- Cloudflare Workers deployment with `src/worker.ts`
 
 ## Quick start
 
@@ -39,26 +39,25 @@ Build and validate sitemaps:
 npm run build:validate
 ```
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Workers)
 
-1. Create a Cloudflare Pages project named **marathoncheats**
+1. Create a Cloudflare Workers project named **marvelrivals**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Add custom domain **marathoncheats.org** (apex) and redirect **www** → apex
-6. Enable SSL **Always Use HTTPS**
+4. Custom domains: **marvelrivals.org** (apex) and **www.marvelrivals.org** (redirect → apex)
+5. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
 
 ```bash
-npm run pages:deploy
+npm run deploy
 ```
 
 ## Environment
 
 - Node.js >= 22.12.0
-- Checkout URL: Zadeyo Marathon product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
+- Checkout URL: Zadeyo Marvel Rivals product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
 
 ## License
 
-Private — for marathoncheats.org deployment only.
+Private — for marvelrivals.org deployment only.

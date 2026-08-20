@@ -76,82 +76,82 @@ const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
 
 /** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
 const REDIRECT_ONLY_PATHS = new Set([
-	'/best-marathon-cheats/',
-	'/marathon-aimbot-hack/',
-	'/marathon-esp-hack/',
-	'/marathon-cheats-2026/',
-	'/undetected-marathon-cheats/',
-	'/marathon-mod-menu/',
-	'/marathon-unlock-all/',
-	'/marathon-soft-aim/',
-	'/marathon-wallhack/',
-	'/marathon-cheat-download/',
-	'/battleye-bypass/',
+	'/best-marvel-rivals-cheats/',
+	'/marvel-rivals-aimbot-hack/',
+	'/marvel-rivals-esp-hack/',
+	'/marvel-rivals-cheats-2026/',
+	'/undetected-marvel-rivals-cheats/',
+	'/marvel-rivals-mod-menu/',
+	'/marvel-rivals-unlock-all/',
+	'/marvel-rivals-soft-aim/',
+	'/marvel-rivals-wallhack/',
+	'/marvel-rivals-cheat-download/',
+	'/neac-bypass/',
 ]);
 
 const ENGLISH_PATHS = [
 	'/',
-	'/marathon-esp/',
-	'/marathon-aimbot/',
+	'/marvel-rivals-esp/',
+	'/marvel-rivals-aimbot/',
 	'/features/',
 	'/pricing/',
 	'/setup/',
 	'/updates/',
 	'/faq/',
 	'/support/',
-	'/undetected-marathon-cheats/',
-	'/marathon-wallhack/',
-	'/marathon-radar-hack/',
-	'/battleye-bypass/',
-	'/marathon-cheats-2026/',
-	'/marathon-cheats/',
-	'/marathon-cheat-download/',
-	'/marathon-mod-menu/',
-	'/marathon-soft-aim/',
-	'/marathon-unlock-all/',
+	'/undetected-marvel-rivals-cheats/',
+	'/marvel-rivals-wallhack/',
+	'/marvel-rivals-radar-hack/',
+	'/neac-bypass/',
+	'/marvel-rivals-cheats-2026/',
+	'/marvel-rivals-cheats/',
+	'/marvel-rivals-cheat-download/',
+	'/marvel-rivals-mod-menu/',
+	'/marvel-rivals-soft-aim/',
+	'/marvel-rivals-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',
 	'/blog/',
-	'/blog/marathon-extraction-run-strategies/',
-	'/blog/marathon-loot-routes-guide/',
-	'/blog/marathon-loadout-tier-list/',
-	'/blog/marathon-skin-leaks-guide/',
-	'/blog/marathon-competitive-meta-guide/',
-	'/blog/marathon-pro-settings-guide/',
-	'/blog/marathon-warmup-maps-ranked/',
-	'/blog/marathon-patch-notes-guide/',
-	'/blog/marathon-cheats-complete-guide-2026/',
-	'/blog/marathon-cheats-buyers-guide/',
-	'/blog/marathon-cheats-2026-whats-new/',
-	'/blog/marathon-aimbot-settings-guide/',
-	'/blog/marathon-esp-wallhack-explained/',
-	'/blog/undetected-marathon-cheats-battleye/',
-	'/blog/marathon-cheats-vs-cheatvault-comparison/',
-	'/blog/elitefn-vs-marathon-cheats-two-week-test/',
-	'/blog/marathon-cheats-vs-ghostware-features-pricing/',
+	'/blog/marvel-rivals-ranked-strategies/',
+	'/blog/marvel-rivals-map-callouts-guide/',
+	'/blog/marvel-rivals-hero-tier-list/',
+	'/blog/marvel-rivals-skin-leaks-guide/',
+	'/blog/marvel-rivals-competitive-meta-guide/',
+	'/blog/marvel-rivals-pro-settings-guide/',
+	'/blog/marvel-rivals-warmup-practice-ranked/',
+	'/blog/marvel-rivals-patch-notes-guide/',
+	'/blog/marvel-rivals-cheats-complete-guide-2026/',
+	'/blog/marvel-rivals-cheats-buyers-guide/',
+	'/blog/marvel-rivals-cheats-2026-whats-new/',
+	'/blog/marvel-rivals-aimbot-settings-guide/',
+	'/blog/marvel-rivals-esp-wallhack-explained/',
+	'/blog/undetected-marvel-rivals-cheats-neac/',
+	'/blog/marvel-rivals-cheats-vs-cheatvault-comparison/',
+	'/blog/elitefn-vs-marvel-rivals-cheats-two-week-test/',
+	'/blog/marvel-rivals-cheats-vs-ghostware-features-pricing/',
 	'/reviews/',
-	'/reviews/marathon-soft-aim-review-xkrypt0/',
-	'/reviews/marathon-esp-growth-run-review-buildsr4k/',
-	'/reviews/marathon-cloud-dma-review-dma-wizard/',
-	'/reviews/marathon-soft-aim-review-ctrl-player99/',
-	'/reviews/marathon-cheat-setup-review-stormchaser07/',
-	'/reviews/marathon-loot-esp-review-lootgoblinx/',
-	'/reviews/marathon-soft-aim-session-review-rankedgrind42/',
-	'/reviews/marathon-radar-hack-review-vanlifemarathon/',
-	'/reviews/marathon-battleye-update-review-patchdaymike/',
-	'/reviews/marathon-sniper-soft-aim-review-snipezonly/',
-	'/faq/what-are-marathon-cheats/',
-	'/faq/are-marathon-cheats-undetected-in-2026/',
-	'/faq/pvp-and-pve-extraction-runs/',
+	'/reviews/marvel-rivals-soft-aim-review-xkrypt0/',
+	'/reviews/marvel-rivals-esp-growth-run-review-buildsr4k/',
+	'/reviews/marvel-rivals-cloud-dma-review-dma-wizard/',
+	'/reviews/marvel-rivals-soft-aim-review-ctrl-player99/',
+	'/reviews/marvel-rivals-cheat-setup-review-stormchaser07/',
+	'/reviews/marvel-rivals-hero-esp-review-lootgoblinx/',
+	'/reviews/marvel-rivals-soft-aim-session-review-rankedgrind42/',
+	'/reviews/marvel-rivals-radar-hack-review-vanlifemarvelrivals/',
+	'/reviews/marvel-rivals-neac-update-review-patchdaymike/',
+	'/reviews/marvel-rivals-sniper-soft-aim-review-snipezonly/',
+	'/faq/what-are-marvel-rivals-cheats/',
+	'/faq/are-marvel-rivals-cheats-undetected-in-2026/',
+	'/faq/pvp-and-pve-ranked-matchs/',
 	'/faq/esp-wallhack-radar-or-aimbot/',
 	'/faq/how-are-licenses-delivered/',
 	'/faq/where-to-check-updates/',
 	'/faq/how-to-contact-support/',
-	'/faq/what-is-an-marathon-wallhack/',
-	'/faq/does-marathon-cheats-include-radar-hack/',
-	'/faq/battleye-anti-cheat-and-marathon-cheats/',
-	'/faq/buy-undetected-marathon-cheats-windows-pc/',
+	'/faq/what-is-an-marvel-rivals-wallhack/',
+	'/faq/does-marvel-rivals-cheats-include-radar-hack/',
+	'/faq/neac-anti-cheat-and-marvel-rivals-cheats/',
+	'/faq/buy-undetected-marvel-rivals-cheats-windows-pc/',
 ];
 
 const LOCALE_CODES = [
@@ -161,11 +161,11 @@ const LOCALE_CODES = [
 
 const I18N_LOCALE_CODES = LOCALE_CODES.filter((code) => code !== 'en');
 
-function extractLocs(xml) {
+function objectiveLocs(xml) {
 	return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 }
 
-function extractHreflangCount(xml, url) {
+function objectiveHreflangCount(xml, url) {
 	const block = xml.split('<loc>').find((part) => part.startsWith(url.replace(/&/g, '&amp;')));
 	if (!block) return 0;
 	return (block.match(/hreflang="/g) ?? []).length;
@@ -216,10 +216,10 @@ async function main() {
 		await readFile(path.join(ROOT, 'functions', 'path-redirects.json'), 'utf8'),
 	);
 
-	const indexLocs = extractLocs(sitemapIndex);
-	const enLocs = extractLocs(sitemapEn);
-	const i18nLocs = extractLocs(sitemapI18n);
-	const imageLocs = extractLocs(sitemapImages);
+	const indexLocs = objectiveLocs(sitemapIndex);
+	const enLocs = objectiveLocs(sitemapEn);
+	const i18nLocs = objectiveLocs(sitemapI18n);
+	const imageLocs = objectiveLocs(sitemapImages);
 
 	// sitemap.xml must be a sitemap index (not a urlset)
 	if (!sitemapIndex.includes('<sitemapindex')) {
@@ -247,7 +247,7 @@ async function main() {
 	for (const locale of I18N_LOCALE_CODES) {
 		const file = path.join(DIST, `sitemap-${locale}.xml`);
 		const xml = await readFile(file, 'utf8');
-		const locs = extractLocs(xml);
+		const locs = objectiveLocs(xml);
 		localeSitemapLocs[locale] = locs;
 		localeUrlTotal += locs.length;
 
@@ -392,7 +392,7 @@ async function main() {
 	if (errors === 0) ok('All sitemap URLs use HTTPS apex with trailing slashes');
 
 	// hreflang on homepage
-	const homeHreflang = extractHreflangCount(sitemapEn, `${SITE}/`);
+	const homeHreflang = objectiveHreflangCount(sitemapEn, `${SITE}/`);
 	if (homeHreflang !== HREFLANG_PER_URL) {
 		fail(`Homepage hreflang links: expected ${HREFLANG_PER_URL}, got ${homeHreflang}`);
 		bump();

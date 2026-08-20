@@ -16,11 +16,11 @@ function HomeAboutInner() {
 			<p>{t('home.aboutP1')}</p>
 			<p>
 				{t('home.aboutP2Before')}{' '}
-				<a href="/marathon-cheats/">{t('home.aboutPillar')}</a>
+				<a href="/marvel-rivals-cheats/">{t('home.aboutPillar')}</a>
 				{t('home.aboutP2Mid')}
-				<a href="/marathon-esp/">{t('home.aboutEsp')}</a>
+				<a href="/marvel-rivals-esp/">{t('home.aboutEsp')}</a>
 				{t('home.aboutP2Mid')}
-				<a href="/marathon-aimbot/">{t('home.aboutAimbot')}</a>
+				<a href="/marvel-rivals-aimbot/">{t('home.aboutAimbot')}</a>
 				{t('home.aboutP2Or')}
 				<a href="/updates/">{t('home.aboutUndetected')}</a>
 				{t('home.aboutP2After')}

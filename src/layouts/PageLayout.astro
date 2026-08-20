@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { getUi } from '../data/i18n';
 import { getLocalizedPath, resolvePageContextFromPath, type PageId } from '../data/i18n/routing';
-import { marathonImages } from '../data/marathon';
+import { marvelRivalsImages } from '../data/marvel-rivals';
 import {
 	heroPreloadSrc,
 	heroSizes,
@@ -53,9 +53,9 @@ const {
 	heading,
 	intro,
 	eyebrow,
-	heroImage = marathonImages.hero,
+	heroImage = marvelRivalsImages.hero,
 	heroAlt,
-	gallery = marathonImages.product.slice(0, 3),
+	gallery = marvelRivalsImages.product.slice(0, 3),
 	galleryTitle,
 	ctaPrimary,
 	ctaSecondary,
@@ -73,7 +73,7 @@ const t = getT(locale);
 const resolvedHeroAlt =
 	(heroAlt && heroAlt.trim()) ||
 	t('images.hero') ||
-	`${siteConfig.name} — The Marathon ESP and aimbot`;
+	`${siteConfig.name} — The Marvel Rivals ESP and aimbot`;
 const resolvedGalleryTitle = galleryTitle ?? t('common.inGameLook');
 
 function resolvePageId(path: string): PageId | undefined {
@@ -109,9 +109,9 @@ const breadcrumbs = [
 ];
 
 const useHomeHero =
-	heroImage === marathonImages.hero ||
+	heroImage === marvelRivalsImages.hero ||
 	heroImage === siteConfig.defaultOgImage ||
-	heroImage.includes('marathon-cheats-hero');
+	heroImage.includes('marvel-rivals-cheats-hero');
 ---
 
 <Layout

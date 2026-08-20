@@ -17,9 +17,9 @@ function HomeSeoInner({ faqs }: Props) {
 			hintKey: 'homeSeo.catFeaturesHint',
 			links: [
 				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
-				{ href: '/marathon-esp/', labelKey: 'homeSeo.linkEsp' },
-				{ href: '/marathon-aimbot/', labelKey: 'homeSeo.linkAimbot' },
-				{ href: '/marathon-radar-hack/', labelKey: 'homeSeo.linkRadar' },
+				{ href: '/marvel-rivals-esp/', labelKey: 'homeSeo.linkEsp' },
+				{ href: '/marvel-rivals-aimbot/', labelKey: 'homeSeo.linkAimbot' },
+				{ href: '/marvel-rivals-radar-hack/', labelKey: 'homeSeo.linkRadar' },
 			],
 		},
 		{
@@ -38,7 +38,7 @@ function HomeSeoInner({ faqs }: Props) {
 			links: [
 				{ href: '/pricing/', labelKey: 'homeSeo.linkPlans' },
 				{ href: '/reviews/', labelKey: 'homeSeo.linkReviews' },
-				{ href: '/', labelKey: 'homeSeo.linkMarathonCheats' },
+				{ href: '/', labelKey: 'homeSeo.linkMarvel RivalsCheats' },
 				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
 			],
 		},

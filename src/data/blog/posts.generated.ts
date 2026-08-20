@@ -11,42 +11,42 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-patch-notes-guide",
-		title: "How to Read Marathon Patch Notes",
-		metaDescription: "Learn how Marathon patch notes change loadouts, loot economy, and maps. What to do after BattlEye and major client updates in 2026.",
-		h1: "How to Read Marathon Patch Notes",
-		intro: "When Bungie drops a patch, most players skim the headline and drop in anyway. That is how you walk into Tau Ceti IV with the wrong ammo and a gun that just lost its damage output. Here is a calmer way to read Marathon patch notes so your next run still makes sense.",
-		keywords: ["marathon patch notes","marathon updates","battleye patch"],
-		imageAlt: "Player reviewing Marathon patch notes before a survival run",
+		slug: "marvel-rivals-patch-notes-guide",
+		title: "How to Read Marvel Rivals Patch Notes",
+		metaDescription: "Learn how Marvel Rivals patch notes change loadouts, hero meta economy, and maps. What to do after NetEase Anti-Cheat and major client updates in 2026.",
+		h1: "How to Read Marvel Rivals Patch Notes",
+		intro: "When NetEase Games drops a patch, most players skim the headline and queue in anyway. That is how you walk into Marvel Rivals maps with the wrong ammo and a gun that just lost its damage output. Here is a calmer way to read Marvel Rivals patch notes so your next match still makes sense.",
+		keywords: ["marvel-rivals patch notes","marvel-rivals updates","neac patch"],
+		imageAlt: "Player reviewing Marvel Rivals patch notes before a survival match",
 		sections: [
 			{
-				h2: "What actually matters in a Marathon patch?",
+				h2: "What actually matters in a Marvel Rivals patch?",
 				paragraphs: [
-					"Official notes live on <a href=\"https://store.steampowered.com/app/3065800/Marathon/\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how contested loadouts push? Does this change what loot drops are worth pushing? Does this change which exfil route or map I should run tonight?",
-					"Growth stat tables, loadout tiers, hot spawn rates, and loadout unlocks move the real economy. A small recoil control tweak on an mid-tier weapons looks boring in a video title, but it quietly reshapes mid-range fights in outpost zones and Gateway. Cosmetic lines and UI polish almost never decide whether you survive high-traffic zones.",
-					"If you also run third-player tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> or client update, check our <a href=\"/updates/\">Marathon Cheats status page</a> before you blame your own aim.",
+					"Official notes live on <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how contested hero picks push? Does this change what ability cooldowns are worth pushing? Does this change which map rotation or map I should match tonight?",
+					"Growth stat tables, hero tiers, hot spawn rates, and hero unlocks move the real economy. A small recoil control tweak on an mid-tier weapons looks boring in a video title, but it quietly reshapes mid-range fights on urban maps and Midtown. Cosmetic lines and UI polish almost never decide whether you survive high-traffic lanes.",
+					"If you also match third-player tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a> or client update, check our <a href=\"/updates/\">Marvel Rivals Cheats status page</a> before you blame your own aim.",
 				],
 			},
 			{
 				h2: "Buffs, nerfs, and removed items — a simple framework",
 				paragraphs: [
-					"When an item is removed from run loot drops pools, delete it from your mental shopping list the same day. Heavy nerfs demote a loadout from “default kit” to “situational.” Light nerfs are fine if you already shoot cleaner than most lobbies. Buffs deserve a short test block — ten focused runs — before you rebuild your entire progress around them.",
-					"Growth stats and damage changes usually matter more than a single gun’s recoil control number. If a popular round loses penetration against contested loadouts, your Tau Ceti IV push into pack pushs suddenly needs a different mag. Pair this reading habit with our <a href=\"/blog/marathon-loadout-tier-list/\">Marathon loadout tier list</a> so you are not chasing streamer builds that ignore your budget.",
+					"When an item is removed from match ability cooldowns pools, delete it from your mental shopping list the same day. Heavy nerfs demote a loadout from “default kit” to “situational.” Light nerfs are fine if you already shoot cleaner than most lobbies. Buffs deserve a short test block — ten focused matches — before you rebuild your entire progress around them.",
+					"Growth stats and damage changes usually matter more than a single gun’s recoil control number. If a popular round loses penetration against contested hero picks, your Marvel Rivals maps push into team pushes suddenly needs a different mag. Pair this reading habit with our <a href=\"/blog/marvel-rivals-hero-tier-list/\">Marvel Rivals hero tier list</a> so you are not chasing streamer builds that ignore your budget.",
 				],
 			},
 			{
 				h2: "How patches reshuffle loadouts and map plans",
 				paragraphs: [
-					"When reliable primarys feel strong, prioritize optics and stats that win 40–70 meter peeks. When stamina recovery get tighter, play more conservatively near exfil and loot zones and avoid ego third-players. When a map POI shifts — new locked rooms, moved spawns, or hotter contest rates — rewrite your first three minutes on that map before you farm it for credits.",
-					"Keep in-game cosmetics chatter out of patch-day focus. Skin talk is fun; kill speed and exfil camping patterns are what get you killed. For aggressive early-run timing after a meta shift, see our <a href=\"/blog/marathon-extraction-run-strategies/\">extraction-run strategies</a>.",
-					"On big mornings, confirm <a href=\"https://store.steampowered.com/app/3065800/Marathon//\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon on Steam</a> looks healthy before you assume your client is broken. Then run a short checklist: note removed items, update your progress “buy list,” play five intentional runs, and only then lock a new main kit.",
+					"When reliable primarys feel strong, prioritize optics and stats that win 40–70 meter peeks. When stamina recovery get tighter, play more conservatively near objective and health pack zones and avoid ego third-players. When a map POI shifts — new locked rooms, moved spawns, or hotter contest rates — rewrite your first three minutes on that map before you farm it for credits.",
+					"Keep in-game cosmetics chatter out of patch-day focus. Skin talk is fun; kill speed and objective camping patterns are what get you killed. For aggressive early-run timing after a meta shift, see our <a href=\"/blog/marvel-rivals-ranked-strategies/\">ranked-match strategies</a>.",
+					"On big mornings, confirm <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals//\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals on Steam</a> looks healthy before you assume your client is broken. Then match a short checklist: note removed items, update your progress “buy list,” play five intentional matches, and only then lock a new main kit.",
 				],
 			},
 			{
-				h2: "Staying ahead after every Marathon update",
+				h2: "Staying ahead after every Marvel Rivals update",
 				paragraphs: [
-					"Patch days are when most players lose progress — not because the game broke, but because they never updated their habits. After you read the notes, spend ten minutes on our <a href=\"/updates/\">status page</a> if you use overlays, then adjust your main loadout and exfil plan before you queue.",
-					"If you rely on information tools, confirm the stack on <a href=\"/marathon-cheats/\">Marathon Cheats</a> still matches the current client. Pair patch reading with the <a href=\"/faq/\">FAQ</a> when something in the notes is unclear — guessing costs more time than one careful read.",
+					"Patch days are when most players lose progress — not because the game broke, but because they never updated their habits. After you read the notes, spend ten minutes on our <a href=\"/updates/\">status page</a> if you use overlays, then adjust your main hero and team plan before you queue.",
+					"If you rely on information tools, confirm the stack on <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> still matches the current client. Pair patch reading with the <a href=\"/faq/\">FAQ</a> when something in the notes is unclear — guessing costs more time than one careful read.",
 				],
 			}
 		],
@@ -54,7 +54,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-skin-leaks",
+		id: "marvel-rivals-skin-leaks",
 		imageKey: "headerArt",
 		published: "2026-07-27",
 		updated: "2026-08-17",
@@ -62,25 +62,25 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-skin-leaks-guide",
-		title: "Marathon Cosmetics & Skin Previews: What Is Worth Buying",
-		metaDescription: "Sensible advice on Marathon cosmetics and skin previews — what to buy on the in-game store, what to skip, and how looks affect run readability.",
-		h1: "Marathon Cosmetics Buying Guide",
-		intro: "Leaks make every patch cycle feel like a fashion drop. Before you dump growth points into another loud outfit, decide whether the skin helps you play Marathon — or just looks cool in a screenshot.",
-		keywords: ["marathon skins","marathon cosmetics","marathon store"],
-		imageAlt: "Marathon character cosmetics and skin appearance options",
+		slug: "marvel-rivals-skin-leaks-guide",
+		title: "Marvel Rivals Cosmetics & Skin Previews: What Is Worth Buying",
+		metaDescription: "Sensible advice on Marvel Rivals cosmetics and skin previews — what to buy on the in-game store, what to skip, and how looks affect match readability.",
+		h1: "Marvel Rivals Cosmetics Buying Guide",
+		intro: "Leaks make every patch cycle feel like a fashion drop. Before you dump growth points into another loud outfit, decide whether the skin helps you play Marvel Rivals — or just looks cool in a screenshot.",
+		keywords: ["marvel-rivals skins","marvel-rivals cosmetics","marvel-rivals store"],
+		imageAlt: "Marvel Rivals hero cosmetics and skin appearance options",
 		sections: [
 			{
 				h2: "Why most impulse cosmetic buys feel bad after a week",
 				paragraphs: [
-					"Shop rotations and official skins come from <a href=\"https://store.steampowered.com/app/3065800/Marathon/\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon</a>. Leaks are entertainment, not a shopping list. Many players spend hard-earned in-game currency the night before a patch cycle, then realize they still need stamina recovery, ammo, and a backup kit.",
-					"Controversial but useful: most cosmetics do not raise your survival rate. Some loud patterns even make you easier to spot in bushes in outpost zones or near river banks. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic peeks.",
+					"Shop rotations and official skins come from <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. Leaks are entertainment, not a shopping list. Many players spend hard-earned in-game currency the night before a patch cycle, then realize they still need stamina recovery, ammo, and a backup kit.",
+					"Controversial but useful: most cosmetics do not raise your win rate. Some loud patterns even make you easier to spot in bushes on urban maps or near river banks. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic peeks.",
 				],
 			},
 			{
-				h2: "A simple worth-it checklist for Marathon cosmetics",
+				h2: "A simple worth-it checklist for Marvel Rivals cosmetics",
 				paragraphs: [
-					"Buy if you will still wear it in ninety days and it stays readable in night runs. Pause if it overlaps three outfits you already own. Skip FOMO bundles packed with fillers you will never equip. Always keep a rouble floor for ammo and healing before fashion.",
+					"Buy if you will still wear it in ninety days and it stays readable in night matches. Pause if it overlaps three outfits you already own. Skip FOMO bundles packed with fillers you will never equip. Always keep a rouble floor for ammo and healing before fashion.",
 					"Do the math on bundles. Paying extra for two fillers you hate is worse than waiting for a single piece on the in-game store. If a leak only hypes one jacket, wait for confirmation instead of panic-buying a full set.",
 				],
 			},
@@ -88,14 +88,14 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "How to use leaks without getting played",
 				paragraphs: [
 					"Treat late-patch cycle leak waves as theme previews, not release dates. Decide a budget before something hits the store, not during the five-minute panic. A quiet daily habit works: open the shop for one minute, check your wishlist, then leave.",
-					"For official server readability tips that actually affect fights, pair this with our <a href=\"/blog/marathon-pro-settings-guide/\">pro settings guide</a>. Looking clean matters less than seeing the other player first.",
+					"For official server readability tips that actually affect fights, pair this with our <a href=\"/blog/marvel-rivals-pro-settings-guide/\">pro settings guide</a>. Looking clean matters less than seeing the other player first.",
 				],
 			},
 			{
 				h2: "Cosmetics vs survival tools — keep the budget split clear",
 				paragraphs: [
-					"Skins are fun, but they do not replace map reads, exfil timing, or a stable kit. If you play for information advantage, budget for <a href=\"/marathon-esp/\">ESP</a> and <a href=\"/features/\">features</a> before you chase another cosmetic drop.",
-					"When a patch cycle shifts visibility or lighting, revisit your settings in our <a href=\"/blog/marathon-pro-settings-guide/\">pro settings guide</a> before you blame a skin for a lost fight.",
+					"Skins are fun, but they do not replace map reads, objective timing, or a stable kit. If you play for information advantage, budget for <a href=\"/marvel-rivals-esp/\">ESP</a> and <a href=\"/features/\">features</a> before you chase another cosmetic drop.",
+					"When a patch cycle shifts visibility or lighting, revisit your settings in our <a href=\"/blog/marvel-rivals-pro-settings-guide/\">pro settings guide</a> before you blame a skin for a lost fight.",
 				],
 			}
 		],
@@ -103,7 +103,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-loadout-tier-list",
+		id: "marvel-rivals-hero-tier-list",
 		imageKey: "aimbotCombat",
 		published: "2026-07-25",
 		updated: "2026-08-17",
@@ -111,41 +111,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "marathon-loadout-tier-list",
-		title: "Marathon Loadout Tier List: Best Guns for Extraction Runs",
-		metaDescription: "A practical Marathon loadout tier list for rival runners and UESC patrols — primaries, SMGs, DMRs, ammo, and when each gun actually wins fights.",
-		h1: "Marathon Loadout Tier List for 2026",
-		intro: "Creator tier lists love flashy guns. Marathon rewards expected value: damage output, recoil control you can control, and a kit you can rebuild after you die. Here is how to rank loadouts for real runs — not highlight reels.",
-		keywords: ["marathon tier list","best marathon loadouts","marathon meta"],
-		imageAlt: "Marathon weapons laid out for a loadout comparison",
+		slug: "marvel-rivals-hero-tier-list",
+		title: "Marvel Rivals Hero Tier List: Best Guns for Ranked Matches",
+		metaDescription: "A practical Marvel Rivals hero tier list for enemy heroes and AI — primaries, SMGs, DMRs, ammo, and when each gun actually wins fights.",
+		h1: "Marvel Rivals Hero Tier List for 2026",
+		intro: "Creator tier lists love flashy guns. Marvel Rivals rewards expected value: damage output, recoil control you can control, and a kit you can rebuild after you die. Here is how to rank loadouts for real matches — not highlight reels.",
+		keywords: ["marvel-rivals tier list","best Marvel Rivals heroes","marvel rivals meta"],
+		imageAlt: "Marvel Rivals weapons laid out for a loadout comparison",
 		sections: [
 			{
-				h2: "How should you define S-tier in Marathon?",
+				h2: "How should you define S-tier in Marvel Rivals?",
 				paragraphs: [
-					"S-tier means the best expected value across a hundred player encounters on maps like Tau Ceti IV, Woods, and Gateway — not the gun that looks strongest in a controlled offline range. Mid-range rifles win many of the fights that actually decide runs: forty to seventy meters through doorways, parking lots, and tree lines.",
+					"S-tier means the best expected value across a hundred player encounters on maps like Marvel Rivals maps, Woods, and Midtown — not the gun that looks strongest in a controlled offline range. Mid-range rifles win many of the fights that actually decide matches: forty to seventy meters through doorways, parking lots, and tree lines.",
 					"Shotguns still own tight interiors. Long-ranges still punish long peeks on Shoreline and Lighthouse. Everything between those extremes is usually assault-rifle country, which is why a well-built M4A1 or similar 5.56 platform stays relevant patch cycle after patch cycle when ammo and mods are available.",
-					"Always re-check live values after patches on <a href=\"https://store.steampowered.com/app/3065800/Marathon/\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon</a>. The hierarchy logic stays useful even when numbers nudge.",
+					"Always re-check live values after patches on <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. The hierarchy logic stays useful even when numbers nudge.",
 				],
 			},
 			{
 				h2: "Ammo, kill speed, and peek discipline matter more than brand names",
 				paragraphs: [
-					"Time-to-kill in Marathon is really time-to-pen. A soft gun with the right rounds beats a loud meta rifle feeding trash ammo into class-five armor. Learn which rounds you can afford this patch cycle, then pick a platform that controls recoil control at your skill level.",
-					"First-shot accuracy decides many peeks. A clean cadence — peek, fire a short burst, jiggle back, re-peek — beats standing still for ego sprays. Pair this mid-range plan with loot drops discipline from our <a href=\"/blog/marathon-loot-routes-guide/\">loot routes guide</a> so you actually spawn with the ammo you planned to use.",
+					"Time-to-kill in Marvel Rivals is really time-to-pen. A soft gun with the right rounds beats a loud meta rifle feeding trash ammo into class-five armor. Learn which rounds you can afford this patch cycle, then pick a platform that controls recoil control at your skill level.",
+					"First-shot accuracy decides many peeks. A clean cadence — peek, fire a short burst, jiggle back, re-peek — beats standing still for ego sprays. Pair this mid-range plan with ability cooldowns discipline from our <a href=\"/blog/marvel-rivals-map-callouts-guide/\">map callouts guide</a> so you actually spawn with the ammo you planned to use.",
 				],
 			},
 			{
 				h2: "Loadout pairings and common mistakes",
 				paragraphs: [
-					"A durable kit is usually a reliable reliable primary, a ambush build in contested zones or high-traffic zones, enough stamina recovery, and a backup loadout you can replace after deaths. In extraction runs, that same spine supports the aggression patterns in our <a href=\"/blog/marathon-extraction-run-strategies/\">extraction strategies article</a>.",
-					"Common mistakes: full-spraying from eighty meters, re-peeking the same pixel, swapping to an SMG at forty meters out of habit, and never practicing controlled bursts offline. If you also use aim-assist tooling, lock aim smoothing and fundamentals first, then review <a href=\"/marathon-aimbot/\">Marathon Aimbot settings</a>.",
+					"A durable kit is usually a reliable reliable primary, a ambush build in contested lanes or high-traffic lanes, enough stamina recovery, and a backup loadout you can replace after deaths. In ranked matches, that same spine supports the aggression patterns in our <a href=\"/blog/marvel-rivals-ranked-strategies/\">ranked strategies article</a>.",
+					"Common mistakes: full-spraying from eighty meters, re-peeking the same pixel, swapping to an SMG at forty meters out of habit, and never practicing controlled bursts offline. If you also use aim-assist tooling, lock aim smoothing and fundamentals first, then review <a href=\"/marvel-rivals-aimbot/\">Marvel Rivals Aimbot settings</a>.",
 				],
 			},
 			{
-				h2: "Turn tier knowledge into run wins",
+				h2: "Turn tier knowledge into match wins",
 				paragraphs: [
-					"A tier list only helps when you spawn with the right plan. Match your pick to your map, exfil route, and whether you solo or trio. Competitive players often pair loadout choice with <a href=\"/marathon-radar-hack/\">radar</a> reads so flanks do not erase a good spawn.",
-					"If you want the full cheat-side stack that supports aggressive picks, start at <a href=\"/marathon-cheats/\">Marathon Cheats</a> and compare plans on <a href=\"/pricing/\">Pricing</a> before you commit to a main loadout for the wipe.",
+					"A tier list only helps when you spawn with the right plan. Match your pick to your map, map rotation, and whether you solo or trio. Competitive players often pair hero choice with <a href=\"/marvel-rivals-radar-hack/\">radar</a> reads so flanks do not erase a good spawn.",
+					"If you want the full cheat-side stack that supports aggressive picks, start at <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> and compare plans on <a href=\"/pricing/\">Pricing</a> before you commit to a main hero for the wipe.",
 				],
 			}
 		],
@@ -153,48 +153,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-growth-run-meta",
+		id: "marvel-rivals-growth-run-meta",
 		imageKey: "survivalCombat",
 		published: "2026-07-22",
 		updated: "2026-08-17",
-		category: "Extraction Runs",
+		category: "Ranked Matches",
 		featured: true,
 		translations: {
 		en: {
-		slug: "marathon-extraction-run-strategies",
-		title: "Marathon Extraction Run Strategies That Actually Pay Off",
-		metaDescription: "Five aggressive but smart Marathon extraction strategies — timings, exfils, third-parties, and how to leave runs with credits instead of empty pockets.",
-		h1: "Marathon Extraction Run Strategies",
-		intro: "Passive early-run players wait behind a bush while two player teams erase each other, then spray into the mess and die. Strong extraction runs manufacture a short advantage, grab what matters, and extract before the run ends collapses on you.",
-		keywords: ["marathon extraction run","marathon extraction","marathon exfils"],
-		imageAlt: "Marathon runner moving toward an exfil with loot",
+		slug: "marvel-rivals-ranked-strategies",
+		title: "Marvel Rivals Ranked Run Strategies That Actually Pay Off",
+		metaDescription: "Five aggressive but smart Marvel Rivals ranked strategies — timings, objectives, third-parties, and how to leave matches with credits instead of empty pockets.",
+		h1: "Marvel Rivals Ranked Run Strategies",
+		intro: "Passive early-run players wait behind a bush while two player teams erase each other, then spray into the mess and die. Strong ranked matches manufacture a short advantage, grab what matters, and secure the objective before the match ends collapses on you.",
+		keywords: ["marvel-rivals ranked match","marvel-rivals objective","marvel-rivals objectives"],
+		imageAlt: "Marvel Rivals match moving toward an objective with loot",
 		sections: [
 			{
-				h2: "Why so many extraction runs feel soft",
+				h2: "Why so many ranked matches feel soft",
 				paragraphs: [
-					"starter kits are random, timers are limited, and player enemy forces can turn on you. Waiting forever for a “perfect” third-player often means you arrive late to a patched lobby with nothing left. Information tools like <a href=\"/marathon-esp/\">Marathon ESP</a> can help you see fights early — but you still need an exit plan.",
-					"Decide your exfil route before you swing. Take a clear damage window, grab high-value loot, then leave. The usual third-player clock in hot POIs is only a few seconds long once gunfire starts.",
+					"starter kits are random, timers are limited, and player enemy forces can turn on you. Waiting forever for a “perfect” third-player often means you arrive late to a patched lobby with nothing left. Information tools like <a href=\"/marvel-rivals-esp/\">Marvel Rivals ESP</a> can help you see fights early — but you still need an exit plan.",
+					"Decide your map rotation before you swing. Take a clear damage window, grab high-value objectives, then leave. The usual third-player clock in hot POIs is only a few seconds long once gunfire starts.",
 				],
 			},
 			{
 				h2: "Five aggressive habits that still work",
 				paragraphs: [
-					"Pre-aim common corners on Tau Ceti IV high-traffic zones and Gateway tech stores so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their stamina is low.",
-					"Stay close to hard cover while you move — never more than a short sprint from a wall or vehicle. Pressure late rotates near exfil and loot zones when players are silhouetted and greedy. Mode rules evolve with <a href=\"https://store.steampowered.com/app/3065800/Marathon/\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon</a> patch cycles; the geometry of first-shot advantage does not.",
+					"Pre-aim common corners on Marvel Rivals maps high-traffic lanes and Midtown tech stores so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their stamina is low.",
+					"Stay close to hard cover while you move — never more than a short sprint from a wall or vehicle. Pressure late rotates near objective and health pack zones when players are silhouetted and greedy. Mode rules evolve with <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> patch cycles; the geometry of first-shot advantage does not.",
 				],
 			},
 			{
-				h2: "Warmup checklist before you queue your first run",
+				h2: "Warmup checklist before you queue your first match",
 				paragraphs: [
-					"Know your map’s main exfils, bring a simple med plan, and pick two POIs with cover ladders instead of open fields. Pair this article with <a href=\"/blog/marathon-loot-routes-guide/\">loot routes</a>, <a href=\"/blog/marathon-loadout-tier-list/\">loadout tiers</a>, and <a href=\"/blog/marathon-warmup-maps-ranked/\">warmup routines</a>.",
-					"Try one run where you force early contact only when you have armor and a usable gun — then track whether you extracted before the third-player window closed.",
+					"Know your map’s main objectives, bring a simple med plan, and pick two POIs with cover ladders instead of open fields. Pair this article with <a href=\"/blog/marvel-rivals-map-callouts-guide/\">map callouts</a>, <a href=\"/blog/marvel-rivals-hero-tier-list/\">hero tiers</a>, and <a href=\"/blog/marvel-rivals-warmup-practice-ranked/\">warmup routines</a>.",
+					"Try one match where you force early contact only when you have armor and a usable gun — then track whether you objectiveed before the third-player window closed.",
 				],
 			},
 			{
-				h2: "Extraction runs and information tools work together",
+				h2: "Ranked matchs and information tools work together",
 				paragraphs: [
-					"Early-run timing is about seconds. Seeing a fight early — through sound, map knowledge, or <a href=\"/marathon-esp/\">ESP</a> — lets you third-party with a plan instead of sprinting into a crossfire.",
-					"After a strong extraction run, protect the kit with conservative settings from our <a href=\"/marathon-aimbot/\">aimbot guide</a> and check <a href=\"/updates/\">Updates</a> before long runs on patch weeks.",
+					"Early-run timing is about seconds. Seeing a fight early — through sound, map knowledge, or <a href=\"/marvel-rivals-esp/\">ESP</a> — lets you third-party with a plan instead of sprinting into a crossfire.",
+					"After a strong ranked match, protect the kit with conservative settings from our <a href=\"/marvel-rivals-aimbot/\">aimbot guide</a> and check <a href=\"/updates/\">Updates</a> before long matches on patch weeks.",
 				],
 			}
 		],
@@ -202,7 +202,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-competitive-meta",
+		id: "marvel-rivals-competitive-meta",
 		imageKey: "ambushFight",
 		published: "2026-07-20",
 		updated: "2026-08-17",
@@ -210,40 +210,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-competitive-meta-guide",
-		title: "What Competitive Marathon Players Optimize For",
-		metaDescription: "What strong Marathon competitors optimize — exfil plans, loadouts, mid-session habits, and which competitive habits help normal survival drop ins.",
-		h1: "Competitive Marathon Meta Guide",
-		intro: "Tournament winners and high-level pairs are not lucky spawn gods. They optimize expected value: safer loot drops paths, cleaner mid-session habits, and fights they choose on purpose. Here is what translates into your normal Marathon drop ins.",
-		keywords: ["marathon competitive","marathon meta","official servers"],
-		imageAlt: "Competitive Marathon players reviewing run strategy",
+		slug: "marvel-rivals-competitive-meta-guide",
+		title: "What Competitive Marvel Rivals Players Optimize For",
+		metaDescription: "What strong Marvel Rivals competitors optimize — team plans, loadouts, mid-session habits, and which competitive habits help normal ranked queue ins.",
+		h1: "Competitive Marvel Rivals Meta Guide",
+		intro: "Tournament winners and high-level pairs are not lucky spawn gods. They optimize expected value: safer ability cooldowns paths, cleaner mid-session habits, and fights they choose on purpose. Here is what translates into your normal Marvel Rivals queue ins.",
+		keywords: ["marvel-rivals competitive","marvel rivals meta","official servers"],
+		imageAlt: "Competitive Marvel Rivals players reviewing match strategy",
 		sections: [
 			{
 				h2: "Watch official server stream replays like a coach, not a fan",
 				paragraphs: [
-					"Start with schedules and film from <a href=\"https://store.steampowered.com/app/3065800/Marathon/\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon</a> official updates or trusted creators, then tag habits instead of memorizing a single POI name. Note the landing plan, first heal, first rotate, first voluntary fight, and the key late-session decision.",
+					"Start with schedules and film from <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> official updates or trusted creators, then tag habits instead of memorizing a single POI name. Note the landing plan, first heal, first rotate, first voluntary fight, and the key late-session decision.",
 					"Five clear timestamps beat a full passive watch. You are stealing decision patterns, not cosplaying someone else’s spawn.",
 				],
 			},
 			{
 				h2: "Spawn EV and loadout patterns that keep showing up",
 				paragraphs: [
-					"Score every spawn on contest rate, loot drops quality in the first few minutes, exfil safety, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then get third-playered.",
-					"Expect a reliable reliable primary, a ambush build, mobility or stamina management, and enough stamina recovery. High-tier loot drops is taken when free, not forced — matching the mindset in our <a href=\"/blog/marathon-loadout-tier-list/\">loadout tier list</a>.",
+					"Score every spawn on contest rate, ability cooldowns quality in the first few minutes, position safety, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then get third-playered.",
+					"Expect a reliable reliable primary, a ambush build, mobility or stamina management, and enough stamina recovery. High-tier ability cooldowns is taken when free, not forced — matching the mindset in our <a href=\"/blog/marvel-rivals-hero-tier-list/\">hero tier list</a>.",
 				],
 			},
 			{
-				h2: "What actually translates to normal runs",
+				h2: "What actually translates to normal matches",
 				paragraphs: [
-					"Steal loot drops-timer discipline, a simple loot route, earlier rotates, and selective fights. Do not blindly mirror a trio drop when you solo drop in. Winners rotate early enough to choose sides — the same idea shows up in our <a href=\"/blog/marathon-extraction-run-strategies/\">extraction aggression guide</a>.",
-					"Try this: watch fifteen minutes of a strong stream replay with five timestamps. Steal one mid-session habit only. Run it for a six-session run block before adding another.",
+					"Steal ability cooldowns-timer discipline, a simple map callout, earlier rotates, and selective fights. Do not blindly mirror a trio drop when you solo queue in. Winners rotate early enough to choose sides — the same idea shows up in our <a href=\"/blog/marvel-rivals-ranked-strategies/\">team fight aggression guide</a>.",
+					"Try this: watch fifteen minutes of a strong stream replay with five timestamps. Steal one mid-session habit only. Run it for a six-session match block before adding another.",
 				],
 			},
 			{
-				h2: "Competitive habits that pair with Marathon Cheats tools",
+				h2: "Competitive habits that pair with Marvel Rivals Cheats tools",
 				paragraphs: [
-					"High-level players win on information timing: who rotates first, who holds exfil, who peeks with armor. That is the same loop <a href=\"/features/\">ESP, radar, and soft aim</a> support when tuned conservatively.",
-					"If you study competitive meta, also read <a href=\"/marathon-cheats/\">Marathon Cheats</a> and <a href=\"/setup/\">Setup</a> so your overlay stack stays readable instead of noisy during real fights.",
+					"High-level players win on information timing: who rotates first, who holds objective, who peeks with armor. That is the same loop <a href=\"/features/\">ESP, radar, and soft aim</a> support when tuned conservatively.",
+					"If you study competitive meta, also read <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> and <a href=\"/setup/\">Setup</a> so your overlay stack stays readable instead of noisy during real fights.",
 				],
 			}
 		],
@@ -251,7 +251,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-loot-routes",
+		id: "marvel-rivals-loot-routes",
 		imageKey: "survivalIslandMap",
 		published: "2026-07-18",
 		updated: "2026-08-17",
@@ -259,40 +259,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "marathon-loot-routes-guide",
-		title: "Marathon Loot Routes That Leave Spawn Ready to Fight",
-		metaDescription: "High-percentage Marathon loot routes for Tau Ceti IV, Woods, and Gateway — how to leave spawn with guns, armor, and stamina recovery that win mid-session fights.",
-		h1: "Marathon Loot Routes Guide",
-		intro: "Winning in Marathon starts before the first gunfight. Random loot dropsing gets you killed with a pistol and no stamina recovery. These route habits consistently convert a drop into a kit you can actually fight with.",
-		keywords: ["marathon loot routes","marathon spawn guide","marathon esp"],
-		imageAlt: "Loot route planning across a Marathon map",
+		slug: "marvel-rivals-map-callouts-guide",
+		title: "Marvel Rivals Loot Routes That Leave Spawn Ready to Fight",
+		metaDescription: "High-percentage Marvel Rivals map callouts for Marvel Rivals maps, Woods, and Midtown — how to leave spawn with guns, armor, and stamina recovery that win mid-session fights.",
+		h1: "Marvel Rivals Loot Routes Guide",
+		intro: "Winning in Marvel Rivals starts before the first gunfight. Random ability cooldownsing gets you killed with a pistol and no stamina recovery. These route habits consistently convert a queue into a kit you can actually fight with.",
+		keywords: ["marvel-rivals map callouts","marvel-rivals spawn guide","marvel rivals esp"],
+		imageAlt: "Loot route planning across a Marvel Rivals map",
 		sections: [
 			{
 				h2: "Why early inventory is the real bottleneck",
 				paragraphs: [
-					"Many early run deaths happen because players loot drops like tourists. Strong players treat the first ninety seconds like a shopping list: usable gun, enough ammo, basic armor, and a heal. Drop spot matters less than sequence — a mediocre POI with discipline beats a stacked landmark with panic loot dropsing.",
-					"Secure a primary loadout tier and stamina recovery before pushing kills. Early ego chases are how hot-spawn players stay broke.",
+					"Many early match deaths happen because players ability cooldowns like tourists. Strong players treat the first ninety seconds like a shopping list: usable gun, enough ammo, basic armor, and a heal. Drop spot matters less than sequence — a mediocre POI with discipline beats a stacked landmark with panic ability cooldownsing.",
+					"Secure a primary hero tier and stamina recovery before pushing kills. Early ego chases are how hot-spawn players stay broke.",
 				],
 			},
 			{
 				h2: "Three route archetypes that keep printing gear",
 				paragraphs: [
-					"Contested edge POI: land outer loot drops, snake inward, leave before late third parties. Uncontested chain: sacrifice early fights for a fuller kit by minute three. Mid-map surge: vacuum piles ninety to one hundred fifty seconds after hot spawns empty out.",
-					"Timing targets help: first gun quickly, clear a cluster, grab heals, then upgrade or leave. Slot priority is usually gun, ammo, armor, stamina recovery, then flex loot drops. POI names shift with <a href=\"https://store.steampowered.com/app/3065800/Marathon/\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon</a> patch cycles — keep the geometry, not just the landmark brand.",
+					"Contested edge POI: land outer ability cooldowns, snake inward, leave before late third parties. Uncontested chain: sacrifice early fights for a fuller kit by minute three. Mid-map surge: vacuum piles ninety to one hundred fifty seconds after hot spawns empty out.",
+					"Timing targets help: first gun quickly, clear a cluster, grab heals, then upgrade or leave. Slot priority is usually gun, ammo, armor, stamina recovery, then flex ability cooldowns. POI names shift with <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> patch cycles — keep the geometry, not just the landmark brand.",
 				],
 			},
 			{
-				h2: "Convert a strong drop into a win",
+				h2: "Convert a strong queue into a win",
 				paragraphs: [
-					"Pair these routes with <a href=\"/blog/marathon-extraction-run-strategies/\">extraction aggression</a> and <a href=\"/blog/marathon-loadout-tier-list/\">loadout tiers</a>. Leave spawn with kit advantage so mid-session becomes a skill check instead of a desperate loot panic.",
-					"If you practice with loot markers, read <a href=\"/marathon-esp/\">Marathon ESP</a> for category toggles — then still run the timer so your habits stay sharp without overlays.",
+					"Pair these routes with <a href=\"/blog/marvel-rivals-ranked-strategies/\">team fight aggression</a> and <a href=\"/blog/marvel-rivals-hero-tier-list/\">hero tiers</a>. Leave spawn with kit advantage so mid-session becomes a skill check instead of a desperate ult panic.",
+					"If you practice with objective markers, read <a href=\"/marvel-rivals-esp/\">Marvel Rivals ESP</a> for category toggles — then still match the timer so your habits stay sharp without overlays.",
 				],
 			},
 			{
 				h2: "Route discipline plus loot awareness",
 				paragraphs: [
-					"Routes fail when players loot like tourists. Mark your ninety-second plan, stick to cover ladders, and use <a href=\"/marathon-esp/\">loot ESP filters</a> only to confirm what your route already predicted — not to replace map knowledge.",
-					"Strong routes feed into extraction runs and competitive spawns. Link this guide with <a href=\"/marathon-cheats/\">Marathon Cheats</a> if you want radar for exfil zones after your kit is online.",
+					"Routes fail when players loot like tourists. Mark your ninety-second plan, stick to cover ladders, and use <a href=\"/marvel-rivals-esp/\">hero ESP filters</a> only to confirm what your route already predicted — not to replace map knowledge.",
+					"Strong routes feed into ranked matches and competitive spawns. Link this guide with <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> if you want radar for objective zones after your kit is online.",
 				],
 			}
 		],
@@ -300,7 +300,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-pro-settings",
+		id: "marvel-rivals-pro-settings",
 		imageKey: "hacksPackage",
 		published: "2026-07-12",
 		updated: "2026-08-17",
@@ -308,40 +308,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-pro-settings-guide",
-		title: "Marathon Pro Settings That Actually Help You See Enemies",
-		metaDescription: "Practical Marathon settings used by strong players — visibility, audio cues, aim smoothing, and what to copy vs ignore from pro configs.",
-		h1: "Marathon Pro Settings Guide",
-		intro: "Copying a champion’s entire config will not make you one. But a few Marathon settings reliably improve visibility, audio reads, and aim consistency. Here is what is worth stealing.",
-		keywords: ["marathon settings","marathon visibility","marathon audio"],
-		imageAlt: "Marathon graphics and control settings menu",
+		slug: "marvel-rivals-pro-settings-guide",
+		title: "Marvel Rivals Pro Settings That Actually Help You See Enemies",
+		metaDescription: "Practical Marvel Rivals settings used by strong players — visibility, audio cues, aim smoothing, and what to copy vs ignore from pro configs.",
+		h1: "Marvel Rivals Pro Settings Guide",
+		intro: "Copying a champion’s entire config will not make you one. But a few Marvel Rivals settings reliably improve visibility, audio reads, and aim consistency. Here is what is worth stealing.",
+		keywords: ["marvel-rivals settings","marvel-rivals visibility","marvel-rivals audio"],
+		imageAlt: "Marvel Rivals graphics and control settings menu",
 		sections: [
 			{
 				h2: "Visibility and performance before fancy numbers",
 				paragraphs: [
-					"If your frame rate collapses in Tau Ceti IV river zones or Gateway interiors, no aim smoothing tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so player silhouettes pop sooner in tree lines and warehouse lighting.",
-					"Test changes in practice server or a quiet practice lobby before locking them for serious survival runs. Your eyes adapt in a few runs — give settings that long before declaring them useless.",
+					"If your frame rate collapses in Marvel Rivals maps river zones or Midtown interiors, no aim smoothing tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so player silhouettes pop sooner in tree lines and warehouse lighting.",
+					"Test changes in practice server or a quiet practice lobby before locking them for serious survival matches. Your eyes adapt in a few matches — give settings that long before declaring them useless.",
 				],
 			},
 			{
 				h2: "Sensitivity, ADS, and muscle memory",
 				paragraphs: [
-					"Pick one hip-fire and ADS relationship and stick with it for at least a week. Constantly rewriting sens after every death trains nothing. Warm up with the routine in our <a href=\"/blog/marathon-warmup-maps-ranked/\">warmup guide</a> so your hands match the new numbers.",
-					"If you later add soft aim tooling, match the in-game sens first, then tune FOV in the <a href=\"/marathon-aimbot/\">aimbot guide</a>. Tools on top of a chaotic sens feel robotic and obvious.",
+					"Pick one hip-fire and ADS relationship and stick with it for at least a week. Constantly rewriting sens after every death trains nothing. Warm up with the routine in our <a href=\"/blog/marvel-rivals-warmup-practice-ranked/\">warmup guide</a> so your hands match the new numbers.",
+					"If you later add soft aim tooling, match the in-game sens first, then tune FOV in the <a href=\"/marvel-rivals-aimbot/\">aimbot guide</a>. Tools on top of a chaotic sens feel robotic and obvious.",
 				],
 			},
 			{
-				h2: "Audio cues that win exfils",
+				h2: "Audio cues that win objectives",
 				paragraphs: [
-					"Footsteps, ability cooldowns, and exfil callouts often matter more than a tiny graphics slider. Use headphones, keep voice chat from drowning game audio, and learn the sound difference between a AI patrol shuffle and a player push.",
-					"Settings are leverage, not a cheat code. Pair them with map knowledge from our <a href=\"/blog/marathon-loot-routes-guide/\">loot routes</a> article so you know where those sounds are coming from.",
+					"Footsteps, ability cooldowns, and map callouts often matter more than a tiny graphics slider. Use headphones, keep voice chat from drowning game audio, and learn the sound difference between a AI patrol shuffle and a player push.",
+					"Settings are leverage, not a cheat code. Pair them with map knowledge from our <a href=\"/blog/marvel-rivals-map-callouts-guide/\">map callouts</a> article so you know where those sounds are coming from.",
 				],
 			},
 			{
 				h2: "Settings that support ESP and aim tools",
 				paragraphs: [
-					"Stable FPS and clean silhouettes make every tool better. Before you tune <a href=\"/marathon-aimbot/\">soft aim</a>, fix sensitivity and visibility here so assists feel natural instead of robotic.",
-					"Audio and shadow clarity also reduce how much you need to toggle <a href=\"/marathon-esp/\">ESP categories</a> mid-fight. Revisit settings after major patches on <a href=\"/updates/\">Updates</a>.",
+					"Stable FPS and clean silhouettes make every tool better. Before you tune <a href=\"/marvel-rivals-aimbot/\">soft aim</a>, fix sensitivity and visibility here so assists feel natural instead of robotic.",
+					"Audio and shadow clarity also reduce how much you need to toggle <a href=\"/marvel-rivals-esp/\">ESP categories</a> mid-fight. Revisit settings after major patches on <a href=\"/updates/\">Updates</a>.",
 				],
 			}
 		],
@@ -349,7 +349,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-warmup-maps",
+		id: "marvel-rivals-warmup-maps",
 		imageKey: "dinoEsp",
 		published: "2026-07-10",
 		updated: "2026-08-17",
@@ -357,32 +357,32 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-warmup-maps-ranked",
-		title: "Marathon Warmup Routine Before Serious Survival Sessions",
-		metaDescription: "A short Marathon warmup routine before survival runs — aim, peeks, audio focus, and what to practice offline so your first fight is not your warmup.",
-		h1: "Marathon Warmup Routine",
-		intro: "Queuing cold into high-traffic zones or high-traffic zones is how you donate a kit. A short Marathon warmup — even ten to fifteen minutes — makes your first real fight feel like your third.",
-		keywords: ["marathon warmup","marathon aim practice","survival routine"],
-		imageAlt: "Player warming up aim before a Marathon survival run",
+		slug: "marvel-rivals-warmup-practice-ranked",
+		title: "Marvel Rivals Warmup Routine Before Serious Ranked Matchs",
+		metaDescription: "A short Marvel Rivals warmup routine before survival matches — aim, peeks, audio focus, and what to practice offline so your first fight is not your warmup.",
+		h1: "Marvel Rivals Warmup Routine",
+		intro: "Queuing cold into high-traffic lanes or high-traffic lanes is how you donate a kit. A short Marvel Rivals warmup — even ten to fifteen minutes — makes your first real fight feel like your third.",
+		keywords: ["marvel-rivals warmup","marvel-rivals aim practice","survival routine"],
+		imageAlt: "Player warming up aim before a Marvel Rivals survival match",
 		sections: [
 			{
-				h2: "Why your first run should not be the warmup",
+				h2: "Why your first match should not be the warmup",
 				paragraphs: [
-					"Most players boot the game, slap on a kit, and die to the first clean peeker. Hands are cold, audio is not dialed, and map timing feels off. Treat warmup as part of the run, not optional fluff.",
-					"Offline practice, practice server habits, and a couple of low-stakes extraction runs exist so your expensive expensive kit is not the experiment.",
+					"Most players boot the game, slap on a kit, and die to the first clean peeker. Hands are cold, audio is not dialed, and map timing feels off. Treat warmup as part of the match, not optional fluff.",
+					"Offline practice, practice server habits, and a couple of low-stakes ranked matches exist so your expensive expensive kit is not the experiment.",
 				],
 			},
 			{
 				h2: "A simple 15-minute routine that scales",
 				paragraphs: [
-					"Minutes 1–5: tracking and short bursts on a practice server with AI patrols. Minutes 6–10: ambush practice on common angles — jiggle, counter-strafe, pre-aim head level. Minutes 11–15: one focused practice or practice server block where you only work one habit, like holding an exfil or clearing dense cover.",
-					"Keep the routine identical for a week so improvements are measurable. Rotate maps later — Tau Ceti IV one day, Woods the next — after the habit sticks.",
+					"Minutes 1–5: tracking and short bursts on a practice server with AI patrols. Minutes 6–10: ambush practice on common angles — jiggle, counter-strafe, pre-aim head level. Minutes 11–15: one focused practice or practice server block where you only work one habit, like holding an objective or clearing dense cover.",
+					"Keep the routine identical for a week so improvements are measurable. Rotate maps later — Marvel Rivals maps one day, Woods the next — after the habit sticks.",
 				],
 			},
 			{
 				h2: "What to do right before you ready up",
 				paragraphs: [
-					"Check progress, stamina recovery, and exfil plans, confirm your map exfils, and skim <a href=\"/updates/\">cheat status</a> if you use overlays after a patch. Pair warmup with <a href=\"/blog/marathon-pro-settings-guide/\">settings</a> and <a href=\"/blog/marathon-loadout-tier-list/\">loadout tiers</a> so you are not reinventing the kit every night.",
+					"Check progress, stamina recovery, and team plans, confirm your map objectives, and skim <a href=\"/updates/\">cheat status</a> if you use overlays after a patch. Pair warmup with <a href=\"/blog/marvel-rivals-pro-settings-guide/\">settings</a> and <a href=\"/blog/marvel-rivals-hero-tier-list/\">hero tiers</a> so you are not reinventing the kit every night.",
 					"If the first two player deaths feel mechanical, stop stacking kits and repeat five minutes of ambush practice. Ego dropping in while tilted is not a strategy.",
 				],
 			},
@@ -390,7 +390,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Warm up before you trust expensive kits",
 				paragraphs: [
 					"Warmup protects expensive kits and paid licenses alike. Run the routine, then confirm <a href=\"/updates/\">status</a> if you use overlays after a patch.",
-					"Pair warmup with <a href=\"/marathon-aimbot/\">aim profiles</a> and <a href=\"/marathon-esp/\">ESP toggles</a> you already plan to use in-session — not new settings you have never tested under pressure.",
+					"Pair warmup with <a href=\"/marvel-rivals-aimbot/\">aim profiles</a> and <a href=\"/marvel-rivals-esp/\">ESP toggles</a> you already plan to use in-session — not new settings you have never tested under pressure.",
 				],
 			}
 		],
@@ -398,7 +398,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-cheats-complete-guide",
+		id: "marvel-rivals-cheats-complete-guide",
 		imageKey: "espWallhack",
 		published: "2026-07-30",
 		updated: "2026-08-17",
@@ -406,47 +406,47 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "marathon-cheats-complete-guide-2026",
-		title: "Marathon Cheats 2026: Complete Undetected Guide",
-		metaDescription: "A clear 2026 guide to marathon cheats — what ESP, soft aim, and radar actually do in Marathon, how BattlEye maintenance works, and how to buy safely.",
-		h1: "Marathon Cheats Guide for 2026",
-		intro: "People search “marathon cheats” for a simple reason: Marathon is information-heavy, punishing, and full of exfil campers. This guide explains what modern undetected packages actually include, how BattlEye maintenance works, and how to decide whether a tool fits your play style.",
-		keywords: ["marathon cheats","undetected hacks","marathon esp"],
-		imageAlt: "Overview of Marathon Cheats ESP soft aim and radar tools for 2026",
+		slug: "marvel-rivals-cheats-complete-guide-2026",
+		title: "Marvel Rivals Cheats 2026: Complete Undetected Guide",
+		metaDescription: "A clear 2026 guide to marvel rivals cheats — what ESP, soft aim, and radar actually do in Marvel Rivals, how NetEase Anti-Cheat maintenance works, and how to buy safely.",
+		h1: "Marvel Rivals Cheats Guide for 2026",
+		intro: "People search “marvel rivals cheats” for a simple reason: Marvel Rivals is information-heavy, punishing, and full of objective campers. This guide explains what modern undetected packages actually include, how NetEase Anti-Cheat maintenance works, and how to decide whether a tool fits your play style.",
+		keywords: ["marvel rivals cheats","undetected hacks","marvel rivals esp"],
+		imageAlt: "Overview of Marvel Rivals Cheats ESP soft aim and radar tools for 2026",
 		sections: [
 			{
-				h2: "What do people mean when they say marathon cheats?",
+				h2: "What do people mean when they say marvel rivals cheats?",
 				paragraphs: [
-					"In plain language, marathon cheats are third-player tools that add information or aim assistance on top of Marathon client. The common stack is ESP wallhack for players and loot drops, a 2D radar for threats outside your view, and configurable soft aim for pushs. One license should cover that loop instead of forcing you to juggle separate downloads.",
-					"Searchers also say “marathon cheats,” “marathon cheats,” or “marathon wallhack.” Those phrases usually point at the same intent: survive runs with better reads. Start at our <a href=\"/\">Marathon Cheats pillar</a> if you want the product overview without the long essay.",
+					"In plain language, marvel rivals cheats are third-player tools that add information or aim assistance on top of Marvel Rivals client. The common stack is ESP wallhack for players and ability cooldowns, a 2D radar for threats outside your view, and configurable soft aim for pushes. One license should cover that loop instead of forcing you to juggle separate downloads.",
+					"Searchers also say “marvel rivals cheats,” “marvel rivals cheats,” or “marvel rivals wallhack.” Those phrases usually point at the same intent: survive matches with better reads. Start at our <a href=\"/\">Marvel Rivals Cheats pillar</a> if you want the product overview without the long essay.",
 				],
 			},
 			{
 				h2: "ESP, soft aim, and radar — what each tool is for",
 				paragraphs: [
-					"ESP answers “who is near me and what is worth loot dropsing?” Soft aim answers “can I finish the fight once I choose it?” Radar answers “is someone flanking while I heal?” Used together, they cover information and combat. Used badly, they create noisy overlays and obvious aim corrections.",
-					"Deep dives live on <a href=\"/marathon-esp/\">ESP</a>, <a href=\"/marathon-aimbot/\">aimbot</a>, <a href=\"/marathon-wallhack/\">wallhack</a>, and <a href=\"/marathon-radar-hack/\">radar</a>. Read those before you buy if you only need one job done well.",
+					"ESP answers “who is near me and what is worth ability cooldownsing?” Soft aim answers “can I finish the fight once I choose it?” Radar answers “is someone flanking while I heal?” Used together, they cover information and combat. Used badly, they create noisy overlays and obvious aim corrections.",
+					"Deep dives live on <a href=\"/marvel-rivals-esp/\">ESP</a>, <a href=\"/marvel-rivals-aimbot/\">aimbot</a>, <a href=\"/marvel-rivals-wallhack/\">wallhack</a>, and <a href=\"/marvel-rivals-radar-hack/\">radar</a>. Read those before you buy if you only need one job done well.",
 				],
 			},
 			{
-				h2: "BattlEye, “undetected,” and honest expectations",
+				h2: "NetEase Anti-Cheat, “undetected,” and honest expectations",
 				paragraphs: [
-					"<a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> protects Marathon. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-marathon-cheats/\">undetected marathon cheats</a> and <a href=\"/battleye-bypass/\">BattlEye maintenance</a>.",
-					"Before every patch-day drop in, read <a href=\"/updates/\">Updates</a>. If status is quiet, wait. Responsible settings matter as much as the binary itself.",
+					"<a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a> protects Marvel Rivals. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-marvel-rivals-cheats/\">undetected marvel rivals cheats</a> and <a href=\"/neac-bypass/\">NetEase Anti-Cheat maintenance</a>.",
+					"Before every patch-day queue in, read <a href=\"/updates/\">Updates</a>. If status is quiet, wait. Responsible settings matter as much as the binary itself.",
 				],
 			},
 			{
 				h2: "How to buy and set up without wasting a night",
 				paragraphs: [
-					"Compare monthly and lifetime on <a href=\"/pricing/\">Pricing</a>, then follow <a href=\"/setup/\">Setup</a> after delivery. Keep your order ID ready for <a href=\"/support/\">Support</a>. If you are still shopping, the <a href=\"/blog/marathon-cheats-buyers-guide/\">buyers guide</a> lists the checklist we wish every shopper used.",
-					"Marathon Cheats is built for Windows PC rival runners and UESC patrols play. It will not replace map knowledge — it amplifies the reads you already practice in runs.",
+					"Compare monthly and lifetime on <a href=\"/pricing/\">Pricing</a>, then follow <a href=\"/setup/\">Setup</a> after delivery. Keep your order ID ready for <a href=\"/support/\">Support</a>. If you are still shopping, the <a href=\"/blog/marvel-rivals-cheats-buyers-guide/\">buyers guide</a> lists the checklist we wish every shopper used.",
+					"Marvel Rivals Cheats is built for Windows PC enemy heroes and AI play. It will not replace map knowledge — it amplifies the reads you already practice in matches.",
 				],
 			},
 			{
 				h2: "Your next steps after reading this guide",
 				paragraphs: [
 					"If the stack fits your play style, compare monthly and lifetime on <a href=\"/pricing/\">Pricing</a>, then follow <a href=\"/setup/\">Setup</a> line by line. Keep <a href=\"/updates/\">Updates</a> bookmarked for patch weeks.",
-					"For deeper category pages, read <a href=\"/marathon-esp/\">ESP</a>, <a href=\"/marathon-aimbot/\">aimbot</a>, and <a href=\"/undetected-marathon-cheats/\">undetected notes</a>. Questions before checkout go to <a href=\"/faq/\">FAQ</a> and <a href=\"/support/\">Support</a>.",
+					"For deeper category pages, read <a href=\"/marvel-rivals-esp/\">ESP</a>, <a href=\"/marvel-rivals-aimbot/\">aimbot</a>, and <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a>. Questions before checkout go to <a href=\"/faq/\">FAQ</a> and <a href=\"/support/\">Support</a>.",
 				],
 			}
 		],
@@ -454,7 +454,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-cheats-buyers-guide",
+		id: "marvel-rivals-cheats-buyers-guide",
 		imageKey: "hacksPackage",
 		published: "2026-07-28",
 		updated: "2026-08-17",
@@ -462,26 +462,26 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "marathon-cheats-buyers-guide",
-		title: "Marathon Cheats Buyers Guide",
-		metaDescription: "What to check before you buy marathon cheats — status pages, ESP features, soft aim, refunds, pricing, and red flags in 2026.",
-		h1: "Marathon Cheats Buyers Guide",
-		intro: "Buying marathon cheats is noisy. Every storefront promises “undetected,” instant delivery, and god mode. This buyers guide slows you down with a practical checklist so you spend money on maintenance and clarity — not banners.",
-		keywords: ["buy marathon cheats","marathon cheats guide","marathon pricing"],
-		imageAlt: "Checklist for buying Marathon Cheats safely",
+		slug: "marvel-rivals-cheats-buyers-guide",
+		title: "Marvel Rivals Cheats Buyers Guide",
+		metaDescription: "What to check before you buy marvel rivals cheats — status pages, ESP features, soft aim, refunds, pricing, and red flags in 2026.",
+		h1: "Marvel Rivals Cheats Buyers Guide",
+		intro: "Buying marvel rivals cheats is noisy. Every storefront promises “undetected,” instant delivery, and god mode. This buyers guide slows you down with a practical checklist so you spend money on maintenance and clarity — not banners.",
+		keywords: ["buy marvel rivals cheats","marvel rivals cheats guide","marvel-rivals pricing"],
+		imageAlt: "Checklist for buying Marvel Rivals Cheats safely",
 		sections: [
 			{
 				h2: "Start with status, not screenshots",
 				paragraphs: [
-					"Ask whether the seller publishes a dated status page after BattlEye or client patches. Fancy galleries do not help if the tool is offline for three days. Marathon Cheats posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
+					"Ask whether the seller publishes a dated status page after NetEase Anti-Cheat or client patches. Fancy galleries do not help if the tool is offline for three days. Marvel Rivals Cheats posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
 					"If a shop only answers in private Discord and never writes public notes, assume you will miss patch windows.",
 				],
 			},
 			{
-				h2: "Feature checklist that matches real Marathon runs",
+				h2: "Feature checklist that matches real Marvel Rivals matches",
 				paragraphs: [
-					"For Marathon, useful features usually mean player ESP with distance, loot filters, exfil awareness, radar for flanks, and soft aim you can tone down. “Unlock all” marketing and other-game leftovers are red flags that the page was cloned from another game.",
-					"Compare the stack on <a href=\"/features/\">Features</a>, <a href=\"/marathon-esp/\">ESP</a>, and <a href=\"/marathon-aimbot/\">Aimbot</a>. If radar matters to how you hold exfils, confirm it exists before checkout.",
+					"For Marvel Rivals, useful features usually mean player ESP with distance, loot filters, map awareness, radar for flanks, and soft aim you can tone down. “Unlock all” marketing and other-game leftovers are red flags that the page was cloned from another game.",
+					"Compare the stack on <a href=\"/features/\">Features</a>, <a href=\"/marvel-rivals-esp/\">ESP</a>, and <a href=\"/marvel-rivals-aimbot/\">Aimbot</a>. If radar matters to how you hold objectives, confirm it exists before checkout.",
 				],
 			},
 			{
@@ -494,8 +494,8 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Final checklist before checkout",
 				paragraphs: [
-					"Confirm dated status, loot ESP, radar, soft aim profiles, Windows support, and a written refund policy. If any item is missing, pause — cheap weekly subs add up when rebuilds are slow.",
-					"When the checklist passes, open <a href=\"/marathon-cheats/\">Marathon Cheats</a>, compare <a href=\"/pricing/\">Pricing</a>, and read <a href=\"/blog/marathon-cheats-complete-guide-2026/\">the 2026 complete guide</a> for feature context.",
+					"Confirm dated status, hero ESP, radar, soft aim profiles, Windows support, and a written refund policy. If any item is missing, pause — cheap weekly subs add up when rebuilds are slow.",
+					"When the checklist passes, open <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a>, compare <a href=\"/pricing/\">Pricing</a>, and read <a href=\"/blog/marvel-rivals-cheats-complete-guide-2026/\">the 2026 complete guide</a> for feature context.",
 				],
 			}
 		],
@@ -503,7 +503,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-cheats-2026-whats-new",
+		id: "marvel-rivals-cheats-2026-whats-new",
 		imageKey: "hero",
 		published: "2026-07-26",
 		updated: "2026-08-17",
@@ -511,32 +511,32 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-cheats-2026-whats-new",
-		title: "Marathon Cheats 2026: What Changed This Year",
-		metaDescription: "What changed for marathon cheats in 2026 — patch cycle cadence, BattlEye maintenance habits, ESP focus, and how Marathon Cheats adapted for Marathon.",
-		h1: "Marathon Cheats Updates in 2026",
-		intro: "2026 did not invent cheating in Marathon — it raised the bar for maintenance. Wipes, BattlEye pushes, and map updates punish stale builds. Here is what changed in how serious Marathon Cheats packages need to operate.",
-		keywords: ["marathon cheats 2026","battleye updates","hack status"],
-		imageAlt: "2026 updates for Marathon Cheats on Marathon",
+		slug: "marvel-rivals-cheats-2026-whats-new",
+		title: "Marvel Rivals Cheats 2026: What Changed This Year",
+		metaDescription: "What changed for marvel rivals cheats in 2026 — patch cycle cadence, NetEase Anti-Cheat maintenance habits, ESP focus, and how Marvel Rivals Cheats adapted for Marvel Rivals.",
+		h1: "Marvel Rivals Cheats Updates in 2026",
+		intro: "2026 did not invent cheating in Marvel Rivals — it raised the bar for maintenance. Wipes, NetEase Anti-Cheat pushes, and map updates punish stale builds. Here is what changed in how serious Marvel Rivals Cheats packages need to operate.",
+		keywords: ["marvel rivals cheats 2026","neac updates","hack status"],
+		imageAlt: "2026 updates for Marvel Rivals Cheats on Marvel Rivals",
 		sections: [
 			{
 				h2: "Why 2026 buyers care more about status pages",
 				paragraphs: [
-					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/undetected-marathon-cheats/\">undetected explainer</a> instead of empty guarantees.",
-					"<a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> and Marathon client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
+					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/undetected-marvel-rivals-cheats/\">undetected explainer</a> instead of empty guarantees.",
+					"<a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a> and Marvel Rivals client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
 				],
 			},
 			{
-				h2: "Feature focus shifted toward run information",
+				h2: "Feature focus shifted toward match information",
 				paragraphs: [
-					"The winning feature set in 2026 is still ESP, radar, and tunable soft aim — because Marathon fights are about information and first peeks. Loud rage features matter less than readable overlays you can turn down near exfil and loot zones.",
-					"See the current stack on <a href=\"/features/\">Features</a> and the pillar at <a href=\"/\">marathon cheats</a>.",
+					"The winning feature set in 2026 is still ESP, radar, and tunable soft aim — because Marvel Rivals fights are about information and first peeks. Loud rage features matter less than readable overlays you can turn down near objective and health pack zones.",
+					"See the current stack on <a href=\"/features/\">Features</a> and the pillar at <a href=\"/\">marvel rivals cheats</a>.",
 				],
 			},
 			{
 				h2: "What we recommend you do differently this year",
 				paragraphs: [
-					"Check status before patch-day drop ins. Keep soft aim conservative. Use loot ESP filters so your screen stays clean. Read the <a href=\"/blog/marathon-cheats-complete-guide-2026/\">complete 2026 guide</a> if you are new to the category.",
+					"Check status before patch-day queue ins. Keep soft aim conservative. Use hero ESP filters so your screen stays clean. Read the <a href=\"/blog/marvel-rivals-cheats-complete-guide-2026/\">complete 2026 guide</a> if you are new to the category.",
 					"Pricing remains monthly and lifetime on <a href=\"/pricing/\">Pricing</a> with digital delivery after payment.",
 				],
 			},
@@ -544,7 +544,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "What to watch for the rest of 2026",
 				paragraphs: [
 					"Expect more frequent client and anti-cheat touchpoints, not fewer. Shops that survive will keep publishing rebuild notes and tightening overlay readability.",
-					"Follow <a href=\"/updates/\">Updates</a>, review <a href=\"/features/\">Features</a> after each major push, and treat <a href=\"/undetected-marathon-cheats/\">undetected</a> as a maintenance process — not a permanent badge.",
+					"Follow <a href=\"/updates/\">Updates</a>, review <a href=\"/features/\">Features</a> after each major push, and treat <a href=\"/undetected-marvel-rivals-cheats/\">undetected</a> as a maintenance process — not a permanent badge.",
 				],
 			}
 		],
@@ -552,7 +552,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-aimbot-settings-guide",
+		id: "marvel-rivals-aimbot-settings-guide",
 		imageKey: "aimbotCombat",
 		published: "2026-07-24",
 		updated: "2026-08-17",
@@ -560,39 +560,39 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-aimbot-settings-guide",
-		title: "Marathon Aimbot Settings: Smooth FOV Without Looking Robotic",
-		metaDescription: "How to tune Marathon Aimbot and soft aim settings — FOV, smoothness, bone priority, and per-weapon profiles that feel natural in Marathon runs.",
-		h1: "The Marathon Aimbot Settings Guide",
-		intro: "A harsh aimbot gets you killed by reports and by your own bad habits. Soft, tunable aim assistance is what most Marathon players actually want. Here is how to think about FOV, smoothness, and weapon profiles.",
-		keywords: ["marathon aimbot","soft aim","aimbot fov"],
-		imageAlt: "Soft aim and FOV settings for Marathon Aimbot on Windows PC",
+		slug: "marvel-rivals-aimbot-settings-guide",
+		title: "Marvel Rivals Aimbot Settings: Smooth FOV Without Looking Robotic",
+		metaDescription: "How to tune Marvel Rivals Aimbot and soft aim settings — FOV, smoothness, bone priority, and per-hero profiles that feel natural in Marvel Rivals matches.",
+		h1: "The Marvel Rivals Aimbot Settings Guide",
+		intro: "A harsh aimbot gets you killed by reports and by your own bad habits. Soft, tunable aim assistance is what most Marvel Rivals players actually want. Here is how to think about FOV, smoothness, and hero profiles.",
+		keywords: ["marvel rivals aimbot","soft aim","aimbot fov"],
+		imageAlt: "Soft aim and FOV settings for Marvel Rivals Aimbot on Windows PC",
 		sections: [
 			{
 				h2: "Start softer than you think you need",
 				paragraphs: [
-					"Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five runs on Tau Ceti IV or high-traffic zones and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.",
-					"Full control docs live on <a href=\"/marathon-aimbot/\">Marathon Aimbot</a> and <a href=\"/marathon-soft-aim/\">soft aim</a>.",
+					"Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five matches on Marvel Rivals maps or high-traffic lanes and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.",
+					"Full control docs live on <a href=\"/marvel-rivals-aimbot/\">Marvel Rivals Aimbot</a> and <a href=\"/marvel-rivals-soft-aim/\">soft aim</a>.",
 				],
 			},
 			{
-				h2: "Per-weapon profiles beat one global slider",
+				h2: "Per-hero profiles beat one global slider",
 				paragraphs: [
-					"SMG, DMR builds, and long-range weapons want different assist. Save separate profiles so high-traffic zones sprays and long forest ambushes do not share the same magnet. Bone priority should favor what you can actually hit under stress — usually upper chest to head transitions, not miracles.",
-					"Hotkeys matter mid-session. You need to disable assist when you are loot dropsing friendlies or holding a suspicious angle where obvious corrections would look wrong.",
+					"SMG, DMR builds, and long-range weapons want different assist. Save separate profiles so high-traffic lanes sprays and long forest ambushes do not share the same magnet. Bone priority should favor what you can actually hit under stress — usually upper chest to head transitions, not miracles.",
+					"Hotkeys matter mid-session. You need to disable assist when you are ability cooldownsing friendlies or holding a suspicious angle where obvious corrections would look wrong.",
 				],
 			},
 			{
 				h2: "Pair aim settings with information tools",
 				paragraphs: [
-					"Soft aim finishes fights that ESP and radar help you choose. If your overlays are noisy, fix <a href=\"/marathon-esp/\">ESP categories</a> before blaming aim. After BattlEye patches, confirm <a href=\"/updates/\">Updates</a> before you tune anything on an old build.",
+					"Soft aim finishes fights that ESP and radar help you choose. If your overlays are noisy, fix <a href=\"/marvel-rivals-esp/\">ESP categories</a> before blaming aim. After NetEase Anti-Cheat patches, confirm <a href=\"/updates/\">Updates</a> before you tune anything on an old build.",
 				],
 			},
 			{
-				h2: "Build a profile set you can trust in exfils",
+				h2: "Build a profile set you can trust in objectives",
 				paragraphs: [
-					"Save SMG, DMR, and long-range profiles separately. Test each on <a href=\"/blog/marathon-warmup-maps-ranked/\">warmup maps</a> before you take a expensive kit into high-traffic zones.",
-					"Combine tuned aim with <a href=\"/marathon-esp/\">ESP</a> and <a href=\"/marathon-radar-hack/\">radar</a> so you only assist fights you chose on purpose. After patches, confirm <a href=\"/updates/\">Updates</a> before you tweak FOV on an old build.",
+					"Save SMG, DMR, and long-range profiles separately. Test each on <a href=\"/blog/marvel-rivals-warmup-practice-ranked/\">warmup maps</a> before you take a expensive kit into high-traffic lanes.",
+					"Combine tuned aim with <a href=\"/marvel-rivals-esp/\">ESP</a> and <a href=\"/marvel-rivals-radar-hack/\">radar</a> so you only assist fights you chose on purpose. After patches, confirm <a href=\"/updates/\">Updates</a> before you tweak FOV on an old build.",
 				],
 			}
 		],
@@ -600,7 +600,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-esp-wallhack-explained",
+		id: "marvel-rivals-esp-wallhack-explained",
 		imageKey: "espWallhack",
 		published: "2026-07-21",
 		updated: "2026-08-17",
@@ -608,39 +608,39 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-esp-wallhack-explained",
-		title: "Marathon ESP and Wallhack Explained in Plain English",
-		metaDescription: "What marathon ESP and wallhack actually show in Marathon — players, loot drops, distance, exfils — and how to keep overlays readable in runs.",
-		h1: "The Marathon ESP and Wallhack Guide",
-		intro: "“ESP” and “wallhack” get used interchangeably. In Marathon they both mean information through walls — but the useful details are distance, filters, and what you choose to hide so your screen stays readable.",
-		keywords: ["marathon esp","marathon wallhack","marathon cheats"],
-		imageAlt: "ESP wallhack overlay showing players and loot drops in Marathon",
+		slug: "marvel-rivals-esp-wallhack-explained",
+		title: "Marvel Rivals ESP and Wallhack Explained in Plain English",
+		metaDescription: "What marvel-rivals ESP and wallhack actually show in Marvel Rivals — players, ability cooldowns, distance, objectives — and how to keep overlays readable in matches.",
+		h1: "The Marvel Rivals ESP and Wallhack Guide",
+		intro: "“ESP” and “wallhack” get used interchangeably. In Marvel Rivals they both mean information through walls — but the useful details are distance, filters, and what you choose to hide so your screen stays readable.",
+		keywords: ["marvel rivals esp","marvel rivals wallhack","marvel rivals cheats"],
+		imageAlt: "ESP wallhack overlay showing players and ability cooldowns in Marvel Rivals",
 		sections: [
 			{
-				h2: "What ESP shows during a real run",
+				h2: "What ESP shows during a real match",
 				paragraphs: [
-					"Player ESP outlines runners and UESC forces through walls and terrain, often with distance. Loot ESP highlights loot drops or high-value items. Exfil cues help you avoid camping surprises. That information gap is why people search for Marathon ESP in the first place.",
-					"Read the dedicated pages for <a href=\"/marathon-esp/\">ESP</a> and <a href=\"/marathon-wallhack/\">wallhack</a> if you want category-level detail.",
+					"Player ESP outlines heroes and enemy team through walls and terrain, often with distance. Hero ESP highlights ability cooldowns or high-value items. Objective cues help you avoid camping surprises. That information gap is why people search for Marvel Rivals ESP in the first place.",
+					"Read the dedicated pages for <a href=\"/marvel-rivals-esp/\">ESP</a> and <a href=\"/marvel-rivals-wallhack/\">wallhack</a> if you want category-level detail.",
 				],
 			},
 			{
 				h2: "How to keep overlays from becoming noise",
 				paragraphs: [
-					"Toggle categories. During a hot push you may want players only. During a loot drops route you may want loot drops. Near exfils you may want threats and exits. Too many boxes at once create hesitation — the opposite of an advantage.",
-					"Pair ESP with <a href=\"/marathon-radar-hack/\">radar</a> for flanks outside your field of view. Visibility wins information wars; aim tools cover the push afterward.",
+					"Toggle categories. During a hot push you may want players only. During a ability cooldowns route you may want ability cooldowns. Near objectives you may want threats and exits. Too many boxes at once create hesitation — the opposite of an advantage.",
+					"Pair ESP with <a href=\"/marvel-rivals-radar-hack/\">radar</a> for flanks outside your field of view. Visibility wins information wars; aim tools cover the push afterward.",
 				],
 			},
 			{
 				h2: "Maintenance and responsible use",
 				paragraphs: [
-					"ESP modules rebuild after BattlEye patches like everything else. Check <a href=\"/updates/\">Updates</a> and the <a href=\"/undetected-marathon-cheats/\">undetected guide</a>. No overlay replaces listening and map knowledge — it shortens the time between “I heard something” and “I know where.”",
+					"ESP modules rebuild after NetEase Anti-Cheat patches like everything else. Check <a href=\"/updates/\">Updates</a> and the <a href=\"/undetected-marvel-rivals-cheats/\">undetected guide</a>. No overlay replaces listening and map knowledge — it shortens the time between “I heard something” and “I know where.”",
 				],
 			},
 			{
-				h2: "ESP in real Marathon runs — practical takeaways",
+				h2: "ESP in real Marvel Rivals matches — practical takeaways",
 				paragraphs: [
-					"Use player ESP when rotating, loot ESP when routing, and exfil cues when holding water or cliffs. Switch profiles instead of leaving every box on — clutter kills reaction time.",
-					"For the maintained stack behind this guide, see <a href=\"/marathon-cheats/\">Marathon Cheats</a>, <a href=\"/marathon-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. Patch-day rules live on <a href=\"/updates/\">Updates</a>.",
+					"Use player ESP when rotating, hero ESP when routing, and objective callouts when holding water or cliffs. Switch profiles instead of leaving every box on — clutter kills reaction time.",
+					"For the maintained stack behind this guide, see <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a>, <a href=\"/marvel-rivals-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>. Patch-day rules live on <a href=\"/updates/\">Updates</a>.",
 				],
 			}
 		],
@@ -648,7 +648,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "undetected-marathon-cheats-battleye",
+		id: "undetected-marvel-rivals-cheats-neac",
 		imageKey: "dinoEsp",
 		published: "2026-07-19",
 		updated: "2026-08-17",
@@ -656,39 +656,39 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "undetected-marathon-cheats-battleye",
-		title: "Undetected Marathon Cheats and BattlEye Reality",
-		metaDescription: "What “undetected marathon cheats” really means under BattlEye — maintenance, patch days, risk, and how to read status before you drop in Marathon.",
-		h1: "Undetected Marathon Cheats Explained",
-		intro: "“Undetected” is the most abused word in cheat marketing. Under BattlEye, it means a package is being maintained against current detections — not that bans are impossible. Here is the honest version for Marathon players.",
-		keywords: ["undetected marathon cheats","battleye marathon","ban risk"],
-		imageAlt: "BattlEye maintenance status for undetected marathon cheats",
+		slug: "undetected-marvel-rivals-cheats-neac",
+		title: "Undetected Marvel Rivals Cheats and NetEase Anti-Cheat Reality",
+		metaDescription: "What “undetected marvel rivals cheats” really means under NetEase Anti-Cheat — maintenance, patch days, risk, and how to read status before you queue in Marvel Rivals.",
+		h1: "Undetected Marvel Rivals Cheats Explained",
+		intro: "“Undetected” is the most abused word in cheat marketing. Under NetEase Anti-Cheat, it means a package is being maintained against current detections — not that bans are impossible. Here is the honest version for Marvel Rivals players.",
+		keywords: ["undetected marvel rivals cheats","neac marvel rivals","ban risk"],
+		imageAlt: "NetEase Anti-Cheat maintenance status for undetected marvel rivals cheats",
 		sections: [
 			{
 				h2: "What undetected can honestly mean",
 				paragraphs: [
-					"BattlEye is documented at <a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Marathon Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/battleye-bypass/\">BattlEye maintenance</a>.",
+					"NetEase Anti-Cheat is documented at <a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Marvel Rivals Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/neac-bypass/\">NetEase Anti-Cheat maintenance</a>.",
 					"If a seller says “100% undetected forever,” treat it as advertising. Your risk also depends on how obviously you play.",
 				],
 			},
 			{
 				h2: "Patch-day habits that reduce pain",
 				paragraphs: [
-					"After a Marathon or BattlEye update, wait for a status note before dropping in. Confirm Steam services on <a href=\"https://store.steampowered.com/app/3065800/Marathon//\" target=\"_blank\" rel=\"noopener noreferrer\">Marathon on Steam</a> if the launcher itself is failing. Do not run yesterday’s build into today’s anti-cheat and call it bad luck.",
+					"After a Marvel Rivals or NetEase Anti-Cheat update, wait for a status note before dropping in. Confirm Steam services on <a href=\"https://store.steampowered.com/app/2767030/Marvel_Rivals//\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals on Steam</a> if the launcher itself is failing. Do not match yesterday’s build into today’s anti-cheat and call it bad luck.",
 					"Keep soft aim conservative and avoid highlight-reel rage settings that attract reports even when the binary is clean.",
 				],
 			},
 			{
 				h2: "Where to go next",
 				paragraphs: [
-					"Read <a href=\"/undetected-marathon-cheats/\">undetected marathon cheats</a>, the <a href=\"/blog/marathon-cheats-complete-guide-2026/\">2026 complete guide</a>, and <a href=\"/pricing/\">Pricing</a> if you want the maintained stack. Undetected status is a process you check — not a sticker on the box.",
+					"Read <a href=\"/undetected-marvel-rivals-cheats/\">undetected marvel rivals cheats</a>, the <a href=\"/blog/marvel-rivals-cheats-complete-guide-2026/\">2026 complete guide</a>, and <a href=\"/pricing/\">Pricing</a> if you want the maintained stack. Undetected status is a process you check — not a sticker on the box.",
 				],
 			},
 			{
-				h2: "Responsible undetected habits for Marathon",
+				h2: "Responsible undetected habits for Marvel Rivals",
 				paragraphs: [
 					"Undetected means maintained today — not immune forever. Read public notes, wait for rebuilds, and avoid rage settings that draw reports even on clean builds.",
-					"Use <a href=\"/updates/\">Updates</a>, <a href=\"/battleye-bypass/\">BattlEye maintenance</a>, and <a href=\"/setup/\">Setup</a> as your patch-week routine. Compare the full stack on <a href=\"/marathon-cheats/\">Marathon Cheats</a> when you are ready to buy.",
+					"Use <a href=\"/updates/\">Updates</a>, <a href=\"/neac-bypass/\">NetEase Anti-Cheat maintenance</a>, and <a href=\"/setup/\">Setup</a> as your patch-week routine. Compare the full stack on <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> when you are ready to buy.",
 				],
 			}
 		],
@@ -696,7 +696,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-cheats-vs-cheatvault",
+		id: "marvel-rivals-cheats-vs-cheatvault",
 		imageKey: "hacksPackage",
 		published: "2026-07-15",
 		updated: "2026-08-17",
@@ -704,40 +704,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-cheats-vs-cheatvault-comparison",
-		title: "Marathon Cheats vs Typical Budget Marathon Cheat Shops",
-		metaDescription: "How Marathon Cheats compares to typical budget marathon cheat shops — ESP depth, radar, status pages, pricing, and what “cheap” usually skips.",
-		h1: "Marathon Cheats vs Budget Shops",
-		intro: "Budget Marathon stores often look identical: neon banners, “undetected” badges, and a low weekly price. Marathon Cheats costs more than the cheapest tier on purpose. Here is what you usually trade when you chase the lowest sticker.",
-		keywords: ["marathon cheats comparison","budget marathon cheats","esp radar"],
-		imageAlt: "Comparing Marathon Cheats features against budget marathon cheat shops",
+		slug: "marvel-rivals-cheats-vs-cheatvault-comparison",
+		title: "Marvel Rivals Cheats vs Typical Budget Marvel Rivals Cheat Shops",
+		metaDescription: "How Marvel Rivals Cheats compares to typical budget marvel rivals cheat shops — ESP depth, radar, status pages, pricing, and what “cheap” usually skips.",
+		h1: "Marvel Rivals Cheats vs Budget Shops",
+		intro: "Budget Marvel Rivals stores often look identical: neon banners, “undetected” badges, and a low weekly price. Marvel Rivals Cheats costs more than the cheapest tier on purpose. Here is what you usually trade when you chase the lowest sticker.",
+		keywords: ["marvel rivals cheats comparison","budget marvel rivals cheats","esp radar"],
+		imageAlt: "Comparing Marvel Rivals Cheats features against budget marvel rivals cheat shops",
 		sections: [
 			{
 				h2: "What budget shops usually optimize for",
 				paragraphs: [
-					"Low entry price and fast checkout. That can be fine for a weekend experiment. The common gaps are thin loot ESP, no real radar, Discord-only status, and slow rebuild communication after BattlEye pushes.",
-					"Marathon Cheats focuses on a full run stack — player ESP, loot filters, radar, soft aim profiles — with a public <a href=\"/updates/\">Updates</a> page. See <a href=\"/features/\">Features</a> for the list.",
+					"Low entry price and fast checkout. That can be fine for a weekend experiment. The common gaps are thin hero ESP, no real radar, Discord-only status, and slow rebuild communication after NetEase Anti-Cheat pushes.",
+					"Marvel Rivals Cheats focuses on a full match stack — player ESP, loot filters, radar, soft aim profiles — with a public <a href=\"/updates/\">Updates</a> page. See <a href=\"/features/\">Features</a> for the list.",
 				],
 			},
 			{
-				h2: "Price versus what you touch every run",
+				h2: "Price versus what you touch every match",
 				paragraphs: [
-					"If you only want basic player boxes in casual runs, a cheaper shop might feel enough. If you hold exfils, run loot routes, and hate dying to unseen flanks, radar and clean filters pay for themselves quickly.",
-					"Our monthly and lifetime options are on <a href=\"/pricing/\">Pricing</a>. Read the <a href=\"/blog/marathon-cheats-buyers-guide/\">buyers guide</a> before you compare three storefronts at once.",
+					"If you only want basic player boxes in casual matches, a cheaper shop might feel enough. If you hold objectives, match map callouts, and hate dying to unseen flanks, radar and clean filters pay for themselves quickly.",
+					"Our monthly and lifetime options are on <a href=\"/pricing/\">Pricing</a>. Read the <a href=\"/blog/marvel-rivals-cheats-buyers-guide/\">buyers guide</a> before you compare three storefronts at once.",
 				],
 			},
 			{
 				h2: "How to decide without brand loyalty",
 				paragraphs: [
-					"Write down must-haves: dated status, loot ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
-					"Then return to <a href=\"/\">marathon cheats</a> and <a href=\"/undetected-marathon-cheats/\">undetected notes</a> if that checklist matches what we ship.",
+					"Write down must-haves: dated status, hero ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
+					"Then return to <a href=\"/\">marvel rivals cheats</a> and <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a> if that checklist matches what we ship.",
 				],
 			},
 			{
 				h2: "Side-by-side before you choose a shop",
 				paragraphs: [
 					"Open each seller’s status page, feature list, and support channel on the same screen. If one shop hides status in private Discord only, weigh that against a lower sticker price.",
-					"When the checklist favors a full stack, compare <a href=\"/features/\">Features</a> and <a href=\"/pricing/\">Pricing</a> here, then read <a href=\"/blog/marathon-cheats-buyers-guide/\">the buyers guide</a> before checkout.",
+					"When the checklist favors a full stack, compare <a href=\"/features/\">Features</a> and <a href=\"/pricing/\">Pricing</a> here, then read <a href=\"/blog/marvel-rivals-cheats-buyers-guide/\">the buyers guide</a> before checkout.",
 				],
 			}
 		],
@@ -753,47 +753,47 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "elitefn-vs-marathon-cheats-two-week-test",
-		title: "I Tested Another Marathon Cheat for 2 Weeks First",
-		metaDescription: "A two-week test of another budget marathon cheat before switching to Marathon Cheats — ESP feel, soft aim, patch downtime, and support differences.",
-		h1: "Two-Week Marathon Cheat Comparison Test",
-		intro: "My Discord kept recommending a popular budget marathon cheat shop. I gave it fourteen days on the same PC and official servers, then moved to Marathon Cheats. This is what actually differed — without the usual affiliate script.",
-		keywords: ["marathon cheats review","hack comparison","soft aim test"],
-		imageAlt: "Two week hands-on comparison between marathon cheat providers",
+		slug: "elitefn-vs-marvel-rivals-cheats-two-week-test",
+		title: "I Tested Another Marvel Rivals Cheat for 2 Weeks First",
+		metaDescription: "A two-week test of another budget marvel rivals cheat before switching to Marvel Rivals Cheats — ESP feel, soft aim, patch downtime, and support differences.",
+		h1: "Two-Week Marvel Rivals Cheat Comparison Test",
+		intro: "My Discord kept recommending a popular budget marvel rivals cheat shop. I gave it fourteen days on the same PC and official servers, then moved to Marvel Rivals Cheats. This is what actually differed — without the usual affiliate script.",
+		keywords: ["marvel rivals cheats review","hack comparison","soft aim test"],
+		imageAlt: "Two week hands-on comparison between marvel rivals cheat providers",
 		sections: [
 			{
 				h2: "Week one — setup and first impressions",
 				paragraphs: [
-					"Delivery was fine: license in email, loader as admin, overlays disabled. Menu learning took a couple evenings. Player ESP was readable. Loot ESP felt secondary. I ran several nights with information tools only and no aim assist so I could judge visibility on its own.",
-					"Marathon Cheats later felt similar on install time, but filters for loot drops and exfils were easier to toggle independently during loot routes.",
+					"Delivery was fine: license in email, loader as admin, overlays disabled. Menu learning took a couple evenings. Player ESP was readable. Hero ESP felt secondary. I ran several nights with information tools only and no aim assist so I could judge visibility on its own.",
+					"Marvel Rivals Cheats later felt similar on install time, but filters for ability cooldowns and objectives were easier to toggle independently during map callouts.",
 				],
 			},
 			{
 				h2: "Soft aim and the mid-session feel",
 				paragraphs: [
 					"Conservative FOV soft aim helped SMG and AR tracking. Sniping needed manual profile swaps that slowed me down. When I pushed smoothness too low, corrections looked obvious in review clips. Tuning toward smoother tracking fixed kills and reduced the robotic look.",
-					"On Marathon Cheats I relied more on per-weapon profiles so high-traffic zones and long peeks did not share one magnet. Details are in the <a href=\"/marathon-aimbot/\">aimbot guide</a>.",
+					"On Marvel Rivals Cheats I relied more on per-hero profiles so high-traffic lanes and long peeks did not share one magnet. Details are in the <a href=\"/marvel-rivals-aimbot/\">aimbot guide</a>.",
 				],
 			},
 			{
 				h2: "The patch window that ended the trial",
 				paragraphs: [
-					"A Marathon plus BattlEye update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped drop ins while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
-					"Marathon Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not drop in blind after patches on any tool.",
+					"A Marvel Rivals plus NetEase Anti-Cheat update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queue ins while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
+					"Marvel Rivals Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not queue in blind after patches on any tool.",
 				],
 			},
 			{
-				h2: "After switching — what improved for my runs",
+				h2: "After switching — what improved for my matches",
 				paragraphs: [
-					"Independent loot drops and player toggles cleaned late-session screens. Radar helped exfil zones. Support replies with order ID were fast enough during setup week. Pricing math favored a single full stack over stacking weekly subs — see <a href=\"/pricing/\">Pricing</a>.",
-					"If you run your own test, measure patch downtime hours, not just day-one vibes. Then read <a href=\"/setup/\">Setup</a> before you buy anything.",
+					"Independent ability cooldowns and player toggles cleaned late-session screens. Radar helped objective zones. Support replies with order ID were fast enough during setup week. Pricing math favored a single full stack over stacking weekly subs — see <a href=\"/pricing/\">Pricing</a>.",
+					"If you match your own test, measure patch downtime hours, not just day-one vibes. Then read <a href=\"/setup/\">Setup</a> before you buy anything.",
 				],
 			},
 			{
-				h2: "How to run your own fair comparison",
+				h2: "How to match your own fair comparison",
 				paragraphs: [
-					"Match the same PC, servers, and run length for each tool. Track patch downtime hours, not just first-night impressions — that is usually where budget shops lose.",
-					"If you switch, follow <a href=\"/setup/\">Setup</a>, bookmark <a href=\"/updates/\">Updates</a>, and tune <a href=\"/marathon-aimbot/\">aim profiles</a> before you judge the full stack.",
+					"Match the same PC, servers, and match length for each tool. Track patch downtime hours, not just first-night impressions — that is usually where budget shops lose.",
+					"If you switch, follow <a href=\"/setup/\">Setup</a>, bookmark <a href=\"/updates/\">Updates</a>, and tune <a href=\"/marvel-rivals-aimbot/\">aim profiles</a> before you judge the full stack.",
 				],
 			}
 		],
@@ -801,7 +801,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "marathon-cheats-vs-ghostware",
+		id: "marvel-rivals-cheats-vs-ghostware",
 		imageKey: "espWallhack",
 		published: "2026-07-05",
 		updated: "2026-08-17",
@@ -809,47 +809,47 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: false,
 		translations: {
 		en: {
-		slug: "marathon-cheats-vs-ghostware-features-pricing",
-		title: "Full-Stack Marathon Cheats vs Minimal ESP Tools",
-		metaDescription: "Full-stack Marathon Cheats versus minimal ESP-only Marathon tools — feature depth, radar, soft aim, pricing, and who should buy which style.",
-		h1: "Full-Stack vs ESP-Only Marathon Cheats",
-		intro: "Some Marathon tools sell a slim ESP module and call it a day. Marathon Cheats ships the wider run stack. Neither philosophy is automatically wrong — they fit different players. Here is a clear comparison.",
-		keywords: ["marathon esp cheat","full stack hacks","radar vs esp"],
-		imageAlt: "Full stack Marathon Cheats compared with minimal ESP-only tools",
+		slug: "marvel-rivals-cheats-vs-ghostware-features-pricing",
+		title: "Full-Stack Marvel Rivals Cheats vs Minimal ESP Tools",
+		metaDescription: "Full-stack Marvel Rivals Cheats versus minimal ESP-only Marvel Rivals tools — feature depth, radar, soft aim, pricing, and who should buy which style.",
+		h1: "Full-Stack vs ESP-Only Marvel Rivals Cheats",
+		intro: "Some Marvel Rivals tools sell a slim ESP module and call it a day. Marvel Rivals Cheats ships the wider match stack. Neither philosophy is automatically wrong — they fit different players. Here is a clear comparison.",
+		keywords: ["marvel rivals esp cheat","full stack hacks","radar vs esp"],
+		imageAlt: "Full stack Marvel Rivals Cheats compared with minimal ESP-only tools",
 		sections: [
 			{
-				h2: "Two philosophies: minimal surface vs full run loop",
+				h2: "Two philosophies: minimal surface vs full match loop",
 				paragraphs: [
 					"Minimal tools focus on player boxes and light assist. Fewer features can mean a simpler menu and a lower price. Full-stack tools add loot filters, radar, and soft aim profiles so one menu covers information and fights.",
-					"Marathon Cheats is intentionally full-stack. If you only need outlines in quiet runs, a slim ESP product may feel enough. If you rotate, loot drops, and hold exfils, missing radar becomes obvious.",
+					"Marvel Rivals Cheats is intentionally full-stack. If you only need outlines in quiet matches, a slim ESP product may feel enough. If you rotate, ability cooldowns, and hold objectives, missing radar becomes obvious.",
 				],
 			},
 			{
 				h2: "Feature and pricing reality check",
 				paragraphs: [
-					"Marathon Cheats monthly is $35 and lifetime is $150 for ESP, radar, and soft aim together. Slimmer competitors often undercut sticker price while charging extra for modules you assumed were included. Always read the feature list, not the banner.",
-					"Our public comparison points live on <a href=\"/features/\">Features</a>, <a href=\"/marathon-esp/\">ESP</a>, <a href=\"/marathon-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>.",
+					"Marvel Rivals Cheats monthly is $35 and lifetime is $150 for ESP, radar, and soft aim together. Slimmer competitors often undercut sticker price while charging extra for modules you assumed were included. Always read the feature list, not the banner.",
+					"Our public comparison points live on <a href=\"/features/\">Features</a>, <a href=\"/marvel-rivals-esp/\">ESP</a>, <a href=\"/marvel-rivals-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>.",
 				],
 			},
 			{
 				h2: "Detection talk without fairy tales",
 				paragraphs: [
 					"Smaller user bases generate fewer public ban screenshots — that is not proof of safety. Larger brands generate more noise even when maintenance is solid. Judge sellers by patch communication speed and whether you can find a dated status note.",
-					"Marathon Cheats documents maintenance on <a href=\"/battleye-bypass/\">BattlEye workflow</a> and <a href=\"/undetected-marathon-cheats/\">undetected notes</a>.",
+					"Marvel Rivals Cheats documents maintenance on <a href=\"/neac-bypass/\">NetEase Anti-Cheat workflow</a> and <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a>.",
 				],
 			},
 			{
 				h2: "Which style should you buy?",
 				paragraphs: [
-					"Choose minimal ESP if budget is tight, you play casually, and you accept Discord-only status tracking. Choose Marathon Cheats if radar, loot filters, configurable soft aim, and a public Updates URL are must-haves.",
-					"Decide your must-haves on paper first. Then open <a href=\"/\">marathon cheats</a> or keep shopping slim tools — but do not skip patch-day checks on either path.",
+					"Choose minimal ESP if budget is tight, you play casually, and you accept Discord-only status tracking. Choose Marvel Rivals Cheats if radar, loot filters, configurable soft aim, and a public Updates URL are must-haves.",
+					"Decide your must-haves on paper first. Then open <a href=\"/\">marvel rivals cheats</a> or keep shopping slim tools — but do not skip patch-day checks on either path.",
 				],
 			},
 			{
 				h2: "Pick the stack that matches how you play",
 				paragraphs: [
-					"Casual outline-only players may tolerate minimal ESP. Players who rotate, loot, and hold exfils usually need radar and filters in one menu — that is the full-stack case for <a href=\"/marathon-cheats/\">Marathon Cheats</a>.",
-					"Compare <a href=\"/marathon-esp/\">ESP</a>, <a href=\"/marathon-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a> on paper first. Then read <a href=\"/undetected-marathon-cheats/\">undetected notes</a> on whichever path you choose.",
+					"Casual outline-only players may tolerate minimal ESP. Players who rotate, loot, and hold objectives usually need radar and filters in one menu — that is the full-stack case for <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a>.",
+					"Compare <a href=\"/marvel-rivals-esp/\">ESP</a>, <a href=\"/marvel-rivals-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a> on paper first. Then read <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a> on whichever path you choose.",
 				],
 			}
 		],

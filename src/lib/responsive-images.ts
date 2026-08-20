@@ -41,14 +41,14 @@ export function contentSrcSet(baseSrc: string): string | undefined {
  * Homepage / banner hero — 16:9 source; LCP src is the 1024w WebP variant.
  */
 export const heroResponsive: ResponsiveWidth[] = [
-	{ src: '/images/marathon-cheats-hero-640w.webp', width: 640 },
-	{ src: '/images/marathon-cheats-hero-1024w.webp', width: 1024 },
+	{ src: '/images/marvel-rivals-cheats-hero-640w.webp', width: 640 },
+	{ src: '/images/marvel-rivals-cheats-hero-1024w.webp', width: 1024 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
 
 /** Default LCP src — mid ladder WebP. */
-export const heroSrc = '/images/marathon-cheats-hero-1024w.webp';
+export const heroSrc = '/images/marvel-rivals-cheats-hero-1024w.webp';
 export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '100vw';
 
@@ -65,7 +65,7 @@ export const contentWidths = [480, 960] as const;
 
 /** Canonical screenshot path — responsive variants use -480w / -960w suffixes. */
 export function screenshotSrc(n: number): string {
-	return `/images/marathon-screenshot-${String(n).padStart(2, '0')}.webp`;
+	return `/images/marvel-rivals-screenshot-${String(n).padStart(2, '0')}.webp`;
 }
 
 export const galleryFeaturedSizes = '(max-width: 560px) 100vw, (max-width: 900px) 90vw, 640px';

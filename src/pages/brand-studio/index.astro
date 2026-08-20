@@ -43,7 +43,7 @@ const seoDefaults = {
 	storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 	statusTitle: '{game} Status | {brand}',
 	statusDescription:
-		'Live status for {brand} after {game} or {antiCheat} patches. Check before you drop in.',
+		'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue in.',
 	previewTitle: '{game} Preview | {brand}',
 	previewDescription:
 		'Quick preview of {brand} -- ESP, aimbot, radar, and updates after {game} patches.',
@@ -115,7 +115,7 @@ const identity: Field[] = [
 	{
 		name: 'name',
 		label: 'Brand name',
-		tip: 'What: The public name of this site. | Why: Shows in the hero, footer, browser tab titles, and Google schema. | Example: Fortnite Hacks, Apex Cheats, Marathon Hacks',
+		tip: 'What: The public name of this site. | Why: Shows in the hero, footer, browser tab titles, and Google schema. | Example: Fortnite Hacks, Apex Cheats, Marvel Rivals Hacks',
 		value: brand.name,
 		required: true,
 		maxlength: 80,
@@ -176,7 +176,7 @@ const product: Field[] = [
 	{
 		name: 'game',
 		label: 'Game',
-		tip: 'What: The game this template instance is for. | Why: Fills {game} in titles, FAQs, Status copy, and SEO titles like "Marathon Features | Brand". | Example: Fortnite, Apex Legends, Marathon',
+		tip: 'What: The game this template instance is for. | Why: Fills {game} in titles, FAQs, Status copy, and SEO titles like "Marvel Rivals Features | Brand". | Example: Fortnite, Apex Legends, Marvel Rivals',
 		value: brand.game,
 		required: true,
 		maxlength: 80,
@@ -184,7 +184,7 @@ const product: Field[] = [
 	{
 		name: 'antiCheat',
 		label: 'Anti-cheat',
-		tip: 'What: The game anti-cheat system name. | Why: Status / FAQ text mentions rebuilds after this anti-cheat patches. Use {antiCheat} token. | Example: BattlEye, BattlEye, BattlEye',
+		tip: 'What: The game anti-cheat system name. | Why: Status / FAQ text mentions rebuilds after this anti-cheat patches. Use {antiCheat} token. | Example: NetEase Anti-Cheat, NetEase Anti-Cheat, NetEase Anti-Cheat',
 		value: brand.antiCheat,
 		required: true,
 		maxlength: 80,
@@ -192,7 +192,7 @@ const product: Field[] = [
 	{
 		name: 'platforms',
 		label: 'Platforms',
-		tip: 'What: Where the product runs (one per line). | Why: Listed in product info / schema-style copy. | Example: Windows PC (then Controllers on the next line)',
+		tip: 'What: Where the product matches (one per line). | Why: Listed in product info / schema-style copy. | Example: Windows PC (then Controllers on the next line)',
 		value: brand.platforms.join('\n'),
 		textarea: true,
 		rows: 3,
@@ -250,7 +250,7 @@ const seoFields: Field[] = [
 	{
 		name: 'homeTitle',
 		label: 'Home title',
-		tip: 'What: Google title for the homepage. | Why: First line in search results. Aim for 50-60 characters after tokens resolve. | Example: Marathon Hacks | Undetected marathon hacks',
+		tip: 'What: Google title for the homepage. | Why: First line in search results. Aim for 50-60 characters after tokens resolve. | Example: Marvel Rivals Hacks | Undetected marvel rivals cheats',
 		value: seo.homeTitle,
 		required: true,
 		maxlength: 70,
@@ -259,7 +259,7 @@ const seoFields: Field[] = [
 	{
 		name: 'homeDescription',
 		label: 'Home description',
-		tip: 'What: Meta description for the homepage. | Why: Snippet under the blue link in Google. Aim for 140-160 characters. | Example: marathon hacks for Windows PC -- ESP, aimbot, and radar...',
+		tip: 'What: Meta description for the homepage. | Why: Snippet under the blue link in Google. Aim for 140-160 characters. | Example: marvel rivals cheats for Windows PC -- ESP, aimbot, and radar...',
 		value: seo.homeDescription,
 		textarea: true,
 		rows: 2,
@@ -270,7 +270,7 @@ const seoFields: Field[] = [
 	{
 		name: 'featuresTitle',
 		label: 'Features title',
-		tip: 'What: Title for the Features page. | Why: Locked pattern is {game} Features | {brand}. | Example: Marathon Features | Marathon Hacks',
+		tip: 'What: Title for the Features page. | Why: Locked pattern is {game} Features | {brand}. | Example: Marvel Rivals Features | Marvel Rivals Hacks',
 		value: seo.featuresTitle,
 		required: true,
 		maxlength: 70,
@@ -279,7 +279,7 @@ const seoFields: Field[] = [
 	{
 		name: 'featuresDescription',
 		label: 'Features description',
-		tip: 'What: Meta description for Features. | Why: Tells searchers what is included before they click. | Example: Everything in one Marathon license for Windows PC...',
+		tip: 'What: Meta description for Features. | Why: Tells searchers what is included before they click. | Example: Everything in one Marvel Rivals license for Windows PC...',
 		value: seo.featuresDescription,
 		textarea: true,
 		rows: 2,
@@ -290,7 +290,7 @@ const seoFields: Field[] = [
 	{
 		name: 'storeTitle',
 		label: 'Store title',
-		tip: 'What: Title for the Store / pricing page. | Why: Drives clicks from "buy" searches. | Example: Marathon Store | Marathon Hacks',
+		tip: 'What: Title for the Store / pricing page. | Why: Drives clicks from "buy" searches. | Example: Marvel Rivals Store | Marvel Rivals Hacks',
 		value: seo.storeTitle,
 		required: true,
 		maxlength: 70,
@@ -299,7 +299,7 @@ const seoFields: Field[] = [
 	{
 		name: 'storeDescription',
 		label: 'Store description',
-		tip: 'What: Meta description for Store. | Why: Mention plans and instant delivery. | Example: Monthly and lifetime Marathon plans. Same features...',
+		tip: 'What: Meta description for Store. | Why: Mention plans and instant delivery. | Example: Monthly and lifetime Marvel Rivals plans. Same features...',
 		value: seo.storeDescription,
 		textarea: true,
 		rows: 2,
@@ -310,7 +310,7 @@ const seoFields: Field[] = [
 	{
 		name: 'statusTitle',
 		label: 'Status title',
-		tip: 'What: Title for the Status page. | Why: Users search patch / undetected status. | Example: Marathon Status | Marathon Hacks',
+		tip: 'What: Title for the Status page. | Why: Users search patch / undetected status. | Example: Marvel Rivals Status | Marvel Rivals Hacks',
 		value: seo.statusTitle,
 		required: true,
 		maxlength: 70,
@@ -319,7 +319,7 @@ const seoFields: Field[] = [
 	{
 		name: 'statusDescription',
 		label: 'Status description',
-		tip: 'What: Meta description for Status. | Why: Mention {antiCheat} and patch checks. | Example: Live status for Marathon Hacks after Marathon or BattlEye patches...',
+		tip: 'What: Meta description for Status. | Why: Mention {antiCheat} and patch checks. | Example: Live status for Marvel Rivals Hacks after Marvel Rivals or NetEase Anti-Cheat patches...',
 		value: seo.statusDescription,
 		textarea: true,
 		rows: 2,
@@ -330,7 +330,7 @@ const seoFields: Field[] = [
 	{
 		name: 'previewTitle',
 		label: 'Preview title',
-		tip: 'What: Title for the Preview page. | Why: Explains what the product looks like. | Example: Marathon Preview | Marathon Hacks',
+		tip: 'What: Title for the Preview page. | Why: Explains what the product looks like. | Example: Marvel Rivals Preview | Marvel Rivals Hacks',
 		value: seo.previewTitle,
 		required: true,
 		maxlength: 70,
@@ -339,7 +339,7 @@ const seoFields: Field[] = [
 	{
 		name: 'previewDescription',
 		label: 'Preview description',
-		tip: 'What: Meta description for Preview. | Why: Short product overview for search. | Example: Quick preview of Marathon Hacks -- ESP, aimbot, radar...',
+		tip: 'What: Meta description for Preview. | Why: Short product overview for search. | Example: Quick preview of Marvel Rivals Hacks -- ESP, aimbot, radar...',
 		value: seo.previewDescription,
 		textarea: true,
 		rows: 2,
@@ -466,7 +466,7 @@ const copyFields: Field[] = [
 	{
 		name: 'tagline',
 		label: 'Tagline',
-		tip: 'What: Short marketing line under the brand. | Why: Used in schema and compact promos. Tokens allowed. | Example: Undetected marathon hacks -- ESP, aimbot, and radar for PC',
+		tip: 'What: Short marketing line under the brand. | Why: Used in schema and compact promos. Tokens allowed. | Example: Undetected marvel rivals cheats -- ESP, aimbot, and radar for PC',
 		value: copy.tagline,
 		required: true,
 		maxlength: 160,
@@ -475,7 +475,7 @@ const copyFields: Field[] = [
 	{
 		name: 'summary',
 		label: 'Summary',
-		tip: 'What: One paragraph about the product. | Why: About-style copy and structured data context. | Example: Marathon Hacks is an undetected Marathon cheat package...',
+		tip: 'What: One paragraph about the product. | Why: About-style copy and structured data context. | Example: Marvel Rivals Hacks is an undetected Marvel Rivals cheat package...',
 		value: copy.summary,
 		textarea: true,
 		rows: 3,
@@ -495,7 +495,7 @@ const copyFields: Field[] = [
 	{
 		name: 'blogLabel',
 		label: 'Blog / intel label',
-		tip: 'What: Nav label for blog or intel section. | Why: Shown in navigation when blog is enabled. | Example: Marathon Intel, Marathon Intel',
+		tip: 'What: Nav label for blog or intel section. | Why: Shown in navigation when blog is enabled. | Example: Marvel Rivals Intel, Marvel Rivals Intel',
 		value: copy.blogLabel,
 		required: true,
 		maxlength: 80,
@@ -678,7 +678,7 @@ const images: Field[] = [
 	{
 		name: 'logoAlt',
 		label: 'Logo alt text',
-		tip: 'What: Accessibility text for the logo image. | Why: Screen readers and image SEO. | Example: Marathon Hacks logo',
+		tip: 'What: Accessibility text for the logo image. | Why: Screen readers and image SEO. | Example: Marvel Rivals Hacks logo',
 		value: brand.logoAlt,
 		maxlength: 120,
 	},
@@ -769,13 +769,13 @@ const seoAuditRows = [
 	{ page: 'Features', path: '/features/', fields: 'featuresTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'Store', path: '/pricing/', fields: 'storeTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'Status', path: '/updates/', fields: 'statusTitle / Description + intro', status: 'Live · permanent' },
-	{ page: 'Preview', path: '/marathon-cheats/', fields: 'previewTitle / Description + intro', status: 'Live · permanent' },
+	{ page: 'Preview', path: '/marvel-rivals-cheats/', fields: 'previewTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'Setup', path: '/setup/', fields: 'setupTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'Support', path: '/support/', fields: 'supportTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'FAQ index', path: '/faq/', fields: 'faqTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'Reviews index', path: '/reviews/', fields: 'reviewsTitle / Description + intro', status: 'Live · permanent' },
 	{ page: 'Blog index', path: '/blog/', fields: 'blogTitle / blogDescription', status: 'Live · EN permanent' },
-	{ page: 'Keyword landings', path: '/marathon-esp/ …', fields: 'content.generated.ts', status: 'Manual file' },
+	{ page: 'Keyword landings', path: '/marvel-rivals-esp/ …', fields: 'content.generated.ts', status: 'Manual file' },
 	{ page: 'FAQ answers', path: '/faq/[slug]/', fields: 'site.ts faqs', status: 'Manual file' },
 	{ page: 'Review posts', path: '/reviews/[slug]/', fields: 'site.ts reviews', status: 'Manual file' },
 ] as const;
@@ -1515,7 +1515,7 @@ const sections = [
 					storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 					statusTitle: '{game} Status | {brand}',
 					statusDescription:
-						'Live status for {brand} after {game} or {antiCheat} patches. Check before you drop in.',
+						'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue in.',
 					previewTitle: '{game} Preview | {brand}',
 					previewDescription:
 						'Quick preview of {brand} -- ESP, aimbot, radar, and updates after {game} patches.',
@@ -1753,7 +1753,7 @@ const sections = [
 							features: '/features/',
 							store: '/pricing/',
 							status: '/updates/',
-							preview: '/marathon-cheats/',
+							preview: '/marvel-rivals-cheats/',
 							setup: '/setup/',
 							support: '/support/',
 							faq: '/faq/',
@@ -2433,7 +2433,7 @@ const sections = [
 							document.getElementById('studio-bar')?.classList.remove('is-dirty');
 						}
 					} catch (err) {
-						show(err instanceof Error ? err.message : 'Network error -- is astro dev running?', false);
+						show(err instanceof Error ? err.message : 'Network error -- is astro dev matchning?', false);
 					} finally {
 						saveBtn.disabled = false;
 					}

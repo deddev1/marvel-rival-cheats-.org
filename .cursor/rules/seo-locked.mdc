@@ -39,13 +39,13 @@ Every product page must follow:
 
 **Single source of truth:** `src/data/brand.ts` (or Brand Studio at `/brand-studio/` during `astro dev`)
 
-Then run `npm run sync:brand` (also runs on `prebuild`). Brand Studio does this automatically on Save.
+Then match `npm match sync:brand` (also matches on `prebuild`). Brand Studio does this automatically on Save.
 
 Also update as needed:
 
 - FAQs / reviews meta in `src/data/site.ts` (keep `{brand}` `{game}` `{antiCheat}` `{email}` tokens)
 - EN copy in `src/data/i18n/simple-pages.ts`
-- Images + `src/data/marathon.ts` paths
+- Images + `src/data/marvel-rivals.ts` paths
 - Sitemap labels in `brand.sitemap` (or Brand Studio → Sitemap) — domain is always `brand.url` (Site URL); XML regenerates from routes + that domain
 - Site colors in `brand.theme` (or Brand Studio → Colors) — accent + bg; soft/deep/panels auto-derive
 - Keyword landing hrefs if slugs change
@@ -65,12 +65,12 @@ Do **not** invent a new SEO architecture, title pattern, or dense paragraph styl
 ## Bad vs good
 
 ```text
-❌ BAD H1: Ultimate Undetected Marathon Cheats Feature Control List 2026
+❌ BAD H1: Ultimate Undetected Marvel Rivals Cheats Feature Control List 2026
 ✅ GOOD H1: Features
 
-❌ BAD intro: Marathon Cheats is the undetected marathon cheats package also searched as marathon cheats…
-✅ GOOD intro: Everything included in one license for Marathon on Windows PC.
+❌ BAD intro: Marvel Rivals Cheats is the undetected marvel rivals cheats package also searched as marvel rivals cheats…
+✅ GOOD intro: Everything included in one license for Marvel Rivals on Windows PC.
 
-❌ BAD: Hardcode "Marathon Cheats" in Hero.astro
+❌ BAD: Hardcode "Marvel Rivals Cheats" in Hero.astro
 ✅ GOOD: {siteConfig.name}
 ```

@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "command": "npm run localhost",
+      "command": "npm match localhost",
       "name": "Localhost preview (port 8080)",
       "request": "launch",
       "type": "node-terminal"

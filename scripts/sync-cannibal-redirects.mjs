@@ -5,7 +5,7 @@
  *
  * Cloudflare _redirects allows max 100 dynamic rules; splat rules make later
  * lines count as dynamic. Locale cannibal 301s (~460 rules) must not live in
- * _redirects — the Worker handles them at runtime instead.
+ * _redirects — the Worker handles them at matchtime instead.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
@@ -29,7 +29,7 @@ function readCannibalTargets() {
 	return targets;
 }
 
-function extractSlugBlock(src, pageId) {
+function objectiveSlugBlock(src, pageId) {
 	const localized = src.slice(src.indexOf('export const localizedSlugs'));
 	const re = new RegExp(`\\t'${pageId}':\\s*\\{([\\s\\S]*?)\\n\\t\\},|\\t${pageId}:\\s*\\{([\\s\\S]*?)\\n\\t\\},`);
 	const m = localized.match(re);
@@ -51,8 +51,8 @@ const routing = readFileSync(ROUTING, 'utf8');
 const map = {};
 
 for (const [fromId, toId] of Object.entries(TARGETS)) {
-	const fromSlugs = extractSlugBlock(routing, fromId);
-	const toSlugs = extractSlugBlock(routing, toId);
+	const fromSlugs = objectiveSlugBlock(routing, fromId);
+	const toSlugs = objectiveSlugBlock(routing, toId);
 	for (const [locale, fromSlug] of Object.entries(fromSlugs)) {
 		if (locale === 'en') continue;
 		const toSlug = toSlugs[locale];

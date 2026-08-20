@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Rebuild routing.ts and constants.mjs from clea Marathon source. */
+/** Rebuild routing.ts and constants.mjs from clea Marvel Rivals source. */
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,43 +13,43 @@ const REMOVE_IDS = [
 ];
 
 const REPLACEMENTS = [
-	['marathon-esp', 'marathon-esp'],
-	['marathon-aimbot', 'marathon-aimbot'],
-	['battleye', 'battleye'],
-	['undetected-marathon-cheats', 'undetected-marathon-cheats'],
-	['marathon-wallhack', 'marathon-wallhack'],
-	['marathon-radar-hack', 'marathon-radar-hack'],
-	['marathon-cheats-2026', 'marathon-cheats-2026'],
-	['battleye-bypass', 'battleye-bypass'],
-	['marathoncheats.org', 'marathoncheats.org'],
-	['trucos-marathon', 'trucos-marathon'],
-	['triche-marathon', 'triche-marathon'],
-	['marathon-cheats', 'marathon-cheats'],
-	['cheats-marathon', 'cheats-marathon'],
-	['trucchi-marathon', 'trucchi-marathon'],
-	['cheaty-marathon', 'cheaty-marathon'],
-	['chity-marathon', 'chity-marathon'],
-	['chitov-marathon', 'chitov-marathon'],
-	['chitiv-marathon', 'chitiv-marathon'],
-	['cheatow-marathon', 'cheatow-marathon'],
-	['hile-marathon', 'hile-marathon'],
-	['marathon-hile', 'marathon-hile'],
-	['marathon-esp-chity', 'marathon-esp-chity'],
-	['marathon-aimbot-chity', 'marathon-aimbot-chity'],
-	['unentdeckte-marathon-cheats', 'unentdeckte-marathon-cheats'],
-	['cheats-marathon-indetectaveis', 'cheats-marathon-indetectaveis'],
-	['trucchi-marathon-indetectabili', 'trucchi-marathon-indetectabili'],
-	['niewykrywalne-cheats-marathon', 'niewykrywalne-cheats-marathon'],
-	['nedecektiruemye-chity-marathon', 'nedecektiruemye-chity-marathon'],
-	['tespit-edilemeyen-marathon-hileleri', 'tespit-edilemeyen-marathon-hileleri'],
-	['nedecektovani-chity-marathon', 'nedecektovani-chity-marathon'],
-	['cheats-marathon-nedetectabile', 'cheats-marathon-nedetectabile'],
-	['basta-marathon-cheats', 'basta-marathon-cheats'],
-	['battleye-bypass-trucos-marathon', 'battleye-bypass-trucos-marathon'],
-	['battleye-bypass-triche-marathon', 'battleye-bypass-triche-marathon'],
-	['battleye-bypass-cheats-marathon', 'battleye-bypass-cheats-marathon'],
-	['battleye-bypass-chity-marathon', 'battleye-bypass-chity-marathon'],
-	['battleye-bypass-marathon', 'battleye-bypass'],
+	['marvel-rivals-esp', 'marvel-rivals-esp'],
+	['marvel-rivals-aimbot', 'marvel-rivals-aimbot'],
+	['neac', 'neac'],
+	['undetected-marvel-rivals-cheats', 'undetected-marvel-rivals-cheats'],
+	['marvel-rivals-wallhack', 'marvel-rivals-wallhack'],
+	['marvel-rivals-radar-hack', 'marvel-rivals-radar-hack'],
+	['marvel-rivals-cheats-2026', 'marvel-rivals-cheats-2026'],
+	['neac-bypass', 'neac-bypass'],
+	['marvelrivals.org', 'marvelrivals.org'],
+	['trucos-marvel-rivals', 'trucos-marvel-rivals'],
+	['triche-marvel-rivals', 'triche-marvel-rivals'],
+	['marvel-rivals-cheats', 'marvel-rivals-cheats'],
+	['cheats-marvel-rivals', 'cheats-marvel-rivals'],
+	['trucchi-marvel-rivals', 'trucchi-marvel-rivals'],
+	['cheaty-marvel-rivals', 'cheaty-marvel-rivals'],
+	['chity-marvel-rivals', 'chity-marvel-rivals'],
+	['chitov-marvel-rivals', 'chitov-marvel-rivals'],
+	['chitiv-marvel-rivals', 'chitiv-marvel-rivals'],
+	['cheatow-marvel-rivals', 'cheatow-marvel-rivals'],
+	['hile-marvel-rivals', 'hile-marvel-rivals'],
+	['marvel-rivals-hile', 'marvel-rivals-hile'],
+	['marvel-rivals-esp-chity', 'marvel-rivals-esp-chity'],
+	['marvel-rivals-aimbot-chity', 'marvel-rivals-aimbot-chity'],
+	['unentdeckte-marvel-rivals-cheats', 'unentdeckte-marvel-rivals-cheats'],
+	['cheats-marvel-rivals-indetectaveis', 'cheats-marvel-rivals-indetectaveis'],
+	['trucchi-marvel-rivals-indetectabili', 'trucchi-marvel-rivals-indetectabili'],
+	['niewykrywalne-cheats-marvel-rivals', 'niewykrywalne-cheats-marvel-rivals'],
+	['nedecektiruemye-chity-marvel-rivals', 'nedecektiruemye-chity-marvel-rivals'],
+	['tespit-edilemeyen-marvel-rivals-hileleri', 'tespit-edilemeyen-marvel-rivals-hileleri'],
+	['nedecektovani-chity-marvel-rivals', 'nedecektovani-chity-marvel-rivals'],
+	['cheats-marvel-rivals-nedetectabile', 'cheats-marvel-rivals-nedetectabile'],
+	['basta-marvel-rivals-cheats', 'basta-marvel-rivals-cheats'],
+	['neac-bypass-trucos-marvel-rivals', 'neac-bypass-trucos-marvel-rivals'],
+	['neac-bypass-triche-marvel-rivals', 'neac-bypass-triche-marvel-rivals'],
+	['neac-bypass-cheats-marvel-rivals', 'neac-bypass-cheats-marvel-rivals'],
+	['neac-bypass-chity-marvel-rivals', 'neac-bypass-chity-marvel-rivals'],
+	['neac-bypass-marvel-rivals', 'neac-bypass'],
 ];
 
 function apply(content) {
@@ -78,31 +78,31 @@ async function fixRouting() {
 	content = apply(content);
 	for (const id of REMOVE_IDS) content = removePageBlocks(content, id);
 	// Fix eac key in englishPaths
-	content = content.replace(/\teac: '/, "\t'battleye': '");
+	content = content.replace(/\teac: '/, "\t'neac': '");
 	await writeFile(path.join(ROOT, 'src/data/i18n/routing.ts'), content);
 	console.log('Fixed routing.ts');
 }
 
 async function fixConstants() {
-	const heroImages = `/** Hero image per page topic — keyword-rich marathon-cheats paths. */
+	const heroImages = `/** Hero image per page topic — keyword-rich marvel-rivals-cheats paths. */
 export const HERO_IMAGES = {
-	home: '/images/the-marathon-cheats-hero.webp',
-	'marathon-esp': '/images/the-marathon-cheats-esp-wallhack.webp',
-	'marathon-aimbot': '/images/the-marathon-cheats-aimbot-combat.webp',
-	features: '/images/marathon-cheats-package.webp',
-	pricing: '/images/marathon-cheats-cover.webp',
-	setup: '/images/marathon-loadout-builder.webp',
-	updates: '/images/marathon-header-art.webp',
-	faq: '/images/marathon-pack-fight.webp',
-	support: '/images/marathon-cheats-package.webp',
-	undetected: '/images/marathon-survival-game-combat.webp',
-	wallhack: '/images/the-marathon-cheats-esp-wallhack.webp',
-	radar: '/images/marathon-player-esp.webp',
-	'battleye': '/images/marathon-reboot-van-fight.webp',
-	'cheats-2026': '/images/the-marathon-cheats-hero.webp',
-	privacy: '/images/the-marathon-cheats-aimbot-combat.webp',
-	refund: '/images/marathon-cheats-cover.webp',
-	terms: '/images/marathon-cheats-package.webp',
+	home: '/images/the-marvel-rivals-cheats-hero.webp',
+	'marvel-rivals-esp': '/images/the-marvel-rivals-cheats-esp-wallhack.webp',
+	'marvel-rivals-aimbot': '/images/the-marvel-rivals-cheats-aimbot-combat.webp',
+	features: '/images/marvel-rivals-cheats-package.webp',
+	pricing: '/images/marvel-rivals-cheats-cover.webp',
+	setup: '/images/marvel-rivals-loadout-builder.webp',
+	updates: '/images/marvel-rivals-header-art.webp',
+	faq: '/images/marvel-rivals-pack-fight.webp',
+	support: '/images/marvel-rivals-cheats-package.webp',
+	undetected: '/images/marvel-rivals-survival-game-combat.webp',
+	wallhack: '/images/the-marvel-rivals-cheats-esp-wallhack.webp',
+	radar: '/images/marvel-rivals-player-esp.webp',
+	'neac': '/images/marvel-rivals-reboot-van-fight.webp',
+	'cheats-2026': '/images/the-marvel-rivals-cheats-hero.webp',
+	privacy: '/images/the-marvel-rivals-cheats-aimbot-combat.webp',
+	refund: '/images/marvel-rivals-cheats-cover.webp',
+	terms: '/images/marvel-rivals-cheats-package.webp',
 };`;
 
 	let content = await readFile(path.join(SRC, 'scripts/i18n-data/constants.mjs'), 'utf8');
@@ -112,15 +112,15 @@ export const HERO_IMAGES = {
 	}
 	content = content.replace(
 		/export const PAGE_IDS = \[[\s\S]*?\];/,
-		`export const PAGE_IDS = [\n\t'home', 'marathon-esp', 'marathon-aimbot', 'features', 'pricing', 'setup',\n\t'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'battleye',\n\t'cheats-2026', 'privacy', 'refund', 'terms',\n];`,
+		`export const PAGE_IDS = [\n\t'home', 'marvel-rivals-esp', 'marvel-rivals-aimbot', 'features', 'pricing', 'setup',\n\t'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'neac',\n\t'cheats-2026', 'privacy', 'refund', 'terms',\n];`,
 	);
 	content = content.replace(/\/\*\* Hero image[\s\S]*?};/, heroImages);
 	content = content.replace(
 		/export type PageId = [^;]+;/,
-		"export type PageId = 'home' | 'marathon-esp' | 'marathon-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'battleye' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
+		"export type PageId = 'home' | 'marvel-rivals-esp' | 'marvel-rivals-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'neac' | 'cheats-2026' | 'privacy' | 'refund' | 'terms';",
 	);
 	content = content.replace(/operatorEsp/g, 'dinoEsp');
-	content = content.replace(/extractFight/g, 'ambushFight');
+	content = content.replace(/objectiveFight/g, 'ambushFight');
 	content = content.replace(/alMazrah/g, 'survivalIsland');
 	await writeFile(path.join(ROOT, 'scripts/i18n-data/constants.mjs'), content);
 	console.log('Fixed constants.mjs');

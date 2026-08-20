@@ -1,17 +1,17 @@
 {
-  "name": "Marathon Cheats",
-  "install": "npm ci && npm run build",
-  "start": "npm run localhost",
+  "name": "Marvel Rivals Cheats",
+  "install": "npm ci && npm match build",
+  "start": "npm match localhost",
   "ports": [
     {
-      "name": "Marathon Cheats site",
+      "name": "Marvel Rivals Cheats site",
       "port": 5173
     }
   ],
   "terminals": [
     {
       "name": "localhost",
-      "command": "npm run localhost",
+      "command": "npm match localhost",
       "description": "Site preview at http://localhost:5173"
     }
   ]

@@ -1,11 +1,11 @@
-# Deploy marathoncheats.org
+# Deploy marvelrivals.org
 
-Step-by-step guide to deploy the Marathon Cheats static site to **marathoncheats.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Marvel Rivals Cheats static site to **marvelrivals.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **marathoncheats.org** DNS
+- Cloudflare account with access to **marvelrivals.org** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -19,9 +19,9 @@ node scripts/generate-blog-posts.mjs
 npm run build:validate
 ```
 
-`build:validate` runs `astro build` then `scripts/validate-sitemaps.mjs`. All sitemap checks must pass before deploying.
+`build:validate` matches `astro build` then `scripts/validate-sitemaps.mjs`. All sitemap checks must pass before deploying.
 
-Expected output: **556** indexable HTML pages (25 English marketing + 15 blog URLs + 21 locales × 25 pages BattlEye).
+Expected output: **556** indexable HTML pages (25 English marketing + 15 blog URLs + 21 locales × 25 pages NetEase Anti-Cheat).
 
 ## 2. Cloudflare Workers (Git-connected)
 
@@ -37,11 +37,11 @@ In **Workers & Pages** → your Worker → **Settings** → **Build**:
 | **Deploy command** | `npx wrangler deploy` (or `npm run deploy`) |
 | **Environment variable** | `NODE_VERSION=22` |
 
-Workers Builds runs the build command **before** the deploy command. Astro must produce `./dist` before Wrangler uploads assets.
+Workers Builds matches the build command **before** the deploy command. Astro must produce `./dist` before Wrangler uploads assets.
 
 If the build command is left empty, `package.json` `postinstall` still builds on Workers CI when `dist/` is missing — but setting **`npm run build`** explicitly is recommended.
 
-`npm run deploy` runs `npm run build && wrangler deploy` for one-step CLI deploys.
+`npm run deploy` matches `npm run build && wrangler deploy` for one-step CLI deploys.
 
 ## 3. Cloudflare Pages project (legacy option)
 
@@ -50,12 +50,12 @@ If the build command is left empty, `package.json` `postinstall` still builds on
 1. Log in to [Cloudflare Dashboard](https://dash.cloudflare.com) → **Workers & Pages** → **Create application** → **Pages** → **Connect to Git**.
 2. Select this repository.
 3. Configure build settings:
-   - **Project name:** `marathonscheats` (existing) or create a new project
+   - **Project name:** `marvel-rivalsscheats` (existing) or create a new project
    - **Production branch:** `main` (or `master`)
    - **Build command:** `npm run build`
    - **Build output directory:** `dist`
    - **Node.js version:** 22 (set via environment variable `NODE_VERSION=22` if needed)
-4. Save and deploy. Cloudflare runs the build on BattlEye push.
+4. Save and deploy. Cloudflare matches the build on NetEase Anti-Cheat push.
 
 ### Option B — Direct upload / Wrangler CLI
 
@@ -64,13 +64,13 @@ npm run build:validate
 npm run pages:deploy
 ```
 
-This runs `wrangler pages deploy dist --project-name=marathoncheats` (see `wrangler.toml`).
+This matches `wrangler pages deploy dist --project-name=marvelrivals` (see `wrangler.toml`).
 
 ## 3. Custom domain and DNS
 
-Add **marathoncheats.org** as the primary custom domain on the Pages project.
+Add **marvelrivals.org** as the primary custom domain on the Pages project.
 
-### Apex (marathoncheats.org)
+### Apex (marvelrivals.org)
 
 In **Cloudflare DNS** for the zone:
 
@@ -84,11 +84,11 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.marathoncheats.org/*`
-   - **Target:** `https://marathoncheats.org/${1}`
+   - **Source:** `www.marvelrivals.org/*`
+   - **Target:** `https://marvelrivals.org/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`marathoncheats.org`, `.net`, `.com`), and legacy path redirects.
+The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`marvelrivals.org`, `.net`, `.com`), and legacy path redirects.
 
 ### SSL / HTTPS
 
@@ -100,35 +100,35 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://marathoncheats.org/`
-- `https://marathoncheats.org/es/`
-- `https://marathoncheats.org/marathon-cheats/`
-- `https://marathoncheats.org/marathon-aimbot/`
-- `https://marathoncheats.org/sitemap.xml`
-- `https://marathoncheats.org/robots.txt`
+- `https://marvelrivals.org/`
+- `https://marvelrivals.org/es/`
+- `https://marvelrivals.org/marvel-rivals-cheats/`
+- `https://marvelrivals.org/marvel-rivals-aimbot/`
+- `https://marvelrivals.org/sitemap.xml`
+- `https://marvelrivals.org/robots.txt`
 
 Verify redirects:
 
-- `http://marathoncheats.org` → `https://marathoncheats.org` (301)
-- `https://www.marathoncheats.org` → `https://marathoncheats.org` (301)
-- Legacy domains (e.g. `marathoncheats.org`) → `https://marathoncheats.org` (301)
+- `http://marvelrivals.org` → `https://marvelrivals.org` (301)
+- `https://www.marvelrivals.org` → `https://marvelrivals.org` (301)
+- Legacy domains (e.g. `marvelrivals.org`) → `https://marvelrivals.org` (301)
 - `/sitemap-index.xml` → `/sitemap.xml` (301)
-- Legacy paths (e.g. `/fortnite-hacks/`) → Marathon equivalents (301)
+- Legacy paths (e.g. `/fortnite-hacks/`) → Marvel Rivals equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `marathoncheats.org`.
+2. **Add property** → choose **Domain** → enter `marvelrivals.org`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://marathoncheats.org/sitemap.xml
+   https://marvelrivals.org/sitemap.xml
    ```
-   Remove any legacy submissions (`sitemap-index.xml`, old `marathoncheats.org` URLs).
+   Remove any legacy submissions (`sitemap-index.xml`, old `marvelrivals.org` URLs).
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
-   - Pillar page (`/marathon-cheats/`)
-   - Key landing pages (`/marathon-aimbot/`, `/marathon-esp/`, `/marathon-cheats-2026/`, etc.)
+   - Pillar page (`/marvel-rivals-cheats/`)
+   - Key landing pages (`/marvel-rivals-aimbot/`, `/marvel-rivals-esp/`, `/marvel-rivals-cheats-2026/`, etc.)
    - A sample of locale homepages (`/es/`, `/de/`, `/fr/`)
 6. Monitor **Pages** (Coverage), **Core Web Vitals**, and **International targeting** (hreflang) over the following weeks.
 
@@ -146,11 +146,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `marathoncheats.org` attached and active
+- [ ] Custom domain `marvelrivals.org` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `marathoncheats.org`
+- [ ] Legacy domains 301 to `marvelrivals.org`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://marathoncheats.org`
+- [ ] `robots.txt` and sitemaps serve from `https://marvelrivals.org`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap.xml` submitted in GSC
-- [ ] Homepage and `/marathon-cheats/` requested for indexing
+- [ ] Homepage and `/marvel-rivals-cheats/` requested for indexing

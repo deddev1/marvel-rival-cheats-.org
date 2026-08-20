@@ -1,5 +1,5 @@
 import { siteConfig } from '../site';
-import { marathonImages } from '../marathon';
+import { marvelRivalsImages } from '../marvel-rivals';
 import { blogSitemapImageMeta } from '../brand-sitemap';
 import {
 	defaultLocale,
@@ -12,20 +12,20 @@ import type { BlogImageKey, BlogPostDefinition, BlogTranslation, ResolvedBlogPos
 import { blogPosts as rawBlogPosts } from './posts.generated';
 
 const imageMap: Record<BlogImageKey, string> = {
-	hero: marathonImages.espWallhack,
-	espWallhack: marathonImages.espWallhack,
-	aimbotCombat: marathonImages.aimbotCombat,
-	aimbotSkeleton: marathonImages.aimbotSkeleton,
-	packFight: marathonImages.aimbotCombat,
-	headerArt: marathonImages.dinoEsp,
-	hacksPackage: marathonImages.espWallhack,
-	dinoEsp: marathonImages.dinoEsp,
-	ambushFight: marathonImages.aimbotCombat,
-	survivalCombat: marathonImages.hacksCombat,
-	survivalIslandMap: marathonImages.espWallhack,
+	hero: marvelRivalsImages.espWallhack,
+	espWallhack: marvelRivalsImages.espWallhack,
+	aimbotCombat: marvelRivalsImages.aimbotCombat,
+	aimbotSkeleton: marvelRivalsImages.aimbotSkeleton,
+	packFight: marvelRivalsImages.aimbotCombat,
+	headerArt: marvelRivalsImages.dinoEsp,
+	hacksPackage: marvelRivalsImages.espWallhack,
+	dinoEsp: marvelRivalsImages.dinoEsp,
+	ambushFight: marvelRivalsImages.aimbotCombat,
+	survivalCombat: marvelRivalsImages.hacksCombat,
+	survivalIslandMap: marvelRivalsImages.espWallhack,
 };
 
-const FALLBACK_BLOG_IMAGE = marathonImages.espWallhack;
+const FALLBACK_BLOG_IMAGE = marvelRivalsImages.espWallhack;
 
 function expandTranslations(
 	translations: Partial<Record<LocaleCode, BlogTranslation>> & { en: BlogTranslation },
@@ -194,7 +194,7 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
 		const imageSrc = getBlogImageSrc(post.imageKey);
-		const isProductPost = /Marathon Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
+		const isProductPost = /Marvel Rivals Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,

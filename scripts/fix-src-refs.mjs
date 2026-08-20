@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-/** Final pass: fix remaining Marathon references in src/. */
+/** Final pass: fix remaining Marvel Rivals references in src/. */
 import { readFile, writeFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,29 +8,29 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 's
 const REMOVE_PAGE_IDS = ['hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats', 'aimbot-hack', 'esp-hack', 'unlock-all'];
 
 const REPLACEMENTS = [
-	['marathonImages', 'marathonImages'],
-	["from '../data/marathon'", "from '../data/marathon'"],
-	["from './marathon'", "from './marathon'"],
-	['/undetected-marathon-cheats/', '/undetected-marathon-cheats/'],
-	['/marathon-wallhack/', '/marathon-wallhack/'],
-	['/marathon-radar-hack/', '/marathon-radar-hack/'],
-	['/battleye-bypass/', '/battleye-bypass/'],
-	['/marathon-cheats-2026/', '/marathon-cheats-2026/'],
-	['/marathon-aimbot/', '/marathon-aimbot/'],
-	['/marathon-esp/', '/marathon-esp/'],
-	['/marathon-cheats/', '/marathon-esp/'],
-	['Marathon Cheats', 'Marathon Cheats'],
-	['marathon cheats', 'marathon cheats'],
-	['marathon wallhack', 'Marathon wallhack'],
-	['marathon radar', 'Marathon radar'],
-	['Marathon Aimbot', 'The Marathon Aimbot'],
-	['Marathon ESP', 'The Marathon ESP'],
-	['Marathon', 'Marathon'],
-	['BattlEye', 'BattlEye'],
-	['battleye', 'battleye'],
-	['marathoncheats.org', 'marathoncheats.org'],
+	['marvelRivalsImages', 'marvelRivalsImages'],
+	["from '../data/marvel-rivals'", "from '../data/marvel-rivals'"],
+	["from './marvel-rivals'", "from './marvel-rivals'"],
+	['/undetected-marvel-rivals-cheats/', '/undetected-marvel-rivals-cheats/'],
+	['/marvel-rivals-wallhack/', '/marvel-rivals-wallhack/'],
+	['/marvel-rivals-radar-hack/', '/marvel-rivals-radar-hack/'],
+	['/neac-bypass/', '/neac-bypass/'],
+	['/marvel-rivals-cheats-2026/', '/marvel-rivals-cheats-2026/'],
+	['/marvel-rivals-aimbot/', '/marvel-rivals-aimbot/'],
+	['/marvel-rivals-esp/', '/marvel-rivals-esp/'],
+	['/marvel-rivals-cheats/', '/marvel-rivals-esp/'],
+	['Marvel Rivals Cheats', 'Marvel Rivals Cheats'],
+	['marvel rivals cheats', 'marvel rivals cheats'],
+	['marvel rivals wallhack', 'Marvel Rivals wallhack'],
+	['marvel rivals radar', 'Marvel Rivals radar'],
+	['Marvel Rivals Aimbot', 'The Marvel Rivals Aimbot'],
+	['Marvel Rivals ESP', 'The Marvel Rivals ESP'],
+	['Marvel Rivals', 'Marvel Rivals'],
+	['NetEase Anti-Cheat', 'NetEase Anti-Cheat'],
+	['neac', 'neac'],
+	['marvelrivals.org', 'marvelrivals.org'],
 	['operatorEsp', 'dinoEsp'],
-	['extractFight', 'ambushFight'],
+	['objectiveFight', 'ambushFight'],
 	['alMazrah', 'survivalIsland'],
 ];
 

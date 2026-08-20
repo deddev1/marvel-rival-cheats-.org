@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes marathon-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes marvel-rivals-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,70 +11,70 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'marathon-cheats', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'marathon-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'marathon-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'marathon-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-marathon-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'marathon-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'marathon-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'marathon-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'marvel-rivals-cheats', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'marvel-rivals-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'marvel-rivals-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'marvel-rivals-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-marvel-rivals-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'marvel-rivals-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'marvel-rivals-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'marvel-rivals-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
-	[/marathon-marathon/g, 'marathon'],
-	[/battleye-bypass-marathon/g, 'battleye-bypass'],
-	[/Marathon/g, 'Marathon'],
-	[/Marathon/g, 'Marathon'],
-	[/Call of Duty/g, 'Marathon'],
-	[/Marathon Wallhack/g, 'Marathon Wallhack'],
-	[/Marathon Radar Hack/g, 'Marathon Radar Hack'],
-	[/Marathon Cheat Features/g, 'Marathon Cheat Features'],
-	[/Marathon Cheat Pricing/g, 'Marathon Cheat Pricing'],
-	[/Marathon Cheat Setup/g, 'Marathon Cheat Setup'],
-	[/Marathon Cheat Status/g, 'Marathon Cheat Status'],
-	[/Marathon Cheat Support/g, 'Marathon Cheat Support'],
-	[/Marathon pack fight/g, 'Marathon pack fight'],
-	[/Marathon pack builder/g, 'Marathon loadout builder'],
-	[/Marathon store header/g, 'Marathon header'],
-	[/Marathon wasteland combat/g, 'Marathon battle royale combat'],
-	[/Marathon loadout builder/g, 'Marathon loadout builder'],
-	[/Marathon pricing/g, 'Marathon pricing'],
-	[/Marathon BattlEye/g, 'Marathon BattlEye'],
-	[/on Marathon/g, 'on Marathon'],
-	[/for Marathon/g, 'for Marathon'],
-	[/Marathon guides/g, 'Marathon guides'],
-	[/Marathon guide/g, 'Marathon guide'],
-	[/Marathon hileleri/g, 'Marathon hileleri'],
-	[/Marathon hile/g, 'Marathon hile'],
-	[/Marathon hileleri/g, 'Marathon hileleri'],
-	[/cheatów Marathon/g, 'cheatów Marathon'],
-	[/cheat Marathon/g, 'cheat Marathon'],
-	[/cheats Marathon/g, 'cheats Marathon'],
-	[/trucos Marathon/g, 'trucos Marathon'],
-	[/triche Marathon/g, 'triche Marathon'],
-	[/trucchi Marathon/g, 'trucchi Marathon'],
-	[/Wallhack Marathon/g, 'Marathon Wallhack'],
-	[/cheat Marathon undetected/g, 'cheat Marathon undetected'],
-	[/cheats Marathon undetected/g, 'cheats Marathon undetected'],
+	[/marvel-rivals-marvel-rivals/g, 'marvel-rivals'],
+	[/neac-bypass-marvel-rivals/g, 'neac-bypass'],
+	[/Marvel Rivals/g, 'Marvel Rivals'],
+	[/Marvel Rivals/g, 'Marvel Rivals'],
+	[/Call of Duty/g, 'Marvel Rivals'],
+	[/Marvel Rivals Wallhack/g, 'Marvel Rivals Wallhack'],
+	[/Marvel Rivals Radar Hack/g, 'Marvel Rivals Radar Hack'],
+	[/Marvel Rivals Cheat Features/g, 'Marvel Rivals Cheat Features'],
+	[/Marvel Rivals Cheat Pricing/g, 'Marvel Rivals Cheat Pricing'],
+	[/Marvel Rivals Cheat Setup/g, 'Marvel Rivals Cheat Setup'],
+	[/Marvel Rivals Cheat Status/g, 'Marvel Rivals Cheat Status'],
+	[/Marvel Rivals Cheat Support/g, 'Marvel Rivals Cheat Support'],
+	[/Marvel Rivals pack fight/g, 'Marvel Rivals pack fight'],
+	[/Marvel Rivals pack builder/g, 'Marvel Rivals hero builder'],
+	[/Marvel Rivals store header/g, 'Marvel Rivals header'],
+	[/Marvel Rivals wasteland combat/g, 'Marvel Rivals battle royale combat'],
+	[/Marvel Rivals hero builder/g, 'Marvel Rivals hero builder'],
+	[/Marvel Rivals pricing/g, 'Marvel Rivals pricing'],
+	[/Marvel Rivals NetEase Anti-Cheat/g, 'Marvel Rivals NetEase Anti-Cheat'],
+	[/on Marvel Rivals/g, 'on Marvel Rivals'],
+	[/for Marvel Rivals/g, 'for Marvel Rivals'],
+	[/Marvel Rivals guides/g, 'Marvel Rivals guides'],
+	[/Marvel Rivals guide/g, 'Marvel Rivals guide'],
+	[/Marvel Rivals hileleri/g, 'Marvel Rivals hileleri'],
+	[/Marvel Rivals hile/g, 'Marvel Rivals hile'],
+	[/Marvel Rivals hileleri/g, 'Marvel Rivals hileleri'],
+	[/cheatów Marvel Rivals/g, 'cheatów Marvel Rivals'],
+	[/cheat Marvel Rivals/g, 'cheat Marvel Rivals'],
+	[/cheats Marvel Rivals/g, 'cheats Marvel Rivals'],
+	[/trucos Marvel Rivals/g, 'trucos Marvel Rivals'],
+	[/triche Marvel Rivals/g, 'triche Marvel Rivals'],
+	[/trucchi Marvel Rivals/g, 'trucchi Marvel Rivals'],
+	[/Wallhack Marvel Rivals/g, 'Marvel Rivals Wallhack'],
+	[/cheat Marvel Rivals undetected/g, 'cheat Marvel Rivals undetected'],
+	[/cheats Marvel Rivals undetected/g, 'cheats Marvel Rivals undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
-	[/loot run room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Verdansk and loot run'],
-	[/Verdansk, Urzikstan/g, 'Verdansk, loot run'],
-	[/session and loot run/g, 'session and loot run'],
+	[/ranked match room clears/g, 'close-quarters room clears'],
+	[/Verdansk and Urzikstan/g, 'Verdansk and ranked match'],
+	[/Verdansk, Urzikstan/g, 'Verdansk, ranked match'],
+	[/session and ranked match/g, 'session and ranked match'],
 	[/Activision's anti-cheat/g, "Epic Games' anti-cheat"],
 	[/Activision anti-cheat/g, 'Epic Games anti-cheat'],
 	[/Activision ships/g, 'Epic Games ships'],
 	[/Activision security/g, 'Epic Games security'],
 	[/Activision bans/g, 'Epic Games bans'],
 	[/Activision/g, 'Epic Games'],
-	[/eac/gi, 'battleye'],
-	[/BattlEye/g, 'BattlEye'],
-	[/marathon-cheats/g, 'marathon-cheats'],
-	[/the-marathon/g, 'marathon'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Marathon'],
+	[/eac/gi, 'neac'],
+	[/NetEase Anti-Cheat/g, 'NetEase Anti-Cheat'],
+	[/marvel-rivals-cheats/g, 'marvel-rivals-cheats'],
+	[/the-marvel-rivals/g, 'marvel-rivals'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Marvel Rivals'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after Marathon anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after Marvel Rivals anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Marathon Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Marvel Rivals Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,39 +169,39 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/Marathon guides/g, 'Marathon guides');
-	content = content.replace(/Marathon guide/g, 'Marathon guide');
-	content = content.replace(/Marathon hileleri/g, 'Marathon hileleri');
-	content = content.replace(/Marathon hile/g, 'Marathon hile');
-	content = content.replace(/cheat Marathon/g, 'cheat Marathon');
-	content = content.replace(/cheats Marathon/g, 'cheats Marathon');
-	content = content.replace(/trucos Marathon/g, 'trucos Marathon');
-	content = content.replace(/triche Marathon/g, 'triche Marathon');
-	content = content.replace(/trucchi Marathon/g, 'trucchi Marathon');
-	content = content.replace(/cheatów Marathon/g, 'cheatów Marathon');
-	content = content.replace(/читов Marathon/g, 'читов Marathon');
-	content = content.replace(/читів Marathon/g, 'читів Marathon');
-	content = content.replace(/Marathonチート/g, 'Marathonチート');
-	content = content.replace(/Marathon 치트/g, 'Marathon 치트');
-	content = content.replace(/Marathon作弊/g, 'Marathon作弊');
-	content = content.replace(/Marathon rehberleri/g, 'Marathon rehberleri');
-	content = content.replace(/Marathon gidsen/g, 'Marathon gidsen');
-	content = content.replace(/Marathon průvodce/g, 'Marathon průvodce');
-	content = content.replace(/Marathon guider/g, 'Marathon guider');
-	content = content.replace(/Marathon related/g, 'Marathon related');
-	content = content.replace(/Marathon ガイド/g, 'Marathon ガイド');
-	content = content.replace(/Marathon 가이드/g, 'Marathon 가이드');
-	content = content.replace(/Marathon指南/g, 'Marathon指南');
-	content = content.replace(/Marathon गाइड/g, 'Marathon गाइड');
-	content = content.replace(/Marathon panduan/g, 'Marathon panduan');
-	content = content.replace(/Marathon คู่มือ/g, 'Marathon คู่มือ');
-	content = content.replace(/Marathon hướng dẫn/g, 'Marathon hướng dẫn');
+	content = content.replace(/Marvel Rivals guides/g, 'Marvel Rivals guides');
+	content = content.replace(/Marvel Rivals guide/g, 'Marvel Rivals guide');
+	content = content.replace(/Marvel Rivals hileleri/g, 'Marvel Rivals hileleri');
+	content = content.replace(/Marvel Rivals hile/g, 'Marvel Rivals hile');
+	content = content.replace(/cheat Marvel Rivals/g, 'cheat Marvel Rivals');
+	content = content.replace(/cheats Marvel Rivals/g, 'cheats Marvel Rivals');
+	content = content.replace(/trucos Marvel Rivals/g, 'trucos Marvel Rivals');
+	content = content.replace(/triche Marvel Rivals/g, 'triche Marvel Rivals');
+	content = content.replace(/trucchi Marvel Rivals/g, 'trucchi Marvel Rivals');
+	content = content.replace(/cheatów Marvel Rivals/g, 'cheatów Marvel Rivals');
+	content = content.replace(/читов Marvel Rivals/g, 'читов Marvel Rivals');
+	content = content.replace(/читів Marvel Rivals/g, 'читів Marvel Rivals');
+	content = content.replace(/Marvel Rivalsチート/g, 'Marvel Rivalsチート');
+	content = content.replace(/Marvel Rivals 치트/g, 'Marvel Rivals 치트');
+	content = content.replace(/Marvel Rivals作弊/g, 'Marvel Rivals作弊');
+	content = content.replace(/Marvel Rivals rehberleri/g, 'Marvel Rivals rehberleri');
+	content = content.replace(/Marvel Rivals gidsen/g, 'Marvel Rivals gidsen');
+	content = content.replace(/Marvel Rivals průvodce/g, 'Marvel Rivals průvodce');
+	content = content.replace(/Marvel Rivals guider/g, 'Marvel Rivals guider');
+	content = content.replace(/Marvel Rivals related/g, 'Marvel Rivals related');
+	content = content.replace(/Marvel Rivals ガイド/g, 'Marvel Rivals ガイド');
+	content = content.replace(/Marvel Rivals 가이드/g, 'Marvel Rivals 가이드');
+	content = content.replace(/Marvel Rivals指南/g, 'Marvel Rivals指南');
+	content = content.replace(/Marvel Rivals गाइड/g, 'Marvel Rivals गाइड');
+	content = content.replace(/Marvel Rivals panduan/g, 'Marvel Rivals panduan');
+	content = content.replace(/Marvel Rivals คู่มือ/g, 'Marvel Rivals คู่มือ');
+	content = content.replace(/Marvel Rivals hướng dẫn/g, 'Marvel Rivals hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Marathon Cheats SEO completion ===\n');
+console.log('=== Marvel Rivals Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();
-console.log('\nDone. Next: update routing.ts manually, then run generate:i18n, fetch:images, build:validate');
+console.log('\nDone. Next: update routing.ts manually, then match generate:i18n, fetch:images, build:validate');

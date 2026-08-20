@@ -8,12 +8,12 @@ export const cannibalRedirectTargets = {
 	undetected: 'home',
 	'mod-menu': 'home',
 	'unlock-all': 'home',
-	'aimbot-hack': 'marathon-aimbot',
-	'soft-aim': 'marathon-aimbot',
-	'esp-hack': 'marathon-esp',
-	wallhack: 'marathon-esp',
+	'aimbot-hack': 'marvel-rivals-aimbot',
+	'soft-aim': 'marvel-rivals-aimbot',
+	'esp-hack': 'marvel-rivals-esp',
+	wallhack: 'marvel-rivals-esp',
 	'cheat-download': 'setup',
-	battleye: 'updates',
+	neac: 'updates',
 } as const;
 
 export type CannibalPageId = keyof typeof cannibalRedirectTargets;

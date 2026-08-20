@@ -15,16 +15,16 @@ export type GuideCta = {
 /** Canonical outbound URLs — single source for CTAs, pills, and resource blocks. */
 export const externalUrls = {
 	steam: brand.gameUrl,
-	steamNews: 'https://store.steampowered.com/app/3065800/news/',
-	officialSite: 'https://www.bungie.net/7/en/Marathon',
-	wiki: 'https://marathondb.gg/',
-	steamCommunity: 'https://steamcommunity.com/app/3065800',
+	steamNews: 'https://store.steampowered.com/app/2767030/news/',
+	officialSite: 'https://www.marvelrivals.com/',
+	wiki: 'https://marvelrivals.fandom.com/wiki/Marvel_Rivals_Wiki',
+	steamCommunity: 'https://steamcommunity.com/app/2767030',
 } as const;
 
 /** Authoritative third-party guides — cite official game sources for readers and search engines. */
 export const externalResources: ExternalResource[] = [
 	{
-		label: 'Marathon on Steam',
+		label: 'Marvel Rivals on Steam',
 		href: externalUrls.steam,
 		note: 'Official store page, system requirements, and player reviews.',
 	},
@@ -34,14 +34,14 @@ export const externalResources: ExternalResource[] = [
 		note: 'Read official update posts before you change your loadout.',
 	},
 	{
-		label: 'Official Marathon website',
+		label: 'Official Marvel Rivals website',
 		href: externalUrls.officialSite,
-		note: 'Game overview from Bungie.',
+		note: 'Game overview from NetEase Games.',
 	},
 	{
-		label: 'Marathon Wiki (Fandom)',
+		label: 'Marvel Rivals Wiki (Fandom)',
 		href: externalUrls.wiki,
-		note: 'Maps, runners, loot, and extraction mechanics.',
+		note: 'Maps, matchners, loot, and objectiveion mechanics.',
 	},
 	{
 		label: 'Steam Community hub',
@@ -52,9 +52,9 @@ export const externalResources: ExternalResource[] = [
 
 /** Compact above-the-fold guide links for blogs and page banners. */
 export const featuredGuidePills: GuideCta[] = [
-	{ label: 'Marathon on Steam', href: externalUrls.steam },
+	{ label: 'Marvel Rivals on Steam', href: externalUrls.steam },
 	{ label: 'Official patch notes', href: externalUrls.steamNews },
-	{ label: 'Marathon Wiki', href: externalUrls.wiki },
+	{ label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
 ];
 
 /**
@@ -64,25 +64,25 @@ export const featuredGuidePills: GuideCta[] = [
 export const externalSecondaryByPageId: Partial<Record<PageId, GuideCta>> = {
 	features: { label: 'Official patch notes', href: externalUrls.steamNews },
 	updates: { label: 'Steam patch notes', href: externalUrls.steamNews },
-	hacks: { label: 'Marathon Wiki', href: externalUrls.wiki },
-	'marathon-esp': { label: 'Marathon Wiki', href: externalUrls.wiki },
-	'marathon-aimbot': { label: 'Marathon Wiki', href: externalUrls.wiki },
-	radar: { label: 'Marathon Wiki', href: externalUrls.wiki },
+	hacks: { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
+	'marvel-rivals-esp': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
+	'marvel-rivals-aimbot': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
+	radar: { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
 	setup: { label: 'Official game site', href: externalUrls.officialSite },
 	support: { label: 'Steam Community', href: externalUrls.steamCommunity },
-	faq: { label: 'Marathon Wiki', href: externalUrls.wiki },
+	faq: { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
 	undetected: { label: 'Steam patch notes', href: externalUrls.steamNews },
-	wallhack: { label: 'Marathon Wiki', href: externalUrls.wiki },
-	battleye: { label: 'Steam patch notes', href: externalUrls.steamNews },
-	'cheats-2026': { label: 'Marathon on Steam', href: externalUrls.steam },
+	wallhack: { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
+	neac: { label: 'Steam patch notes', href: externalUrls.steamNews },
+	'cheats-2026': { label: 'Marvel Rivals on Steam', href: externalUrls.steam },
 	'cheat-download': { label: 'Official game site', href: externalUrls.officialSite },
-	'mod-menu': { label: 'Marathon Wiki', href: externalUrls.wiki },
-	'soft-aim': { label: 'Marathon Wiki', href: externalUrls.wiki },
+	'mod-menu': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
+	'soft-aim': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
 	'best-cheats': { label: 'Steam Community', href: externalUrls.steamCommunity },
-	'aimbot-hack': { label: 'Marathon Wiki', href: externalUrls.wiki },
-	'esp-hack': { label: 'Marathon Wiki', href: externalUrls.wiki },
+	'aimbot-hack': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
+	'esp-hack': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
 	'unlock-all': { label: 'Official game site', href: externalUrls.officialSite },
-	pricing: { label: 'Marathon on Steam', href: externalUrls.steam },
+	pricing: { label: 'Marvel Rivals on Steam', href: externalUrls.steam },
 };
 
 export function getExternalSecondaryCta(pageId: PageId): GuideCta | undefined {

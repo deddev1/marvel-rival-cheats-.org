@@ -5,7 +5,7 @@ import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
 import type { LocaleCode } from '../data/i18n/locales';
 import { productInfo, seoFaqs, siteConfig } from '../data/site';
 import { absoluteFaqUrl, getFaqPath } from '../data/faq';
-import { marathonImages } from '../data/marathon';
+import { marvelRivalsImages } from '../data/marvel-rivals';
 import { simplePageCopy } from '../data/i18n/simple-pages';
 import { getT } from '../i18n/server';
 import { getPageCrawlImage } from '../data/page-images';
@@ -57,7 +57,7 @@ const introEditByPage: Partial<Record<PageId, string>> = {
 const introEdit = locale === 'en' ? introEditByPage[pageId] : undefined;
 const gallery = [
 	{ src: crawl.src, alt: page.imageAlt || crawl.caption },
-	...marathonImages.product.slice(0, 2).map((img) => ({
+	...marvelRivalsImages.product.slice(0, 2).map((img) => ({
 		src: img.src,
 		alt: img.alt,
 	})),

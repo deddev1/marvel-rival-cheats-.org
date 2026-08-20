@@ -71,32 +71,32 @@ const SITEMAP_TEXT_KEYS = [
 
 const DEFAULT_SITEMAP_IMAGES = [
 	{
-		src: '/images/marathon-esp-player-tags.webp',
+		src: '/images/marvel-rivals-esp-player-tags.webp',
 		title: '{primaryKeyword} ESP',
 		caption: 'See players with {primaryKeyword}',
 	},
 	{
-		src: '/images/marathon-wallhack-skeleton.webp',
+		src: '/images/marvel-rivals-wallhack-skeleton.webp',
 		title: '{primaryKeyword} wallhack',
 		caption: 'See through walls with {primaryKeyword}',
 	},
 	{
-		src: '/images/marathon-aimbot-sniper.webp',
+		src: '/images/marvel-rivals-aimbot-sniper.webp',
 		title: '{primaryKeyword} aimbot',
 		caption: 'Aimbot in {primaryKeyword}',
 	},
 	{
-		src: '/images/marathon-aimbot-skeleton.webp',
+		src: '/images/marvel-rivals-aimbot-skeleton.webp',
 		title: '{primaryKeyword} aimbot view',
 		caption: 'Aimbot bone view in {primaryKeyword}',
 	},
 	{
-		src: '/images/marathon-esp-radar.webp',
+		src: '/images/marvel-rivals-esp-radar.webp',
 		title: '{primaryKeyword} radar',
 		caption: 'Radar map in {primaryKeyword}',
 	},
 	{
-		src: '/images/marathon-cheats-combat.webp',
+		src: '/images/marvel-rivals-cheats-combat.webp',
 		title: '{primaryKeyword} in a fight',
 		caption: 'Fight view with {primaryKeyword}',
 	},
@@ -364,10 +364,10 @@ export function validateBrandPayload(body) {
 	const lifetime = price(b.lifetimePrice ?? b.lifetime);
 	const monthlyLabel = soft(b.monthlyLabel, 'Monthly', 40);
 	const lifetimeLabel = soft(b.lifetimeLabel, 'Lifetime', 40);
-	const logo = assetPath(b.logo ?? '/images/marathon-cheats-logo.webp');
-	const logoRaster = assetPath(b.logoRaster ?? '/images/marathon-cheats-logo.png');
-	const defaultOgImage = assetPath(b.defaultOgImage ?? '/images/marathon-cheats-combat.webp');
-	const heroImage = assetPath(b.heroImage ?? '/images/marathon-hero-banner.webp');
+	const logo = assetPath(b.logo ?? '/images/marvel-rivals-cheats-logo.webp');
+	const logoRaster = assetPath(b.logoRaster ?? '/images/marvel-rivals-cheats-logo.png');
+	const defaultOgImage = assetPath(b.defaultOgImage ?? '/images/marvel-rivals-cheats-combat.webp');
+	const heroImage = assetPath(b.heroImage ?? '/images/marvel-rivals-hero-banner.webp');
 	const logoAlt = soft(b.logoAlt, `${name || 'Brand'} logo`, 120);
 	const logoW = price(b.logoRasterWidth ?? 512) ?? 512;
 	const logoH = price(b.logoRasterHeight ?? 512) ?? 512;
@@ -424,7 +424,7 @@ export function validateBrandPayload(body) {
 		storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 		statusTitle: '{game} Status | {brand}',
 		statusDescription:
-			'Live status for {brand} after {game} or {antiCheat} patches. Check before you drop in.',
+			'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue in.',
 		previewTitle: '{game} Preview | {brand}',
 		previewDescription:
 			'Quick preview of {brand} — ESP, aimbot, radar, and updates after {game} patches.',
@@ -597,7 +597,7 @@ export function renderBrandTs(data) {
 		storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 		statusTitle: '{game} Status | {brand}',
 		statusDescription:
-			'Live status for {brand} after {game} or {antiCheat} patches. Check before you drop in.',
+			'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue in.',
 		previewTitle: '{game} Preview | {brand}',
 		previewDescription:
 			'Quick preview of {brand} — ESP, aimbot, radar, and updates after {game} patches.',
@@ -904,7 +904,7 @@ export function writeBrandAndSync(data) {
 	};
 }
 
-function extractBlock(src, name) {
+function objectiveBlock(src, name) {
 	const m = src.match(new RegExp(`${name}:\\s*\\{([\\s\\S]*?)\\n\\t\\},`));
 	return m ? m[1] : '';
 }
@@ -930,10 +930,10 @@ export function readBrandForStudio() {
 	const keywords = listMatch
 		? [...listMatch[1].matchAll(/'((?:\\'|[^'])*)'/g)].map((m) => m[1].replace(/\\'/g, "'"))
 		: [];
-	const seoBlock = extractBlock(src, 'seo');
-	const copyBlock = extractBlock(src, 'copy');
-	const sitemapBlock = extractBlock(src, 'sitemap');
-	const themeBlock = extractBlock(src, 'theme');
+	const seoBlock = objectiveBlock(src, 'seo');
+	const copyBlock = objectiveBlock(src, 'copy');
+	const sitemapBlock = objectiveBlock(src, 'sitemap');
+	const themeBlock = objectiveBlock(src, 'theme');
 	/** @type {Record<string, string>} */
 	const seo = {};
 	for (const key of SEO_KEYS) seo[key] = fieldFrom(seoBlock, key);

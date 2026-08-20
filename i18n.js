@@ -49,7 +49,7 @@ if (!i18n.isInitialized) {
 			},
 			detection: {
 				order: ['cookie', 'navigator', 'htmlTag'],
-				lookupCookie: 'fc_locale',
+				lookupCookie: 'mr_locale',
 				caches: ['cookie'],
 				cookieMinutes: 525600,
 				cookieOptions: { path: '/', sameSite: 'lax' },

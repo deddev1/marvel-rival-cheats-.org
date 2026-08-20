@@ -50,7 +50,7 @@ const seoDefaults = {
 	storeDescription: 'Monthly and lifetime {game} plans. Same features. Instant delivery after payment.',
 	statusTitle: '{game} Status | {brand}',
 	statusDescription:
-		'Live status for {brand} after {game} or {antiCheat} patches. Check before you drop in.',
+		'Live status for {brand} after {game} or {antiCheat} patches. Check before you queue in.',
 	previewTitle: '{game} Preview | {brand}',
 	previewDescription:
 		'Quick preview of {brand} — ESP, aimbot, radar, and updates after {game} patches.',
@@ -125,21 +125,21 @@ export const productInfo = {
 	heroLede: fillBrandTokens(brandCopy.heroLede),
 	features: {
 		esp: [
-			'Runner and UESC ESP / wallhack',
-			'Player loadout tier and threat cues',
-			'Loot and exfil markers',
+			'Hero and enemy ESP / wallhack',
+			'Player hero tier and threat cues',
+			'Loot and objective markers',
 			'Distance readouts',
 			'Toggleable ESP categories',
-			'Container and loot highlights',
+			'Health pack and objective highlights',
 		],
 		aimbot: [
 			'Soft aim and aimbot controls',
 			'Smoothness and FOV settings',
 			'Bone priority',
 			'Hotkeys mid-session',
-			'Per-weapon profiles',
+			'Per-hero profiles',
 		],
-		radar: ['2D radar overlay', 'Adjustable range', 'Works in PvP and PvE extraction runs'],
+		radar: ['2D radar overlay', 'Adjustable range', 'Works in PvP and team fight ranked matches'],
 		general: [
 			fillBrandTokens('{antiCheat} maintenance after patches'),
 			'Digital delivery after checkout',

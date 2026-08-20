@@ -1,6 +1,6 @@
 /**
- * SVG overlay generators for marathon cheats marketing images.
- * Composited on top of IGN Marathon gameplay screenshots.
+ * SVG overlay generators for marvel rivals cheats marketing images.
+ * Composited on top of IGN Marvel Rivals gameplay screenshots.
  */
 
 const PURPLE = '#c084fc';
@@ -150,11 +150,11 @@ export function buildOverlaySvg(width, height, preset) {
 			body += espBox(width * 0.2, height * 0.32, width * 0.09, height * 0.24, 'Enemy · 67m', RED, snap);
 			body += modMenuOverlay(width, height);
 			break;
-		case 'extract':
+		case 'objective':
 			body += espBox(width * 0.42, height * 0.28, width * 0.14, height * 0.38, 'Gulag · 12m', RED, snap);
 			body += aimbotOverlay(width, height);
 			break;
-		case 'loot run':
+		case 'ranked match':
 			body += espBox(width * 0.25, height * 0.3, width * 0.1, height * 0.26, 'Squad · 44m', RED, snap);
 			body += espBox(width * 0.58, height * 0.35, width * 0.09, height * 0.22, 'Squad · 71m', RED, snap);
 			body += radarOverlay(width, height);

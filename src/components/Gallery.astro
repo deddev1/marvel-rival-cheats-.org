@@ -1,5 +1,5 @@
 ---
-import { marathonImages } from '../data/marathon';
+import { marvelRivalsImages } from '../data/marvel-rivals';
 import { getUi } from '../data/i18n';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
@@ -21,7 +21,7 @@ const galleryAlts = [
 	ui.images.packFight,
 ] as const;
 
-const galleryImages = marathonImages.gallery.slice(0, 4).map((image, index) => ({
+const galleryImages = marvelRivalsImages.gallery.slice(0, 4).map((image, index) => ({
 	src: image.src,
 	alt: galleryAlts[index] ?? image.alt,
 }));

@@ -1,5 +1,5 @@
 {
-	"name": "marathon-cheats",
+	"name": "marvel-rivals-cheats",
 	"type": "module",
 	"version": "1.0.0",
 	"engines": {
@@ -16,15 +16,15 @@
 		"postbuild": "node scripts/strip-brand-studio.mjs && node scripts/validate-cloudflare-redirects.mjs",
 		"build:validate": "npm run sync:brand && astro build && node scripts/strip-brand-studio.mjs && npm run validate:sitemaps",
 		"smoke:sitemaps": "node scripts/smoke-sitemaps-http.mjs",
-		"smoke:sitemaps:local": "node scripts/smoke-sitemaps-http.mjs --base http://127.0.0.1:8788 --host marathoncheats.org",
+		"smoke:sitemaps:local": "node scripts/smoke-sitemaps-http.mjs --base http://127.0.0.1:8788 --host marvelrivals.org",
 		"dev:stop": "astro dev stop",
 		"dev:status": "astro dev status",
 		"dev:logs": "astro dev logs",
 		"optimize:images": "node scripts/optimize-responsive-images.mjs",
-		"fetch:images": "node scripts/fetch-marathon-images.mjs",
-		"fetch:hero": "node scripts/fetch-marathon-hero.mjs",
+		"fetch:images": "node scripts/fetch-marvel-rivals-images.mjs",
+		"fetch:hero": "node scripts/fetch-marvel-rivals-hero.mjs",
 		"fetch:steam-hero": "node scripts/fetch-steam-hero.mjs",
-		"fetch:screenshots": "node scripts/import-marathon-screenshots.mjs",
+		"fetch:screenshots": "node scripts/import-marvel-rivals-screenshots.mjs",
 		"generate:brand": "node scripts/generate-brand-assets.mjs",
 		"preview": "astro preview --host 0.0.0.0 --port 3000",
 		"preview:4321": "astro preview --host 0.0.0.0 --port 4321",
@@ -32,7 +32,7 @@
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
 		"postinstall": "node scripts/ensure-dist-for-workers-ci.mjs",
 		"deploy": "npm run build && wrangler deploy",
-		"pages:deploy": "wrangler pages deploy dist --project-name=marathoncheats",
+		"pages:deploy": "wrangler pages deploy dist --project-name=marvelrivals",
 		"astro": "astro"
 	},
 	"dependencies": {

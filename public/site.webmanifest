@@ -1,11 +1,11 @@
 {
-  "name": "Marathon Cheats",
-  "short_name": "Marathon Cheats",
-  "description": "Undetected marathon cheats — ESP, aimbot, and radar for PC",
+  "name": "Marvel Rivals Cheats",
+  "short_name": "Marvel Rivals Cheats",
+  "description": "Undetected marvel rivals cheats — ESP, aimbot, and radar for PC",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#08090C",
-  "theme_color": "#08090C",
+  "background_color": "#0A0E14",
+  "theme_color": "#0A0E14",
   "icons": [
     {
       "src": "/favicon.png",

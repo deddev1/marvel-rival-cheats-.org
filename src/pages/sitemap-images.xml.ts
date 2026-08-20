@@ -11,8 +11,8 @@ export const prerender = true;
  */
 const PREFERRED_HOSTS = [
 	englishPaths.home,
-	englishPaths['marathon-esp'],
-	englishPaths['marathon-aimbot'],
+	englishPaths['marvel-rivals-esp'],
+	englishPaths['marvel-rivals-aimbot'],
 	englishPaths.features,
 	englishPaths.pricing,
 	englishPaths.updates,

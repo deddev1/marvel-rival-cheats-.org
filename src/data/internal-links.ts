@@ -13,8 +13,8 @@ function L(label: string): string {
 /** Topics rival {game} cheat sites cover — mapped to our canonical pages. */
 const TOPIC_LINKS = {
 	overview: { kind: 'page' as const, pageId: 'home' as const, label: L('{brand} overview') },
-	esp: { kind: 'page' as const, pageId: 'marathon-esp' as const, label: L('{game} ESP & wallhack') },
-	aimbot: { kind: 'page' as const, pageId: 'marathon-aimbot' as const, label: L('{game} aimbot & soft aim') },
+	esp: { kind: 'page' as const, pageId: 'marvel-rivals-esp' as const, label: L('{game} ESP & wallhack') },
+	aimbot: { kind: 'page' as const, pageId: 'marvel-rivals-aimbot' as const, label: L('{game} aimbot & soft aim') },
 	radar: { kind: 'page' as const, pageId: 'radar' as const, label: L('{game} radar hack') },
 	features: { kind: 'page' as const, pageId: 'features' as const, label: L('Full {game} feature list') },
 	pricing: { kind: 'page' as const, pageId: 'pricing' as const, label: 'Store & pricing' },
@@ -55,7 +55,7 @@ export const relatedLinksByPageId: Partial<Record<PageId, InternalLinkTarget[]>>
 		TOPIC_LINKS.setup,
 		TOPIC_LINKS.status,
 	],
-	'marathon-esp': [
+	'marvel-rivals-esp': [
 		TOPIC_LINKS.overview,
 		TOPIC_LINKS.aimbot,
 		TOPIC_LINKS.radar,
@@ -65,7 +65,7 @@ export const relatedLinksByPageId: Partial<Record<PageId, InternalLinkTarget[]>>
 		TOPIC_LINKS.status,
 		TOPIC_LINKS.blog,
 	],
-	'marathon-aimbot': [
+	'marvel-rivals-aimbot': [
 		TOPIC_LINKS.overview,
 		TOPIC_LINKS.esp,
 		TOPIC_LINKS.radar,

@@ -23,7 +23,7 @@ When editing copy in `src/data/` or homepage / page components:
 
 ## Rebrand checklist (copy)
 
-1. Edit `src/data/brand.ts` (name, url, game, keywords, plans) → `npm run sync:brand`
+1. Edit `src/data/brand.ts` (name, url, game, keywords, plans) → `npm match sync:brand`
 2. Rewrite EN simple pages + FAQs with `{brand}` / `{game}` tokens
 3. Keep section count and heading style the same
 4. Keep “simple English” — no denser copy for “more SEO”

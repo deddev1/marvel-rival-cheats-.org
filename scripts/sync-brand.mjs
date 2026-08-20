@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Syncs public SEO files from src/data/brand.ts (single source of truth).
- * Run: npm run sync:brand  (also runs before build)
+ * Run: npm run sync:brand  (also matches before build)
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';

@@ -6,39 +6,39 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'marathon-esp', 'marathon-aimbot', 'features', 'pricing', 'setup',
-	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'battleye',
+	'home', 'marvel-rivals-esp', 'marvel-rivals-aimbot', 'features', 'pricing', 'setup',
+	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'neac',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
 
-/** Hero image per page — simple marathon cheats keyword filenames. */
+/** Hero image per page — simple marvel rivals cheats keyword filenames. */
 export const HERO_IMAGES = {
-	home: '/images/marathon-cheats-esp.webp',
-	'marathon-esp': '/images/marathon-cheats-radar.webp',
-	'marathon-aimbot': '/images/marathon-cheats-aimbot.webp',
-	features: '/images/marathon-cheats-aimbot-view.webp',
-	pricing: '/images/marathon-cheats-run.webp',
-	setup: '/images/marathon-cheats-radar.webp',
-	updates: '/images/marathon-cheats-esp.webp',
-	faq: '/images/marathon-cheats-aimbot-view.webp',
-	support: '/images/marathon-cheats-run.webp',
-	undetected: '/images/marathon-cheats-wallhack.webp',
-	wallhack: '/images/marathon-cheats-wallhack.webp',
-	radar: '/images/marathon-cheats-radar.webp',
-	battleye: '/images/marathon-cheats-aimbot.webp',
-	'cheats-2026': '/images/marathon-cheats-esp.webp',
-	hacks: '/images/marathon-cheats-run.webp',
-	'cheat-download': '/images/marathon-cheats-run.webp',
-	'mod-menu': '/images/marathon-cheats-radar.webp',
-	'soft-aim': '/images/marathon-cheats-aimbot-view.webp',
-	'best-cheats': '/images/marathon-cheats-esp.webp',
-	'aimbot-hack': '/images/marathon-cheats-aimbot-view.webp',
-	'esp-hack': '/images/marathon-cheats-wallhack.webp',
-	'unlock-all': '/images/marathon-cheats-radar.webp',
-	privacy: '/images/marathon-cheats-aimbot.webp',
-	refund: '/images/marathon-cheats-run.webp',
-	terms: '/images/marathon-cheats-aimbot-view.webp',
+	home: '/images/marvel-rivals-cheats-esp.webp',
+	'marvel-rivals-esp': '/images/marvel-rivals-cheats-radar.webp',
+	'marvel-rivals-aimbot': '/images/marvel-rivals-cheats-aimbot.webp',
+	features: '/images/marvel-rivals-cheats-aimbot-view.webp',
+	pricing: '/images/marvel-rivals-cheats-run.webp',
+	setup: '/images/marvel-rivals-cheats-radar.webp',
+	updates: '/images/marvel-rivals-cheats-esp.webp',
+	faq: '/images/marvel-rivals-cheats-aimbot-view.webp',
+	support: '/images/marvel-rivals-cheats-run.webp',
+	undetected: '/images/marvel-rivals-cheats-wallhack.webp',
+	wallhack: '/images/marvel-rivals-cheats-wallhack.webp',
+	radar: '/images/marvel-rivals-cheats-radar.webp',
+	neac: '/images/marvel-rivals-cheats-aimbot.webp',
+	'cheats-2026': '/images/marvel-rivals-cheats-esp.webp',
+	hacks: '/images/marvel-rivals-cheats-run.webp',
+	'cheat-download': '/images/marvel-rivals-cheats-run.webp',
+	'mod-menu': '/images/marvel-rivals-cheats-radar.webp',
+	'soft-aim': '/images/marvel-rivals-cheats-aimbot-view.webp',
+	'best-cheats': '/images/marvel-rivals-cheats-esp.webp',
+	'aimbot-hack': '/images/marvel-rivals-cheats-aimbot-view.webp',
+	'esp-hack': '/images/marvel-rivals-cheats-wallhack.webp',
+	'unlock-all': '/images/marvel-rivals-cheats-radar.webp',
+	privacy: '/images/marvel-rivals-cheats-aimbot.webp',
+	refund: '/images/marvel-rivals-cheats-run.webp',
+	terms: '/images/marvel-rivals-cheats-aimbot-view.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -70,7 +70,7 @@ export type LocaleUi = {
 \t\theaderArt: string; hacksPackage: string; ambushFight: string; battleRoyale: string; survivalIsland: string;
 \t};
 };
-export type PageId = 'home' | 'marathon-esp' | 'marathon-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'battleye' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'marvel-rivals-esp' | 'marvel-rivals-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'neac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -101,7 +101,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Marathon Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Marvel Rivals Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -124,13 +124,11 @@ export function section(h2, ...args) {
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
 	activision:
-		'<a href="https://store.steampowered.com/app/3065800/Marathon/" target="_blank" rel="noopener noreferrer">Marathon</a>',
-	marathon:
-		'<a href="https://store.steampowered.com/app/3065800/Marathon/" target="_blank" rel="noopener noreferrer">Marathon</a>',
+		'<a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/" target="_blank" rel="noopener noreferrer">Marvel Rivals</a>',
+	marvelRivals:
+		'<a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/" target="_blank" rel="noopener noreferrer">Marvel Rivals</a>',
 	status:
-		'<a href="https://store.steampowered.com/app/3065800/Marathon/" target="_blank" rel="noopener noreferrer">Marathon on Steam</a>',
-	eac:
-		'<a href="https://www.battleye.com/" target="_blank" rel="noopener noreferrer">BattlEye</a>',
-	battleye:
-		'<a href="https://www.battleye.com/" target="_blank" rel="noopener noreferrer">BattlEye</a>',
+		'<a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/" target="_blank" rel="noopener noreferrer">Marvel Rivals on Steam</a>',
+	neac:
+		'<a href="https://help.marvelrivals.com/" target="_blank" rel="noopener noreferrer">NetEase Anti-Cheat</a>',
 };

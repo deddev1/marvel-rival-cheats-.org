@@ -51,8 +51,8 @@ function buildI18nContent() {
 
 		// Validate required page keys
 		const requiredPages = [
-			'home', 'marathon-esp', 'marathon-aimbot', 'features', 'pricing', 'setup',
-			'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'battleye',
+			'home', 'marvel-rivals-esp', 'marvel-rivals-aimbot', 'features', 'pricing', 'setup',
+			'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'neac',
 			'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 			'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 		];
@@ -61,7 +61,7 @@ function buildI18nContent() {
 			const p = pages[pageId];
 			if (p.title.length > 60) console.warn(`WARN [${locale}/${pageId}] title ${p.title.length} chars: ${p.title}`);
 			if (p.description.length > 160) console.warn(`WARN [${locale}/${pageId}] desc ${p.description.length} chars`);
-			if (!p.heroImage?.startsWith('/images/marathon') && !p.heroImage?.startsWith('/images/the-marathon')) {
+			if (!p.heroImage?.startsWith('/images/marvel-rivals') && !p.heroImage?.startsWith('/images/the-marvel-rivals')) {
 				throw new Error(`Invalid heroImage for ${locale}/${pageId}: ${p.heroImage}`);
 			}
 			if (pageId === 'home' && p.sections.length !== 2) {

@@ -17,7 +17,7 @@ type Props = {
 };
 
 function detectPreferredLocale(locales: LocaleMeta[], defaultLocale: string): string {
-	const cookie = document.cookie.match(/(?:^|;\s*)fc_locale=([^;]+)/)?.[1];
+	const cookie = document.cookie.match(/(?:^|;\s*)mr_locale=([^;]+)/)?.[1];
 	if (cookie && locales.some((l) => l.code === cookie)) return cookie;
 
 	const detected = i18n.services.languageDetector?.detect?.();
@@ -59,9 +59,9 @@ export default function LocaleSuggest({
 
 	useEffect(() => {
 		if (currentLocale !== defaultLocale) return;
-		if (sessionStorage.getItem('fc_locale_dismissed')) return;
+		if (sessionStorage.getItem('mr_locale_dismissed')) return;
 
-		const run = () => {
+		const match = () => {
 			const preferred = detectPreferredLocale(locales, defaultLocale);
 			if (preferred === defaultLocale || preferred === currentLocale) return;
 
@@ -96,7 +96,7 @@ export default function LocaleSuggest({
 				<a
 					href={href}
 					onClick={() => {
-						document.cookie = `fc_locale=${target.code};path=/;max-age=31536000;SameSite=Lax`;
+						document.cookie = `mr_locale=${target.code};path=/;max-age=31536000;SameSite=Lax`;
 					}}
 				>
 					{t('common.localeVersion', { name: target.name })}
@@ -107,7 +107,7 @@ export default function LocaleSuggest({
 				className="locale-suggest__dismiss"
 				aria-label={t('common.dismiss')}
 				onClick={() => {
-					sessionStorage.setItem('fc_locale_dismissed', '1');
+					sessionStorage.setItem('mr_locale_dismissed', '1');
 					setVisible(false);
 				}}
 			>

@@ -50,13 +50,13 @@ Edit **`src/data/brand.ts` first** (or use Brand Studio). Everything else derive
 | `{primaryKeyword}` | Main search phrase |
 | `{checkout}` | Checkout URL |
 
-Then run:
+Then match:
 
 ```bash
 npm run sync:brand
 ```
 
-This updates `astro.config.mjs` `site`, `public/robots.txt`, and `public/site.webmanifest`. It also runs automatically on `npm run build` (`prebuild`).
+This updates `astro.config.mjs` `site`, `public/robots.txt`, and `public/site.webmanifest`. It also matches automatically on `npm run build` (`prebuild`).
 
 ## What you may change
 
@@ -69,7 +69,7 @@ This updates `astro.config.mjs` `site`, `public/robots.txt`, and `public/site.we
 | Sitemap XML (auto) | `src/pages/sitemap*.xml.ts` + `brand.sitemap` | Do not hand-edit XML — change brand URL / labels, then rebuild |
 | FAQs / reviews / landing link labels | `src/data/site.ts` | Use `{brand}` `{game}` tokens in copy |
 | Simple EN pages (Preview, Features, Store, Status) | `src/data/i18n/simple-pages.ts` | Keep structure; swap game wording / tokens |
-| Images | `public/images/` + `src/data/marathon.ts` | Own licensed / provided assets only |
+| Images | `public/images/` + `src/data/marvel-rivals.ts` | Own licensed / provided assets only |
 | Nav labels | `src/components/Navbar.astro` | Keep meanings (Preview / Features / Store / Status) |
 | Dense i18n landings (optional) | `src/data/i18n/content.generated.ts` | Regenerate or rewrite after brand swap |
 
@@ -117,7 +117,7 @@ Helpers: `seoTitle(topic)` and `seoDescription(template)` in `src/data/brand.ts`
 1. Or update **`src/data/brand.ts`** manually, then **`npm run sync:brand`**
 2. Rewrite **`simple-pages.ts`** for the new game (keep structure + tokens)
 3. Update FAQs / review meta in **`site.ts`** (keep `{brand}` / `{game}` tokens)
-4. Replace images; update **`marathon.ts`** (image registry) paths/alts
+4. Replace images; update **`marvel-rivals.ts`** (image registry) paths/alts
 5. Update keyword landing **hrefs** in `seoLandingPages` if URL slugs change for the new game
 6. (Optional) Regenerate or trim `content.generated.ts` / blog posts for the new niche
 7. Run **`npm run build`** and spot-check `/`, `/features/`, `/pricing/`, `/updates/`, `/faq/`, `/reviews/`

@@ -6,38 +6,38 @@ const root = path.resolve('.');
 const imagesDir = path.join(root, 'public/images');
 const publicDir = path.join(root, 'public');
 const assetsDir =
-	'C:/Users/Aman/.cursor/projects/c-Users-Aman-marathonhacks/assets';
+	'C:/Users/Aman/.cursor/projects/c-Users-Aman-marvel-rivalshacks/assets';
 
 const USER_SCREENSHOTS = [
 	{
 		source:
 			'c__Users_Aman_AppData_Roaming_Cursor_User_workspaceStorage_5fc01ad59007d6b1ec3564ba48b04eb7_images_image-4e39dba0-c5eb-40a6-9dff-f00c004bf6c1.png',
-		file: 'marathon-esp-player-tags.webp',
+		file: 'marvel-rivals-esp-player-tags.webp',
 	},
 	{
 		source:
 			'c__Users_Aman_AppData_Roaming_Cursor_User_workspaceStorage_5fc01ad59007d6b1ec3564ba48b04eb7_images_image-d50dbb87-0ddd-476a-b41f-a5ba6cf79e6b.png',
-		file: 'marathon-wallhack-skeleton.webp',
+		file: 'marvel-rivals-wallhack-skeleton.webp',
 	},
 	{
 		source:
 			'c__Users_Aman_AppData_Roaming_Cursor_User_workspaceStorage_5fc01ad59007d6b1ec3564ba48b04eb7_images_image-d6376015-d4c8-420c-bb87-bd5bd5d98c45.png',
-		file: 'marathon-aimbot-sniper.webp',
+		file: 'marvel-rivals-aimbot-sniper.webp',
 	},
 	{
 		source:
 			'c__Users_Aman_AppData_Roaming_Cursor_User_workspaceStorage_5fc01ad59007d6b1ec3564ba48b04eb7_images_image-339045fa-5567-4df1-8592-91160ec6e0af.png',
-		file: 'marathon-aimbot-skeleton.webp',
+		file: 'marvel-rivals-aimbot-skeleton.webp',
 	},
 	{
 		source:
 			'c__Users_Aman_AppData_Roaming_Cursor_User_workspaceStorage_5fc01ad59007d6b1ec3564ba48b04eb7_images_image-f0dcf8d8-7475-4e77-b690-c0bcac4fc67c.png',
-		file: 'marathon-esp-radar.webp',
+		file: 'marvel-rivals-esp-radar.webp',
 	},
 	{
 		source:
 			'c__Users_Aman_AppData_Roaming_Cursor_User_workspaceStorage_5fc01ad59007d6b1ec3564ba48b04eb7_images_image-ba262ad4-1a09-43a6-95eb-e7371f63c6ee.png',
-		file: 'marathon-cheats-combat.webp',
+		file: 'marvel-rivals-cheats-combat.webp',
 	},
 ];
 
@@ -45,27 +45,27 @@ const HERO_WIDTHS = [480, 640, 960, 1400];
 const CONTENT_WIDTHS = [480, 960];
 
 const REMOVE_PREFIXES = [
-	'marathon-survival-game-combat',
-	'marathon-extract-fight',
-	'marathon-cheats-aimbot',
-	'marathon-cheats-cover',
-	'marathon-cheats-esp-wallhack',
-	'marathon-cheats-hero',
-	'marathon-cheats-logo',
-	'marathon-cheats-package',
-	'marathon-header-art',
-	'marathon-loadout-builder',
-	'marathon-player-esp',
-	'marathon-growth-run-combat',
-	'marathon-growth-run-mode',
-	'marathon-pack-fight',
-	'marathon-verdansk-map',
+	'marvel-rivals-survival-game-combat',
+	'marvel-rivals-objective-fight',
+	'marvel-rivals-cheats-aimbot',
+	'marvel-rivals-cheats-cover',
+	'marvel-rivals-cheats-esp-wallhack',
+	'marvel-rivals-cheats-hero',
+	'marvel-rivals-cheats-logo',
+	'marvel-rivals-cheats-package',
+	'marvel-rivals-header-art',
+	'marvel-rivals-loadout-builder',
+	'marvel-rivals-player-esp',
+	'marvel-rivals-growth-run-combat',
+	'marvel-rivals-growth-run-mode',
+	'marvel-rivals-pack-fight',
+	'marvel-rivals-verdansk-map',
 ];
 
-async function removeOldMarathonImages() {
+async function removeOldMarvel RivalsImages() {
 	const files = await readdir(imagesDir).catch(() => []);
 	for (const file of files) {
-		if (file.includes('marathon-cheats-logo')) continue;
+		if (file.includes('marvel-rivals-cheats-logo')) continue;
 		const base = file.replace(/(-\d+w)?\.webp$/i, '');
 		if (REMOVE_PREFIXES.includes(base)) {
 			await unlink(path.join(imagesDir, file));
@@ -91,12 +91,12 @@ async function convertScreenshots() {
 }
 
 async function generateResponsiveVariants() {
-	const heroSource = path.join(imagesDir, 'marathon-esp-player-tags.webp');
+	const heroSource = path.join(imagesDir, 'marvel-rivals-esp-player-tags.webp');
 	const heroMeta = await sharp(heroSource).metadata();
 
 	for (const width of HERO_WIDTHS) {
 		if (heroMeta.width && width > heroMeta.width) continue;
-		const file = `marathon-esp-player-tags-${width}w.webp`;
+		const file = `marvel-rivals-esp-player-tags-${width}w.webp`;
 		const quality = width <= 480 ? 56 : width <= 640 ? 70 : 78;
 		const buffer = await sharp(heroSource)
 			.resize({ width, withoutEnlargement: true })
@@ -107,7 +107,7 @@ async function generateResponsiveVariants() {
 	}
 
 	for (const { file } of USER_SCREENSHOTS) {
-		if (file === 'marathon-esp-player-tags.webp') continue;
+		if (file === 'marvel-rivals-esp-player-tags.webp') continue;
 		const source = path.join(imagesDir, file);
 		const meta = await sharp(source).metadata();
 		const base = file.replace(/\.webp$/i, '');
@@ -126,7 +126,7 @@ async function generateResponsiveVariants() {
 }
 
 async function generateFavicons() {
-	const logoPath = path.join(imagesDir, 'marathon-cheats-logo.png');
+	const logoPath = path.join(imagesDir, 'marvel-rivals-cheats-logo.png');
 	const logoBuffer = await sharp(logoPath)
 		.resize(512, 512, { fit: 'contain', background: { r: 10, g: 6, b: 18, alpha: 1 } })
 		.png()
@@ -158,7 +158,7 @@ async function generateFavicons() {
 }
 
 await mkdir(imagesDir, { recursive: true });
-await removeOldMarathonImages();
+await removeOldMarvel RivalsImages();
 await convertScreenshots();
 await generateResponsiveVariants();
 await generateFavicons();

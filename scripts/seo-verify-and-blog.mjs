@@ -4,7 +4,7 @@
  * Default: verify only (safe for CI/prebuild). Pass --fix to auto-rewrite known patterns.
  */
 import { readFileSync, writeFileSync } from 'node:fs';
-import { applyIsleReplacements, findIsleLeaks } from './isle-blog-guard.mjs';
+import { applyIsleReplacements, findIsleLeaks, findMarathonLeaks } from './isle-blog-guard.mjs';
 
 const FIX = process.argv.includes('--fix');
 
@@ -26,14 +26,14 @@ const FORTNITE_BAD = [
 	'Activision',
 	'soft aim, and .',
 	'ESP, Soft Aim,',
-	'best-marathon-cheats',
-	'marathon-esp-hack',
-	'marathon-aimbot-hack',
+	'best-marvel-rivals-cheats',
+	'marvel-rivals-esp-hack',
+	'marvel-rivals-aimbot-hack',
 ];
 
 const TYPO_REPLACEMENTS = [
 	['RadarRadar', 'Radar'],
-	['RBattlEye', 'Reach out'],
+	['RNetEase Anti-Cheat', 'Reach out'],
 ];
 
 function applyTypoFixes(text) {
@@ -71,6 +71,16 @@ function scan(label, text, patterns) {
 	}
 }
 
+function scanMarathon(label, text) {
+	const hits = findMarathonLeaks(text, label);
+	if (hits.length) {
+		console.log(`--- ${label} Marathon leaks (${hits.length}) ---`);
+		for (const h of hits.slice(0, 30)) console.log(`  ${h.match} (${h.pattern})`);
+		if (hits.length > 30) console.log(`  ... and ${hits.length - 30} more`);
+	}
+	return hits;
+}
+
 function scanIsle(label, text) {
 	const hits = findIsleLeaks(text, label);
 	if (hits.length) {
@@ -100,10 +110,10 @@ scan('EN generated Fortnite leftovers', enSlice, [
 	'vehicles before',
 	'Controllers',
 	'Battle Pass',
-	'RBattlEye',
+	'RNetEase Anti-Cheat',
 	'soft aim, and .',
-	'best-marathon-cheats',
-	'marathon-esp-hack',
+	'best-marvel-rivals-cheats',
+	'marvel-rivals-esp-hack',
 ]);
 
 // --- blog ---
@@ -113,26 +123,26 @@ const blogReps = [
 	['V-Bucks', 'credits'],
 	['Item Shop', 'in-game store'],
 	['Battle Pass', 'patch cycle progression'],
-	['FNCS', 'Marathon community event'],
+	['FNCS', 'Marvel Rivals community event'],
 	['Hammer AR', 'M4A1'],
 	['mythics', 'meta guns'],
-	['island codes', 'practice server runs maps'],
+	['island codes', 'practice server matches maps'],
 	['Creative 1v1s', 'aim training'],
 	['creative 1v1s', 'aim training'],
-	['Epic health', 'Bungie server status'],
-	['Epic terms', 'Bungie terms'],
-	["Epic's BattlEye", 'BattlEye'],
-	['Epic patch', 'Marathon patch'],
+	['Epic health', 'NetEase server status'],
+	['Epic terms', 'NetEase terms'],
+	["Epic's NetEase Anti-Cheat", 'NetEase Anti-Cheat'],
+	['Epic patch', 'Marvel Rivals patch'],
 	['EliteFN', 'a budget cheat shop'],
 	['GhostWare', 'a slim cheat vendor'],
 	['CheatVault', 'another cheat shop'],
-	['/marathon-aimbot-hack/', '/marathon-aimbot/'],
-	['/marathon-esp-hack/', '/marathon-esp/'],
-	['/best-marathon-cheats/', '/'],
-	['best marathon cheats', 'marathon cheats'],
+	['/marvel-rivals-aimbot-hack/', '/marvel-rivals-aimbot/'],
+	['/marvel-rivals-esp-hack/', '/marvel-rivals-esp/'],
+	['/best-marvel-rivals-cheats/', '/'],
+	['best marvel rivals cheats', 'marvel rivals cheats'],
 	['hot drops', 'hot spawns'],
-	['ranked grinders', 'session grinders'],
-	['before Ranked', 'before a run'],
+	['ranked grinders', 'ranked grinders'],
+	['before Ranked', 'before a match'],
 ];
 let blogFixCount = 0;
 if (FIX) {
@@ -149,9 +159,9 @@ maybeWrite(BLOG_PATH, blog, blogOriginal);
 if (FIX) console.log(`blog patterns fixed: ${blogFixCount} (+ Isle replacements)`);
 
 // --- final scan ---
-const blogHits = scanIsle('blog', blog);
-const pagesHits = scanIsle('pages-en', pagesRaw);
-const enHits = scanIsle('EN generated', enSlice);
+const blogHits = [...scanIsle('blog', blog), ...scanMarathon('blog', blog)];
+const pagesHits = [...scanIsle('pages-en', pagesRaw), ...scanMarathon('pages-en', pagesRaw)];
+const enHits = [...scanIsle('EN generated', enSlice), ...scanMarathon('EN generated', enSlice)];
 const typoHits = [
 	...scanTypos('pages-en', pagesRaw),
 	...scanTypos('content.generated (all locales)', gen),
@@ -160,9 +170,9 @@ const typoHits = [
 
 const allHits = [...blogHits, ...pagesHits, ...enHits, ...typoHits];
 if (allHits.length) {
-	console.error(`\nFAIL: ${allHits.length} Isle/off-topic term(s) or typo(s) remain in published copy.`);
+	console.error(`\nFAIL: ${allHits.length} Isle/Marathon/off-topic term(s) or typo(s) remain in published copy.`);
 	if (!FIX) console.error('Run: node scripts/seo-verify-and-blog.mjs --fix');
 	process.exit(1);
 }
 
-console.log('\nOK: no Isle leaks, typos, or banned off-topic patterns in blog / EN pages.');
+console.log('\nOK: no Isle/Marathon leaks, typos, or banned off-topic patterns in blog / EN pages.');

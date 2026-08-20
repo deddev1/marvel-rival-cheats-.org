@@ -3,13 +3,13 @@
  * HTTP smoke test for sitemap index + child sitemaps.
  * Usage:
  *   node scripts/smoke-sitemaps-http.mjs
- *   node scripts/smoke-sitemaps-http.mjs --base http://127.0.0.1:8788 --host marathoncheats.org
+ *   node scripts/smoke-sitemaps-http.mjs --base http://127.0.0.1:8788 --host marvelrivals.org
  */
 
 const args = process.argv.slice(2);
 const baseIdx = args.indexOf('--base');
 const hostIdx = args.indexOf('--host');
-const BASE = baseIdx >= 0 ? args[baseIdx + 1] : 'https://marathoncheats.org';
+const BASE = baseIdx >= 0 ? args[baseIdx + 1] : 'https://marvelrivals.org';
 const HOST = hostIdx >= 0 ? args[hostIdx + 1] : new URL(BASE).host;
 
 const INDEX_CHILDREN = [

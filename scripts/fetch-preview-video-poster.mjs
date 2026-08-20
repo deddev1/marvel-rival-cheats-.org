@@ -13,15 +13,15 @@ const exec = promisify(execFile);
 const VIDEO_URL =
 	'https://ooszazcwzmwhitdxwtom.supabase.co/storage/v1/object/public/ef/0510%282%29.mp4';
 const imagesDir = path.resolve('public/images');
-const tmpPng = path.resolve('tmp/marathon-preview-poster.png');
+const tmpPng = path.resolve('tmp/marvel-rivals-preview-poster.png');
 
-await exec('curl', ['-fsSL', VIDEO_URL, '-o', '/tmp/marathon-preview.mp4']);
+await exec('curl', ['-fsSL', VIDEO_URL, '-o', '/tmp/marvel-rivals-preview.mp4']);
 await exec('ffmpeg', [
 	'-y',
 	'-ss',
 	'00:00:01.5',
 	'-i',
-	'/tmp/marathon-preview.mp4',
+	'/tmp/marvel-rivals-preview.mp4',
 	'-vframes',
 	'1',
 	'-q:v',
@@ -30,10 +30,10 @@ await exec('ffmpeg', [
 ]);
 
 const poster = await sharp(tmpPng).webp({ quality: 82 }).toBuffer();
-await writeFile(path.join(imagesDir, 'marathon-preview-video-poster.webp'), poster);
+await writeFile(path.join(imagesDir, 'marvel-rivals-preview-video-poster.webp'), poster);
 await writeFile(
-	path.join(imagesDir, 'marathon-preview-video-poster-640w.webp'),
+	path.join(imagesDir, 'marvel-rivals-preview-video-poster-640w.webp'),
 	await sharp(tmpPng).resize(640, 360, { fit: 'cover' }).webp({ quality: 78 }).toBuffer(),
 );
 
-console.log(`✓ marathon-preview-video-poster.webp (${Math.round(poster.length / 1024)}KB)`);
+console.log(`✓ marvel-rivals-preview-video-poster.webp (${Math.round(poster.length / 1024)}KB)`);
