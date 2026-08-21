@@ -27,6 +27,22 @@ const LEGACY_HOSTS = new Set([
 	'www.theislehack.org',
 	'bestislecheats.com',
 	'www.bestislecheats.com',
+	'fortnitehack.net',
+	'www.fortnitehack.net',
+	'fortnitecheats.xyz',
+	'www.fortnitecheats.xyz',
+	'fortnitecheats.net',
+	'www.fortnitecheats.net',
+	'fortnitecheats.com',
+	'www.fortnitecheats.com',
+	'warzonehacks.net',
+	'www.warzonehacks.net',
+	'warzonescheats.net',
+	'www.warzonescheats.net',
+	'warzonescheats.com',
+	'www.warzonescheats.com',
+	'warzonescheats.xyz',
+	'www.warzonescheats.xyz',
 ]);
 
 /** /sitemap.xml and /sitemap-*.xml — must stay application/xml for Google Search Console. */

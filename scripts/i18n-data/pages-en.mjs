@@ -3,7 +3,7 @@ import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT }
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
 	home: {
-		title: 'Marvel Rivals Cheats | Undetected Aimbot, ESP & Wallhack 2026',
+		title: 'Marvel Rivals Cheats | Undetected ESP, Aimbot & Wallhack',
 		description:
 			'Marvel Rivals cheats for PC with aimbot, ESP and wallhack features. Explore gameplay features, pricing, setup information and the latest updates.',
 		h1: 'Marvel Rivals Cheats — Undetected ESP, Wallhack & Aimbot',
@@ -18,7 +18,7 @@ export const enPages = {
 			section(
 				'Why players choose marvel rivals cheats in 2026',
 				'Marvel Rivals rewards map awareness. Marvel Rivals Cheats combines ESP wallhack for enemy players and ability cooldowns, radar-style threat cues, and configurable Aimbot so you can read fights before committing — on PvP and team fight matches, and official servers.',
-				`Official seasons, patches, and anti-cheat updates come from ${EXT.marvelRivals} and ${EXT.neac}. We rebuild ESP, radar, and Aimbot modules when those patches require maintenance — then post status on the <a href="/updates/">Updates page</a>.`,
+				`Official seasons, patches, and anti-cheat updates come from ${EXT.marvelRivals} and ${EXT.nneac}. We rebuild ESP, radar, and Aimbot modules when those patches require maintenance — then post status on the <a href="/updates/">Updates page</a>.`,
 				'Licenses ship digitally after payment confirmation. Monthly ($35) and lifetime ($150) plans include NetEase Anti-Cheat maintenance rebuilds when anti-cheat or game patches require updates.',
 				'Start with the <a href="/marvel-rivals-cheats/">Marvel Rivals Cheats pillar</a>, <a href="/marvel-rivals-esp/">ESP guide</a>, <a href="/marvel-rivals-aimbot/">Aimbot controls</a>, and <a href="/marvel-rivals-cheats/">undetected status</a> pages if you are comparing tools before checkout.',
 			),
@@ -65,7 +65,7 @@ export const enPages = {
 			section(
 				'Undetected ESP with NetEase Anti-Cheat maintenance',
 				'Marvel Rivals Cheats ESP wallhack is maintained for Marvel Rivals with rebuilds after NetEase Anti-Cheat patches. Check the <a href="/updates/">Updates page</a> before you queue in — no cheat guarantees permanent undetected status.',
-				`Read ${EXT.neac} for how anti-cheat updates ship, then cross-check our <a href="/updates/">NetEase Anti-Cheat maintenance guide</a> after major patches.`,
+				`Read ${EXT.nneac} for how anti-cheat updates ship, then cross-check our <a href="/updates/">NetEase Anti-Cheat maintenance guide</a> after major patches.`,
 				'Checkout includes instant digital delivery for Windows 10 and 11. After purchase, follow the <a href="/setup/">Setup guide</a> and tune overlays before your first match.',
 			),
 			section(
@@ -110,7 +110,7 @@ export const enPages = {
 			section(
 				'NetEase Anti-Cheat maintenance for undetected Aimbot',
 				'Marvel Rivals Cheats rebuilds Aimbot behavior when NetEase Anti-Cheat or major Marvel Rivals patches land. Maintenance notes appear on the <a href="/updates/">Updates page</a> so you know when a new build is live.',
-				`Cross-check service health on ${EXT.status} and anti-cheat context on ${EXT.neac}, then follow our <a href="/updates/">NetEase Anti-Cheat maintenance guide</a> before dropping in on patch day.`,
+				`Cross-check service health on ${EXT.status} and anti-cheat context on ${EXT.nneac}, then follow our <a href="/updates/">NetEase Anti-Cheat maintenance guide</a> before dropping in on patch day.`,
 				'Responsible settings matter — undetected status requires ongoing maintenance, not set-and-forget configs. Start with conservative smoothness, then tune.',
 			),
 			section(
@@ -190,7 +190,7 @@ export const enPages = {
 	setup: {
 		title: 'Marvel Rivals Cheats Setup | Windows PC Guide',
 		description:
-			'Set up marvel rivals cheats on Windows PC — activate ESP boxes, soft aim profiles, and . Check NetEase Anti-Cheat updates before your first queue in.',
+			'Set up marvel rivals cheats on Windows PC — activate ESP boxes, soft aim profiles, and radar. Check NetEase Anti-Cheat updates before your first queue in.',
 		h1: 'Marvel Rivals Cheats Setup — Windows PC Guide',
 		intro:
 			'Install and configure Marvel Rivals Cheats for Marvel Rivals on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify NetEase Anti-Cheat maintenance status before dropping in.',
@@ -215,7 +215,7 @@ export const enPages = {
 			section(
 				'After Marvel Rivals or NetEase Anti-Cheat patches',
 				'When NetEase Games ships a major Marvel Rivals update or NetEase Anti-Cheat patch, revisit Updates before dropping in. Download maintenance rebuilds when posted.',
-				`Official anti-cheat background: ${EXT.neac}. Our practical workflow is documented on the <a href="/updates/">NetEase Anti-Cheat bypass page</a> and <a href="/marvel-rivals-cheats/">undetected guide</a>.`,
+				`Official anti-cheat background: ${EXT.nneac}. Our practical workflow is documented on the <a href="/updates/">NetEase Anti-Cheat bypass page</a> and <a href="/marvel-rivals-cheats/">undetected guide</a>.`,
 				'Contact <a href="/support/">Support</a> with your order ID if activation fails after a patch — include Windows version and error details for faster replies.',
 			),
 		],
@@ -289,7 +289,7 @@ export const enPages = {
 	support: {
 		title: 'Marvel Rivals Cheats Support | Help & Contact',
 		description:
-			'Contact marvel rivals cheats support for licenses, ESP setup, soft aim profiles, and on Windows PC. Include your order ID for faster help.',
+			'Contact marvel rivals cheats support for licenses, ESP setup, soft aim profiles, and radar on Windows PC. Include your order ID for faster help.',
 		h1: 'Marvel Rivals Cheats Support — Contact Us',
 		intro:
 			'Get help with Marvel Rivals Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and NetEase Anti-Cheat maintenance for Marvel Rivals on Windows PC.',
@@ -336,7 +336,7 @@ export const enPages = {
 				'What undetected means for Marvel Rivals Cheats',
 				'Undetected Marvel Rivals Cheats means the package is actively maintained against NetEase Anti-Cheat and major Marvel Rivals patches — not that detection is impossible forever.',
 				'Rebuilds target ESP wallhack overlays, radar behavior, and Aimbot signatures after NetEase Anti-Cheat security updates.',
-				`Anti-cheat technology is documented by ${EXT.neac}; Marvel Rivals client updates ship through ${EXT.activision}. Undetected status is an ongoing process tied to those releases.`,
+				`Anti-cheat technology is documented by ${EXT.nneac}; Marvel Rivals client updates ship through ${EXT.activision}. Undetected status is an ongoing process tied to those releases.`,
 			),
 			section(
 				'NetEase Anti-Cheat maintenance workflow',
@@ -418,7 +418,7 @@ export const enPages = {
 			),
 		],
 	},
-	'neac': {
+	'nneac': {
 		title: 'NetEase Anti-Cheat Bypass Marvel Rivals | Marvel Rivals Cheats Maintenance',
 		description:
 			'How marvel rivals cheats rebuild after NetEase Anti-Cheat patches — ESP boxes, soft aim, and radar maintenance for Windows PC. Read before dropping in.',
@@ -433,7 +433,7 @@ export const enPages = {
 		sections: [
 			section(
 				'NetEase Anti-Cheat overview',
-				`NetEase Anti-Cheat is NetEase Games' anti-cheat for Marvel Rivals on PC (see ${EXT.neac}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
+				`NetEase Anti-Cheat is NetEase Games' anti-cheat for Marvel Rivals on PC (see ${EXT.nneac}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
 				`Marvel Rivals Cheats monitors NetEase Anti-Cheat patch notes and Marvel Rivals seasonal updates from ${EXT.marvelRivals} to schedule module reviews.`,
 				'“NetEase Anti-Cheat bypass” in our wording means timely maintenance — not a permanent free pass around anti-cheat.',
 			),
@@ -507,7 +507,7 @@ export const enPages = {
 				'How this Marvel Rivals Cheats pillar fits nearby pages',
 				'Use this pillar for the core product overview. For year-specific buying notes, see the <a href="/marvel-rivals-cheats/">marvel rivals cheats 2026</a> and <a href="/marvel-rivals-cheats/">marvel rivals cheats</a> pages cover buyer comparisons in cheats wording.',
 				'Deep-dive modules: <a href="/marvel-rivals-esp/">Marvel Rivals ESP</a>, <a href="/marvel-rivals-aimbot/">Marvel Rivals Aimbot</a>, <a href="/marvel-rivals-esp/">wallhack</a>, <a href="/marvel-rivals-radar-hack/">radar hack</a>, and <a href="/marvel-rivals-aimbot/">soft aim</a>.',
-				'Blog guides expand NetEase Anti-Cheat keyword: <a href="/blog/marvel-rivals-hacks-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/marvel-rivals-hacks-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-marvel-rivals-cheats-neac/">undetected NetEase Anti-Cheat notes</a>.',
+				'Blog guides expand NetEase Anti-Cheat keyword: <a href="/blog/marvel-rivals-hacks-complete-guide-2026/">hacks complete guide</a>, <a href="/blog/marvel-rivals-hacks-buyers-guide/">cheats buyers guide</a>, and <a href="/blog/undetected-marvel-rivals-cheats-nneac/">undetected NetEase Anti-Cheat notes</a>.',
 			),
 			section(
 				'marvel rivals cheats vs single-feature tools',
@@ -518,7 +518,7 @@ export const enPages = {
 			section(
 				'Undetected marvel rivals cheats with NetEase Anti-Cheat maintenance',
 				'Undetected marvel rivals cheats require rebuilds after NetEase Anti-Cheat and major Marvel Rivals patches. Check Updates before dropping in — maintenance notes confirm when a new build is live. No package can promise permanent undetected status.',
-				`See ${EXT.neac} for anti-cheat background and our <a href="/updates/">NetEase Anti-Cheat bypass guide</a> for the practical workflow. Pair with <a href="/marvel-rivals-cheats/">undetected marvel rivals cheats</a> for status language buyers expect.`,
+				`See ${EXT.nneac} for anti-cheat background and our <a href="/updates/">NetEase Anti-Cheat bypass guide</a> for the practical workflow. Pair with <a href="/marvel-rivals-cheats/">undetected marvel rivals cheats</a> for status language buyers expect.`,
 				'Digital delivery matches after checkout for Windows 10 and 11 PCs worldwide. After purchase, follow <a href="/setup/">Setup</a> and keep <a href="/support/">Support</a> ready with your order ID.',
 			),
 		],
@@ -559,7 +559,7 @@ export const enPages = {
 	'mod-menu': {
 		title: 'Marvel Rivals Mod Menu 2026 | ESP & Soft Aim Toggles',
 		description:
-			'Marvel Rivals mod menu for in-match toggles — ESP boxes, soft aim, radar, and on Windows PC. Undetected Marvel Rivals Cheats package.',
+			'Marvel Rivals mod menu for in-match toggles — ESP boxes, soft aim, and radar on Windows PC. Undetected Marvel Rivals Cheats package.',
 		h1: 'Marvel Rivals Mod Menu — In-Client Control Panel',
 		intro:
 			'Marvel Rivals mod menu controls for Marvel Rivals — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Marvel Rivals match on Windows PC.',

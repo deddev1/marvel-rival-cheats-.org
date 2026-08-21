@@ -7,7 +7,7 @@ export const LOCALES = [
 
 export const PAGE_IDS = [
 	'home', 'marvel-rivals-esp', 'marvel-rivals-aimbot', 'features', 'pricing', 'setup',
-	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'neac',
+	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'nneac',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
@@ -26,7 +26,7 @@ export const HERO_IMAGES = {
 	undetected: '/images/marvel-rivals-cheats-wallhack.webp',
 	wallhack: '/images/marvel-rivals-cheats-wallhack.webp',
 	radar: '/images/marvel-rivals-cheats-radar.webp',
-	neac: '/images/marvel-rivals-cheats-aimbot.webp',
+	nneac: '/images/marvel-rivals-cheats-aimbot.webp',
 	'cheats-2026': '/images/marvel-rivals-cheats-esp.webp',
 	hacks: '/images/marvel-rivals-cheats-run.webp',
 	'cheat-download': '/images/marvel-rivals-cheats-run.webp',
@@ -70,7 +70,7 @@ export type LocaleUi = {
 \t\theaderArt: string; hacksPackage: string; ambushFight: string; battleRoyale: string; survivalIsland: string;
 \t};
 };
-export type PageId = 'home' | 'marvel-rivals-esp' | 'marvel-rivals-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'neac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'marvel-rivals-esp' | 'marvel-rivals-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'nneac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -129,6 +129,6 @@ export const EXT = {
 		'<a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/" target="_blank" rel="noopener noreferrer">Marvel Rivals</a>',
 	status:
 		'<a href="https://store.steampowered.com/app/2767030/Marvel_Rivals/" target="_blank" rel="noopener noreferrer">Marvel Rivals on Steam</a>',
-	neac:
+	nneac:
 		'<a href="https://help.marvelrivals.com/" target="_blank" rel="noopener noreferrer">NetEase Anti-Cheat</a>',
 };

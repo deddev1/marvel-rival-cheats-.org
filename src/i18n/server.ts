@@ -13,7 +13,7 @@ function lookup(obj: unknown, path: string): string | undefined {
 	return typeof cur === 'string' ? cur : undefined;
 }
 
-/** Sync translator for Astro frontmatter (SSR). React islands use useTranslation(). */
+/** Sync translator for Astro frontmatter (SSR). Rneact islands use useTranslation(). */
 export function getT(locale: string) {
 	const catalog = catalogs[locale] ?? catalogs.en;
 	return (key: string, vars?: Record<string, string | number>) => {

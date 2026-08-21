@@ -23,7 +23,7 @@ export type PageId =
 	| 'undetected'
 	| 'wallhack'
 	| 'radar'
-	| 'neac'
+	| 'nneac'
 	| 'cheats-2026'
 	| 'hacks'
 	| 'cheat-download'
@@ -51,7 +51,7 @@ export const englishPaths: Record<PageId, string> = {
 	undetected: '/undetected-marvel-rivals-cheats/',
 	wallhack: '/marvel-rivals-wallhack/',
 	radar: '/marvel-rivals-radar-hack/',
-	'neac': '/neac-bypass/',
+	'nneac': '/nneac-bypass/',
 	'cheats-2026': '/marvel-rivals-cheats-2026/',
 	hacks: '/marvel-rivals-cheats/',
 	'cheat-download': '/marvel-rivals-cheat-download/',
@@ -359,29 +359,29 @@ export const localizedSlugs: Record<PageId, Record<LocaleCode, string>> = {
 		ro: 'radar-hack-cheats-marvel-rivals',
 		sv: 'marvel-rivals-radar-hack',
 	},
-	'neac': {
-		en: 'neac-bypass',
-		es: 'neac-bypass-trucos',
-		fr: 'neac-bypass-triche',
-		de: 'neac-bypass',
-		pt: 'neac-bypass-cheats',
-		it: 'neac-bypass-trucchi',
-		nl: 'neac-bypass',
-		pl: 'neac-bypass-cheatow',
-		ru: 'neac-bypass-chity',
-		tr: 'neac-bypass',
-		ar: 'neac-bypass',
-		ja: 'neac-bypass',
-		ko: 'neac-bypass',
-		zh: 'neac-bypass',
-		hi: 'neac-bypass',
-		id: 'neac-bypass',
-		th: 'neac-bypass',
-		vi: 'neac-bypass',
-		uk: 'neac-bypass-chity',
-		cs: 'neac-bypass',
-		ro: 'neac-bypass-cheats',
-		sv: 'neac-bypass',
+	'nneac': {
+		en: 'nneac-bypass',
+		es: 'nneac-bypass-trucos',
+		fr: 'nneac-bypass-triche',
+		de: 'nneac-bypass',
+		pt: 'nneac-bypass-cheats',
+		it: 'nneac-bypass-trucchi',
+		nl: 'nneac-bypass',
+		pl: 'nneac-bypass-cheatow',
+		ru: 'nneac-bypass-chity',
+		tr: 'nneac-bypass',
+		ar: 'nneac-bypass',
+		ja: 'nneac-bypass',
+		ko: 'nneac-bypass',
+		zh: 'nneac-bypass',
+		hi: 'nneac-bypass',
+		id: 'nneac-bypass',
+		th: 'nneac-bypass',
+		vi: 'nneac-bypass',
+		uk: 'nneac-bypass-chity',
+		cs: 'nneac-bypass',
+		ro: 'nneac-bypass-cheats',
+		sv: 'nneac-bypass',
 	},
 	'cheats-2026': {
 		en: 'marvel-rivals-cheats-2026',

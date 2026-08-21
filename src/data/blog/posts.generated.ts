@@ -16,7 +16,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		metaDescription: "Learn how Marvel Rivals patch notes change loadouts, hero meta economy, and maps. What to do after NetEase Anti-Cheat and major client updates in 2026.",
 		h1: "How to Read Marvel Rivals Patch Notes",
 		intro: "When NetEase Games drops a patch, most players skim the headline and queue in anyway. That is how you walk into Marvel Rivals maps with the wrong ammo and a gun that just lost its damage output. Here is a calmer way to read Marvel Rivals patch notes so your next match still makes sense.",
-		keywords: ["marvel-rivals patch notes","marvel-rivals updates","neac patch"],
+		keywords: ["marvel-rivals patch notes","marvel-rivals updates","nneac patch"],
 		imageAlt: "Player reviewing Marvel Rivals patch notes before a survival match",
 		sections: [
 			{
@@ -113,7 +113,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		en: {
 		slug: "marvel-rivals-hero-tier-list",
 		title: "Marvel Rivals Hero Tier List: Best Guns for Ranked Matches",
-		metaDescription: "A practical Marvel Rivals hero tier list for enemy heroes and AI — primaries, SMGs, DMRs, ammo, and when each gun actually wins fights.",
+		metaDescription: "A practical Marvel Rivals hero tier list for enemy heroes and AI — primaries, SMGs, DMRs, ammo, and when neach gun actually wins fights.",
 		h1: "Marvel Rivals Hero Tier List for 2026",
 		intro: "Creator tier lists love flashy guns. Marvel Rivals rewards expected value: damage output, recoil control you can control, and a kit you can rebuild after you die. Here is how to rank loadouts for real matches — not highlight reels.",
 		keywords: ["marvel-rivals tier list","best Marvel Rivals heroes","marvel rivals meta"],
@@ -165,7 +165,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		title: "Marvel Rivals Ranked Run Strategies That Actually Pay Off",
 		metaDescription: "Five aggressive but smart Marvel Rivals ranked strategies — timings, objectives, third-parties, and how to leave matches with credits instead of empty pockets.",
 		h1: "Marvel Rivals Ranked Run Strategies",
-		intro: "Passive early-run players wait behind a bush while two player teams erase each other, then spray into the mess and die. Strong ranked matches manufacture a short advantage, grab what matters, and secure the objective before the match ends collapses on you.",
+		intro: "Passive early-run players wait behind a bush while two player teams erase neach other, then spray into the mess and die. Strong ranked matches manufacture a short advantage, grab what matters, and secure the objective before the match ends collapses on you.",
 		keywords: ["marvel-rivals ranked match","marvel-rivals objective","marvel-rivals objectives"],
 		imageAlt: "Marvel Rivals match moving toward an objective with loot",
 		sections: [
@@ -422,7 +422,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				],
 			},
 			{
-				h2: "ESP, soft aim, and radar — what each tool is for",
+				h2: "ESP, soft aim, and radar — what neach tool is for",
 				paragraphs: [
 					"ESP answers “who is near me and what is worth ability cooldownsing?” Soft aim answers “can I finish the fight once I choose it?” Radar answers “is someone flanking while I heal?” Used together, they cover information and combat. Used badly, they create noisy overlays and obvious aim corrections.",
 					"Deep dives live on <a href=\"/marvel-rivals-esp/\">ESP</a>, <a href=\"/marvel-rivals-aimbot/\">aimbot</a>, <a href=\"/marvel-rivals-wallhack/\">wallhack</a>, and <a href=\"/marvel-rivals-radar-hack/\">radar</a>. Read those before you buy if you only need one job done well.",
@@ -431,7 +431,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "NetEase Anti-Cheat, “undetected,” and honest expectations",
 				paragraphs: [
-					"<a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a> protects Marvel Rivals. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-marvel-rivals-cheats/\">undetected marvel rivals cheats</a> and <a href=\"/neac-bypass/\">NetEase Anti-Cheat maintenance</a>.",
+					"<a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a> protects Marvel Rivals. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-marvel-rivals-cheats/\">undetected marvel rivals cheats</a> and <a href=\"/nneac-bypass/\">NetEase Anti-Cheat maintenance</a>.",
 					"Before every patch-day queue in, read <a href=\"/updates/\">Updates</a>. If status is quiet, wait. Responsible settings matter as much as the binary itself.",
 				],
 			},
@@ -516,7 +516,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		metaDescription: "What changed for marvel rivals cheats in 2026 — patch cycle cadence, NetEase Anti-Cheat maintenance habits, ESP focus, and how Marvel Rivals Cheats adapted for Marvel Rivals.",
 		h1: "Marvel Rivals Cheats Updates in 2026",
 		intro: "2026 did not invent cheating in Marvel Rivals — it raised the bar for maintenance. Wipes, NetEase Anti-Cheat pushes, and map updates punish stale builds. Here is what changed in how serious Marvel Rivals Cheats packages need to operate.",
-		keywords: ["marvel rivals cheats 2026","neac updates","hack status"],
+		keywords: ["marvel rivals cheats 2026","nneac updates","hack status"],
 		imageAlt: "2026 updates for Marvel Rivals Cheats on Marvel Rivals",
 		sections: [
 			{
@@ -544,7 +544,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "What to watch for the rest of 2026",
 				paragraphs: [
 					"Expect more frequent client and anti-cheat touchpoints, not fewer. Shops that survive will keep publishing rebuild notes and tightening overlay readability.",
-					"Follow <a href=\"/updates/\">Updates</a>, review <a href=\"/features/\">Features</a> after each major push, and treat <a href=\"/undetected-marvel-rivals-cheats/\">undetected</a> as a maintenance process — not a permanent badge.",
+					"Follow <a href=\"/updates/\">Updates</a>, review <a href=\"/features/\">Features</a> after neach major push, and treat <a href=\"/undetected-marvel-rivals-cheats/\">undetected</a> as a maintenance process — not a permanent badge.",
 				],
 			}
 		],
@@ -591,7 +591,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Build a profile set you can trust in objectives",
 				paragraphs: [
-					"Save SMG, DMR, and long-range profiles separately. Test each on <a href=\"/blog/marvel-rivals-warmup-practice-ranked/\">warmup maps</a> before you take a expensive kit into high-traffic lanes.",
+					"Save SMG, DMR, and long-range profiles separately. Test neach on <a href=\"/blog/marvel-rivals-warmup-practice-ranked/\">warmup maps</a> before you take a expensive kit into high-traffic lanes.",
 					"Combine tuned aim with <a href=\"/marvel-rivals-esp/\">ESP</a> and <a href=\"/marvel-rivals-radar-hack/\">radar</a> so you only assist fights you chose on purpose. After patches, confirm <a href=\"/updates/\">Updates</a> before you tweak FOV on an old build.",
 				],
 			}
@@ -648,7 +648,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "undetected-marvel-rivals-cheats-neac",
+		id: "undetected-marvel-rivals-cheats-nneac",
 		imageKey: "dinoEsp",
 		published: "2026-07-19",
 		updated: "2026-08-17",
@@ -656,18 +656,18 @@ export const blogPosts: BlogPostDefinition[] = [
 		featured: true,
 		translations: {
 		en: {
-		slug: "undetected-marvel-rivals-cheats-neac",
+		slug: "undetected-marvel-rivals-cheats-nneac",
 		title: "Undetected Marvel Rivals Cheats and NetEase Anti-Cheat Reality",
 		metaDescription: "What “undetected marvel rivals cheats” really means under NetEase Anti-Cheat — maintenance, patch days, risk, and how to read status before you queue in Marvel Rivals.",
 		h1: "Undetected Marvel Rivals Cheats Explained",
 		intro: "“Undetected” is the most abused word in cheat marketing. Under NetEase Anti-Cheat, it means a package is being maintained against current detections — not that bans are impossible. Here is the honest version for Marvel Rivals players.",
-		keywords: ["undetected marvel rivals cheats","neac marvel rivals","ban risk"],
+		keywords: ["undetected marvel rivals cheats","nneac marvel rivals","ban risk"],
 		imageAlt: "NetEase Anti-Cheat maintenance status for undetected marvel rivals cheats",
 		sections: [
 			{
 				h2: "What undetected can honestly mean",
 				paragraphs: [
-					"NetEase Anti-Cheat is documented at <a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Marvel Rivals Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/neac-bypass/\">NetEase Anti-Cheat maintenance</a>.",
+					"NetEase Anti-Cheat is documented at <a href=\"https://help.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">NetEase Anti-Cheat</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Marvel Rivals Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/nneac-bypass/\">NetEase Anti-Cheat maintenance</a>.",
 					"If a seller says “100% undetected forever,” treat it as advertising. Your risk also depends on how obviously you play.",
 				],
 			},
@@ -688,7 +688,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Responsible undetected habits for Marvel Rivals",
 				paragraphs: [
 					"Undetected means maintained today — not immune forever. Read public notes, wait for rebuilds, and avoid rage settings that draw reports even on clean builds.",
-					"Use <a href=\"/updates/\">Updates</a>, <a href=\"/neac-bypass/\">NetEase Anti-Cheat maintenance</a>, and <a href=\"/setup/\">Setup</a> as your patch-week routine. Compare the full stack on <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> when you are ready to buy.",
+					"Use <a href=\"/updates/\">Updates</a>, <a href=\"/nneac-bypass/\">NetEase Anti-Cheat maintenance</a>, and <a href=\"/setup/\">Setup</a> as your patch-week routine. Compare the full stack on <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats</a> when you are ready to buy.",
 				],
 			}
 		],
@@ -729,14 +729,14 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "How to decide without brand loyalty",
 				paragraphs: [
-					"Write down must-haves: dated status, hero ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
+					"Write down must-haves: dated status, hero ESP, radar, soft aim profiles, Windows PC support. Open neach seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
 					"Then return to <a href=\"/\">marvel rivals cheats</a> and <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a> if that checklist matches what we ship.",
 				],
 			},
 			{
 				h2: "Side-by-side before you choose a shop",
 				paragraphs: [
-					"Open each seller’s status page, feature list, and support channel on the same screen. If one shop hides status in private Discord only, weigh that against a lower sticker price.",
+					"Open neach seller’s status page, feature list, and support channel on the same screen. If one shop hides status in private Discord only, weigh that against a lower sticker price.",
 					"When the checklist favors a full stack, compare <a href=\"/features/\">Features</a> and <a href=\"/pricing/\">Pricing</a> here, then read <a href=\"/blog/marvel-rivals-cheats-buyers-guide/\">the buyers guide</a> before checkout.",
 				],
 			}
@@ -792,7 +792,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "How to match your own fair comparison",
 				paragraphs: [
-					"Match the same PC, servers, and match length for each tool. Track patch downtime hours, not just first-night impressions — that is usually where budget shops lose.",
+					"Match the same PC, servers, and match length for neach tool. Track patch downtime hours, not just first-night impressions — that is usually where budget shops lose.",
 					"If you switch, follow <a href=\"/setup/\">Setup</a>, bookmark <a href=\"/updates/\">Updates</a>, and tune <a href=\"/marvel-rivals-aimbot/\">aim profiles</a> before you judge the full stack.",
 				],
 			}
@@ -835,7 +835,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Detection talk without fairy tales",
 				paragraphs: [
 					"Smaller user bases generate fewer public ban screenshots — that is not proof of safety. Larger brands generate more noise even when maintenance is solid. Judge sellers by patch communication speed and whether you can find a dated status note.",
-					"Marvel Rivals Cheats documents maintenance on <a href=\"/neac-bypass/\">NetEase Anti-Cheat workflow</a> and <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a>.",
+					"Marvel Rivals Cheats documents maintenance on <a href=\"/nneac-bypass/\">NetEase Anti-Cheat workflow</a> and <a href=\"/undetected-marvel-rivals-cheats/\">undetected notes</a>.",
 				],
 			},
 			{

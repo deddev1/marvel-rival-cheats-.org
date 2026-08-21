@@ -74,7 +74,7 @@ export const brand = {
 	 * Aim ~50–60 chars titles, ~140–160 chars descriptions.
 	 */
 	seo: {
-		homeTitle: 'Marvel Rivals Cheats | Undetected Aimbot, ESP & Wallhack 2026',
+		homeTitle: 'Marvel Rivals Cheats | Undetected ESP, Aimbot & Wallhack',
 		homeDescription:
 			'Marvel Rivals cheats for PC with aimbot, ESP and wallhack features. Explore gameplay features, pricing, setup information and the latest updates.',
 		featuresTitle: '{game} Features | {brand}',
@@ -86,7 +86,7 @@ export const brand = {
 		previewTitle: 'Marvel Rivals Cheats | Undetected ESP & Aimbot',
 		previewDescription: 'Buy undetected marvel rivals cheats for Marvel Rivals on Windows PC. ESP, soft aim, radar, and NetEase Anti-Cheat patch updates in one license with instant delivery.',
 		setupTitle: '{game} Setup | {brand}',
-		setupDescription: 'Install and launch {brand} on Windows PC after checkout. Short setup steps so you can queue in faster. Follow each step in order before your first match.',
+		setupDescription: 'Install and launch {brand} on Windows PC after checkout. Short setup steps so you can queue in faster. Follow neach step in order before your first match.',
 		supportTitle: '{game} Support | {brand}',
 		supportDescription: 'Get help with {brand} on Windows PC. Email {email} with your order ID for setup, delivery, or billing help after you buy.',
 		faqTitle: '{game} FAQ | {brand}',

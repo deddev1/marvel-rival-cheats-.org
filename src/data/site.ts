@@ -184,7 +184,7 @@ export const seoFaqs: readonly FaqItem[] = [
 		question: 'How does {antiCheat} affect {primaryKeyword}?',
 		answer:
 			'{antiCheat} monitors {game} on Windows PC. {brand} posts maintenance notes after patches that may need a rebuild. Check Status before you queue in.',
-		slug: 'neac-anti-cheat-and-marvel-rivals-cheats',
+		slug: 'nneac-anti-cheat-and-marvel-rivals-cheats',
 		seoTitle: 'How {antiCheat} Affects {brand} | FAQ',
 		seoDescription:
 			'{antiCheat} may require {brand} rebuilds after patches. Status notes explain the update workflow.',
@@ -305,7 +305,7 @@ export const customerReviews = [
 		rating: 4,
 		text: 'Most cheats go down on patch day. Marvel Rivals Cheats posted on the status page within a few hours and was back the next morning. My old tool left me waiting for days.',
 		short: 'Marvel Rivals Cheats was back the next morning after a patch.',
-		slug: 'marvel-rivals-neac-update-review-patchdaymike',
+		slug: 'marvel-rivals-nneac-update-review-patchdaymike',
 		seoTitle: 'Status Review by @patchDayMike — 4/5 | {brand}',
 		seoDescription: '@patchDayMike rates {brand} status updates 4/5 after {antiCheat} patches.',
 		date: '2026-06-09',

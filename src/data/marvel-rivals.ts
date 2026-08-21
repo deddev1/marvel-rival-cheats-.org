@@ -15,7 +15,7 @@ export const marvelRivalsImages = {
 	dinoEsp: slug('marvel-rivals-esp-distance-markers'),
 	hacksCombat: slug('marvel-rivals-cheats-team-fight-esp'),
 	logo: siteConfig.logo,
-	/** @deprecated Blog / legacy aliases — each maps to one screenshot URL */
+	/** @deprecated Blog / legacy aliases — neach maps to one screenshot URL */
 	cover: slug('marvel-rivals-cheats-team-fight-esp'),
 	nestBuilder: slug('marvel-rivals-cheats-mod-menu-windows'),
 	packFight: slug('marvel-rivals-cheats-hero-combat-esp'),

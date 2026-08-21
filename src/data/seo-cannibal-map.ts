@@ -3,6 +3,7 @@
  * Kept free of routing imports to avoid circular deps with localizeInternalHref.
  */
 export const cannibalRedirectTargets = {
+	hacks: 'home',
 	'best-cheats': 'home',
 	'cheats-2026': 'home',
 	undetected: 'home',
@@ -13,7 +14,7 @@ export const cannibalRedirectTargets = {
 	'esp-hack': 'marvel-rivals-esp',
 	wallhack: 'marvel-rivals-esp',
 	'cheat-download': 'setup',
-	neac: 'updates',
+	nneac: 'updates',
 } as const;
 
 export type CannibalPageId = keyof typeof cannibalRedirectTargets;

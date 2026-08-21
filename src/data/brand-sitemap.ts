@@ -58,7 +58,7 @@ const pageImageTemplates: Record<PageId, { title: string; caption: string }> = {
 	undetected: { title: 'Undetected {primaryKeyword}', caption: 'Status notes for {primaryKeyword} after patches' },
 	wallhack: { title: '{primaryKeyword} wallhack', caption: 'Through-wall visibility with {primaryKeyword}' },
 	radar: { title: '{primaryKeyword} radar', caption: '2D radar map cues in {primaryKeyword}' },
-	neac: { title: '{antiCheat} and {primaryKeyword}', caption: '{primaryKeyword} rebuilds after a NetEase Anti-Cheat update' },
+	nneac: { title: '{antiCheat} and {primaryKeyword}', caption: '{primaryKeyword} rebuilds after a NetEase Anti-Cheat update' },
 	'cheats-2026': { title: '{primaryKeyword} overview', caption: '{primaryKeyword} for Marvel Rivals on PC' },
 	hacks: { title: '{primaryKeyword}', caption: '{primaryKeyword} ESP, aimbot, and radar package' },
 	'cheat-download': { title: '{primaryKeyword} download', caption: 'Get {primaryKeyword} after you buy' },

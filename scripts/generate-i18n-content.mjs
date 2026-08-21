@@ -52,7 +52,7 @@ function buildI18nContent() {
 		// Validate required page keys
 		const requiredPages = [
 			'home', 'marvel-rivals-esp', 'marvel-rivals-aimbot', 'features', 'pricing', 'setup',
-			'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'neac',
+			'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'nneac',
 			'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 			'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 		];

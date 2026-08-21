@@ -73,7 +73,7 @@ export const externalSecondaryByPageId: Partial<Record<PageId, GuideCta>> = {
 	faq: { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
 	undetected: { label: 'Steam patch notes', href: externalUrls.steamNews },
 	wallhack: { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },
-	neac: { label: 'Steam patch notes', href: externalUrls.steamNews },
+	nneac: { label: 'Steam patch notes', href: externalUrls.steamNews },
 	'cheats-2026': { label: 'Marvel Rivals on Steam', href: externalUrls.steam },
 	'cheat-download': { label: 'Official game site', href: externalUrls.officialSite },
 	'mod-menu': { label: 'Marvel Rivals Wiki', href: externalUrls.wiki },

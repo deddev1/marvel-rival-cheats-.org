@@ -33,7 +33,7 @@ export const pageImageSrcById: Record<PageId, string> = {
 	undetected: slugShot('marvel-rivals-undetected-cheats-gameplay'),
 	wallhack: slugShot('marvel-rivals-wallhack-enemy-outlines'),
 	radar: slugShot('marvel-rivals-cheats-radar-2d-overlay'),
-	neac: slugShot('marvel-rivals-undetected-cheats-gameplay'),
+	nneac: slugShot('marvel-rivals-undetected-cheats-gameplay'),
 	'cheats-2026': slugShot('marvel-rivals-cheats-hero-combat-esp'),
 	hacks: slugShot('marvel-rivals-cheats-team-fight-esp'),
 	'cheat-download': slugShot('marvel-rivals-cheats-mod-menu-windows'),

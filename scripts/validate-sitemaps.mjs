@@ -56,11 +56,11 @@ const BLOG_PAGES = 18; // /blog/ index + 17 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
 const FAQ_PAGES = 11; // FAQ answer pages (index is in the product pages)
 /** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
-const ENGLISH_PRODUCT_PAGES = 14;
+const ENGLISH_PRODUCT_PAGES = 13;
 const ENGLISH_PAGES = ENGLISH_PRODUCT_PAGES + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 const I18N_LOCALES = 21;
 /** Locale product pages also exclude the same cannibal pageIds and retired hacks pillar */
-const PRODUCT_PAGES_PER_LOCALE = 14;
+const PRODUCT_PAGES_PER_LOCALE = 13;
 const BLOG_PAGES_PER_LOCALE = 0; // Locale blog URLs 301 to EN; not in sitemaps
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
@@ -76,6 +76,7 @@ const SITEMAP_INDEX_ENTRIES = 1 + I18N_LOCALES + 1; // EN + locales + images
 
 /** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
 const REDIRECT_ONLY_PATHS = new Set([
+	'/marvel-rivals-cheats/',
 	'/best-marvel-rivals-cheats/',
 	'/marvel-rivals-aimbot-hack/',
 	'/marvel-rivals-esp-hack/',
@@ -86,7 +87,7 @@ const REDIRECT_ONLY_PATHS = new Set([
 	'/marvel-rivals-soft-aim/',
 	'/marvel-rivals-wallhack/',
 	'/marvel-rivals-cheat-download/',
-	'/neac-bypass/',
+	'/nneac-bypass/',
 ]);
 
 const ENGLISH_PATHS = [
@@ -102,7 +103,7 @@ const ENGLISH_PATHS = [
 	'/undetected-marvel-rivals-cheats/',
 	'/marvel-rivals-wallhack/',
 	'/marvel-rivals-radar-hack/',
-	'/neac-bypass/',
+	'/nneac-bypass/',
 	'/marvel-rivals-cheats-2026/',
 	'/marvel-rivals-cheats/',
 	'/marvel-rivals-cheat-download/',
@@ -126,7 +127,7 @@ const ENGLISH_PATHS = [
 	'/blog/marvel-rivals-cheats-2026-whats-new/',
 	'/blog/marvel-rivals-aimbot-settings-guide/',
 	'/blog/marvel-rivals-esp-wallhack-explained/',
-	'/blog/undetected-marvel-rivals-cheats-neac/',
+	'/blog/undetected-marvel-rivals-cheats-nneac/',
 	'/blog/marvel-rivals-cheats-vs-cheatvault-comparison/',
 	'/blog/elitefn-vs-marvel-rivals-cheats-two-week-test/',
 	'/blog/marvel-rivals-cheats-vs-ghostware-features-pricing/',
@@ -139,7 +140,7 @@ const ENGLISH_PATHS = [
 	'/reviews/marvel-rivals-hero-esp-review-lootgoblinx/',
 	'/reviews/marvel-rivals-soft-aim-session-review-rankedgrind42/',
 	'/reviews/marvel-rivals-radar-hack-review-vanlifemarvelrivals/',
-	'/reviews/marvel-rivals-neac-update-review-patchdaymike/',
+	'/reviews/marvel-rivals-nneac-update-review-patchdaymike/',
 	'/reviews/marvel-rivals-sniper-soft-aim-review-snipezonly/',
 	'/faq/what-are-marvel-rivals-cheats/',
 	'/faq/are-marvel-rivals-cheats-undetected-in-2026/',
@@ -150,7 +151,7 @@ const ENGLISH_PATHS = [
 	'/faq/how-to-contact-support/',
 	'/faq/what-is-an-marvel-rivals-wallhack/',
 	'/faq/does-marvel-rivals-cheats-include-radar-hack/',
-	'/faq/neac-anti-cheat-and-marvel-rivals-cheats/',
+	'/faq/nneac-anti-cheat-and-marvel-rivals-cheats/',
 	'/faq/buy-undetected-marvel-rivals-cheats-windows-pc/',
 ];
 

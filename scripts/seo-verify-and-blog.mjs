@@ -34,6 +34,8 @@ const FORTNITE_BAD = [
 const TYPO_REPLACEMENTS = [
 	['RadarRadar', 'Radar'],
 	['RNetEase Anti-Cheat', 'Reach out'],
+	['Supportrneacties', 'Supportreacties'],
+	['rneaction', 'reaction'],
 ];
 
 function applyTypoFixes(text) {
