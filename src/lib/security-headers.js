@@ -59,8 +59,9 @@ export function applySecurityHeaders(headers, { html = false, dev = false } = {}
 		if (!/charset=/i.test(contentType)) {
 			headers.set('Content-Type', 'text/html; charset=utf-8');
 		}
+		// Match public/_headers — edge cache helps Googlebot crawl faster (no-store blocked CDN caching).
 		headers.set('Cache-Control', 'public, max-age=0, must-revalidate');
-		headers.set('CDN-Cache-Control', 'no-store');
-		headers.set('Cloudflare-CDN-Cache-Control', 'no-store');
+		headers.set('CDN-Cache-Control', 'public, s-maxage=600, stale-while-revalidate=86400');
+		headers.set('Cloudflare-CDN-Cache-Control', 'public, s-maxage=600, stale-while-revalidate=86400');
 	}
 }

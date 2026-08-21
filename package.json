@@ -15,6 +15,7 @@
 		"build": "astro build",
 		"postbuild": "node scripts/strip-brand-studio.mjs && node scripts/validate-cloudflare-redirects.mjs",
 		"build:validate": "npm run sync:brand && astro build && node scripts/strip-brand-studio.mjs && npm run validate:sitemaps",
+		"ping:sitemap": "node scripts/ping-search-engines.mjs",
 		"smoke:sitemaps": "node scripts/smoke-sitemaps-http.mjs",
 		"smoke:sitemaps:local": "node scripts/smoke-sitemaps-http.mjs --base http://127.0.0.1:8788 --host marvelrivalscheats.org",
 		"dev:stop": "astro dev stop",
@@ -32,7 +33,7 @@
 		"validate:sitemaps": "node scripts/validate-sitemaps.mjs && node scripts/audit-sitemap-deep.mjs",
 		"generate:i18n": "node scripts/generate-i18n-content.mjs",
 		"postinstall": "node scripts/ensure-dist-for-workers-ci.mjs",
-		"deploy": "npm run build && wrangler deploy",
+		"deploy": "npm run build && wrangler deploy && npm run ping:sitemap",
 		"pages:deploy": "wrangler pages deploy dist --project-name=marvelrivals",
 		"astro": "astro"
 	},

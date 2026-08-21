@@ -13,6 +13,8 @@ export const brand = {
 	locale: 'en',
 	market: 'Worldwide',
 	supportEmail: 'support@marvelrivalscheats.org',
+	/** Paste the content value from Google Search Console → HTML tag verification (empty = skip). */
+	googleSiteVerification: '',
 	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fmarvel-rivals',
 
 	/** Game this template instance targets */
@@ -131,7 +133,7 @@ export const brand = {
 	 */
 	sitemap: {
 		/** YYYY-MM-DD — Brand Studio can bump this on save to refresh crawl dates */
-		contentLastmod: '2026-08-15',
+		contentLastmod: '2026-08-21',
 		blogImageTitle: '{brand} blog',
 		blogImageCaption: 'Tips and updates for {primaryKeyword}',
 		reviewsImageTitle: '{brand} reviews',

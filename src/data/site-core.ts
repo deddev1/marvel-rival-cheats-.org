@@ -90,6 +90,7 @@ export const siteConfig = {
 	locale: brand.locale,
 	market: brand.market,
 	supportEmail: brand.supportEmail,
+	googleSiteVerification: brand.googleSiteVerification,
 	logo: brand.logo,
 	logoRaster: brand.logoRaster,
 	logoRasterWidth: brand.logoRasterWidth,
