@@ -10,11 +10,13 @@ export interface Env {
 	ASSETS: Fetcher;
 }
 
-const CANONICAL_ORIGIN = 'https://marvelrivals.org';
-const CANONICAL_HOST = 'marvelrivals.org';
+const CANONICAL_ORIGIN = 'https://marvelrivalscheats.org';
+const CANONICAL_HOST = 'marvelrivalscheats.org';
 const WWW_HOST = `www.${CANONICAL_HOST}`;
 
 const LEGACY_HOSTS = new Set([
+	'marvelrivals.org',
+	'www.marvelrivals.org',
 	'marathoncheats.org',
 	'www.marathoncheats.org',
 	'marathoncheat.org',

@@ -149,7 +149,7 @@ export const enPages = {
 			section(
 				'Licensing, delivery, and NetEase Anti-Cheat maintenance',
 				'Monthly ($35) and lifetime ($150) licenses with instant digital delivery. NetEase Anti-Cheat maintenance rebuilds publish on the <a href="/updates/">Updates page</a> after anti-cheat or game patches.',
-				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue in. Setup and billing help lives on <a href="/support/">Support</a> and support@marvelrivals.org.`,
+				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue in. Setup and billing help lives on <a href="/support/">Support</a> and support@marvelrivalscheats.org.`,
 				'Next step: compare plans on <a href="/pricing/">Pricing</a> or read <a href="/marvel-rivals-cheats/">how undetected maintenance works</a>.',
 			),
 		],
@@ -281,7 +281,7 @@ export const enPages = {
 			section(
 				'Delivery, pricing, and support',
 				'Licenses deliver digitally after payment confirmation. Monthly is $35; lifetime is $150 USD — see <a href="/pricing/">Pricing</a>.',
-				'Contact support@marvelrivals.org or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
+				'Contact support@marvelrivalscheats.org or the <a href="/support/">Support page</a> with order details for setup or billing help. First launch steps are on <a href="/setup/">Setup</a>.',
 				'Refund eligibility is covered in the <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
@@ -314,7 +314,7 @@ export const enPages = {
 			section(
 				'Self-service resources',
 				'Setup guide, Features list, Updates log, Refund Policy, and Terms of Use are linked from the footer. NetEase Anti-Cheat bypass notes live on the dedicated <a href="/updates/">NetEase Anti-Cheat page</a>.',
-				'Email: support@marvelrivals.org',
+				'Email: support@marvelrivalscheats.org',
 				'Ready to purchase or renew? Open <a href="/pricing/">Pricing</a>. Need feature detail first? See <a href="/features/">Features</a>.',
 			),
 		],
@@ -480,7 +480,7 @@ export const enPages = {
 				'Before you buy in 2026',
 				'Read the <a href="/marvel-rivals-cheats/">marvel rivals cheats</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.',
 				'Also compare the <a href="/marvel-rivals-cheats/">marvel rivals cheats</a> checklist, <a href="/blog/marvel-rivals-cheats-2026-whats-new/">2026 blog guide</a>, and <a href="/faq/">FAQ</a>.',
-				'Support is available at support@marvelrivals.org via the <a href="/support/">Support page</a>.',
+				'Support is available at support@marvelrivalscheats.org via the <a href="/support/">Support page</a>.',
 			),
 		],
 	},
@@ -757,9 +757,9 @@ export const enPages = {
 	privacy: {
 		title: 'Privacy Policy | Marvel Rivals Cheats',
 		description:
-			'Privacy policy for Marvel Rivals Cheats. How we handle support emails, order data, and checkout for marvel rivals cheats licenses on marvelrivals.org.',
+			'Privacy policy for Marvel Rivals Cheats. How we handle support emails, order data, and checkout for marvel rivals cheats licenses on marvelrivalscheats.org.',
 		h1: 'Privacy Policy',
-		intro: 'How Marvel Rivals Cheats handles information when you browse marvelrivals.org or contact support about a Marvel Rivals license.',
+		intro: 'How Marvel Rivals Cheats handles information when you browse marvelrivalscheats.org or contact support about a Marvel Rivals license.',
 		imageAlt: "Marvel Rivals Cheats privacy policy page",
 		galleryTitle: 'Marvel Rivals Cheats legal resources',
 		ctaPrimary: 'Email support',
@@ -779,8 +779,8 @@ export const enPages = {
 			),
 			section(
 				'Your choices and contact',
-				'You may request correction or deletion of support email data by contacting support@marvelrivals.org with your request details.',
-				'Policy updates publish on this page. Continued use of marvelrivals.org after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
+				'You may request correction or deletion of support email data by contacting support@marvelrivalscheats.org with your request details.',
+				'Policy updates publish on this page. Continued use of marvelrivalscheats.org after updates means you accept the revised policy. Also see <a href="/terms/">Terms of Use</a> and <a href="/refund-policy/">Refund Policy</a>.',
 			),
 		],
 	},
@@ -809,7 +809,7 @@ export const enPages = {
 			),
 			section(
 				'How to request a refund',
-				'Email support@marvelrivals.org with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
+				'Email support@marvelrivalscheats.org with subject "Refund Request", your order ID, purchase date, and issue summary — or use the <a href="/support/">Support page</a>.',
 				'Approved refunds process back to the original payment method when possible. Pricing details live on <a href="/pricing/">Pricing</a>.',
 			),
 		],
@@ -817,9 +817,9 @@ export const enPages = {
 	terms: {
 		title: 'Terms of Use 2026 | Marvel Rivals Cheats Rules',
 		description:
-			'Terms of use for marvelrivals.org and Marvel Rivals Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.',
+			'Terms of use for marvelrivalscheats.org and Marvel Rivals Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.',
 		h1: 'Terms of Use',
-		intro: 'Terms governing use of marvelrivals.org and Marvel Rivals Cheats licenses for Marvel Rivals on Windows PC.',
+		intro: 'Terms governing use of marvelrivalscheats.org and Marvel Rivals Cheats licenses for Marvel Rivals on Windows PC.',
 		imageAlt: "Marvel Rivals Cheats terms of use page",
 		galleryTitle: 'Marvel Rivals Cheats legal pages',
 		ctaPrimary: 'Email support',
@@ -839,7 +839,7 @@ export const enPages = {
 			section(
 				'Changes and governing law',
 				'We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.',
-				'Contact support@marvelrivals.org for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
+				'Contact support@marvelrivalscheats.org for questions. Related policies: <a href="/privacy-policy/">Privacy</a> and <a href="/refund-policy/">Refunds</a>.',
 			),
 		],
 	},

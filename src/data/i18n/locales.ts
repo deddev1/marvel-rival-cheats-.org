@@ -95,7 +95,7 @@ export const blogUi: Record<
 	en: {
 		blogTitle: 'Marvel Rivals Cheats Blog | Raid Guides',
 		blogDescription:
-			'Marvel Rivals guides — hero meta tips, ESP, aimbot notes, map callouts, and NetEase Anti-Cheat update coverage. English blog at marvelrivals.org/blog/.',
+			'Marvel Rivals guides — hero meta tips, ESP, aimbot notes, map callouts, and NetEase Anti-Cheat update coverage. English blog at marvelrivalscheats.org/blog/.',
 		blogH1: 'Marvel Rivals Cheats Intel',
 		blogIntro:
 			'Short Marvel Rivals guides for PvP and team fight ranked matches. Pair these tips with Marvel Rivals Cheats product pages when you need ESP, soft aim, or radar.',

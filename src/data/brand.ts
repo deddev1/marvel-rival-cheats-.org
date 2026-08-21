@@ -9,10 +9,10 @@ export const brand = {
 	/** Short product label if needed */
 	shortName: 'Marvel Rivals Cheats',
 	/** Canonical origin — no trailing slash */
-	url: 'https://marvelrivals.org',
+	url: 'https://marvelrivalscheats.org',
 	locale: 'en',
 	market: 'Worldwide',
-	supportEmail: 'support@marvelrivals.org',
+	supportEmail: 'support@marvelrivalscheats.org',
 	checkoutUrl: 'https://zadeyo.com/go/QRH?to=%2Fproducts%2Fmarvel-rivals',
 
 	/** Game this template instance targets */

@@ -308,7 +308,7 @@ function buildLegal(locale, pageKey, kind) {
 		title: clampTitle(stripZadeyoFromMeta(`${h1} | Marvel Rivals Cheats`)),
 		description: clampDesc(stripZadeyoFromMeta(`${h1} ${L?.descFor ?? 'for Marvel Rivals Cheats — ESP wallhack, Aimbot'}, ${p.win}.`)),
 		h1,
-		intro: p.s1(`${h1} ${L?.introTopic ?? 'for marvelrivals.org and Marvel Rivals licenses.'}`),
+		intro: p.s1(`${h1} ${L?.introTopic ?? 'for marvelrivalscheats.org and Marvel Rivals licenses.'}`),
 		imageAlt: 'Marvel Rivals Cheats',
 		galleryTitle: 'Marvel Rivals Cheats',
 		heroImage: HERO_IMAGES[pageKey],
@@ -323,7 +323,7 @@ function buildLegal(locale, pageKey, kind) {
 				h2[0],
 				p.s1(L?.sec1p1 ?? 'Contact email, Zadeyo order references, and basic site security data.'),
 				kind === 'privacy'
-					? L?.privacy?.sec1p2 ?? 'Payment details are processed by Zadeyo checkout — not stored on marvelrivals.org.'
+					? L?.privacy?.sec1p2 ?? 'Payment details are processed by Zadeyo checkout — not stored on marvelrivalscheats.org.'
 					: p.s2(),
 			),
 			section(
@@ -333,7 +333,7 @@ function buildLegal(locale, pageKey, kind) {
 					? L?.terms?.sec2p2 ?? 'Using cheats may violate NetEase terms — you assume all ban risk.'
 					: p.s3(),
 			),
-			section(h2[2], p.legal(), `${L?.emailLabel ?? 'Email:'} support@marvelrivals.org`),
+			section(h2[2], p.legal(), `${L?.emailLabel ?? 'Email:'} support@marvelrivalscheats.org`),
 		],
 	};
 }

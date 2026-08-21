@@ -21,7 +21,7 @@ const REPLACEMENTS = [
 	['marvel-rivals-radar-hack', 'marvel-rivals-radar-hack'],
 	['marvel-rivals-cheats-2026', 'marvel-rivals-cheats-2026'],
 	['neac-bypass', 'neac-bypass'],
-	['marvelrivals.org', 'marvelrivals.org'],
+	['marvelrivalscheats.org', 'marvelrivalscheats.org'],
 	['trucos-marvel-rivals', 'trucos-marvel-rivals'],
 	['triche-marvel-rivals', 'triche-marvel-rivals'],
 	['marvel-rivals-cheats', 'marvel-rivals-cheats'],

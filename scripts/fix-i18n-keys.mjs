@@ -32,7 +32,7 @@ const UI_REPLACEMENTS = [
 	['Verdansk', 'Verdansk'],
 	['ranked match', 'ranked match'],
 	['objective', 'objective'],
-	['marvelrivals.org', 'marvelrivals.org'],
+	['marvelrivalscheats.org', 'marvelrivalscheats.org'],
 	['Trucos Marvel Rivals', 'Trucos Marvel Rivals'],
 	['Triches Marvel Rivals', 'Triches Marvel Rivals'],
 	['Cheats Marvel Rivals', 'Cheats Marvel Rivals'],

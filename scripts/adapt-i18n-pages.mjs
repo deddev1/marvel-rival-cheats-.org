@@ -52,7 +52,7 @@ const REPLACEMENTS = [
 	['NetEase Anti-Cheat Bypass', 'NetEase Anti-Cheat Bypass'],
 	['NetEase Anti-Cheat', 'NetEase Anti-Cheat'],
 	['neac', 'neac'],
-	['support@marvelrivals.org', 'support@marvelrivals.org'],
+	['support@marvelrivalscheats.org', 'support@marvelrivalscheats.org'],
 	['Marvel Rivals maps, objectives, and team fight zones', 'Marvel Rivals maps, objectives, and team fight zones'],
 	['Marvel Rivals maps, objectives and team fight zones', 'Marvel Rivals maps, objectives and team fight zones'],
 	['exfil fights', 'exfil fights'],

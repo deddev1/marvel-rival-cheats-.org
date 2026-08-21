@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * One-time migration: Marathon Cheats → Marvel Rivals Cheats.
- * Domain: marvelrivals.org
+ * Domain: marvelrivalscheats.org
  * Run from project root: node scripts/adapt-marvel-rivals.mjs
  */
 import { readFile, writeFile, readdir, rename } from 'node:fs/promises';
@@ -31,15 +31,15 @@ const RENAME_PAGE_DIRS = [
 /** Ordered replacements — specific patterns first. */
 const REPLACEMENTS = [
 	// Domains & URLs
-	['https://www.marathoncheats.org', 'https://www.marvelrivals.org'],
-	['https://marathoncheats.org', 'https://marvelrivals.org'],
-	['www.marathoncheats.org', 'www.marvelrivals.org'],
-	['marathoncheats.org', 'marvelrivals.org'],
-	['support@marathoncheats.org', 'support@marvelrivals.org'],
-	['marathoncheat.org', 'marvelrivals.org'],
-	['www.marathoncheat.org', 'www.marvelrivals.org'],
-	['bestmarathoncheats.com', 'marvelrivals.org'],
-	['www.bestmarathoncheats.com', 'www.marvelrivals.org'],
+	['https://www.marathoncheats.org', 'https://www.marvelrivalscheats.org'],
+	['https://marathoncheats.org', 'https://marvelrivalscheats.org'],
+	['www.marathoncheats.org', 'www.marvelrivalscheats.org'],
+	['marathoncheats.org', 'marvelrivalscheats.org'],
+	['support@marathoncheats.org', 'support@marvelrivalscheats.org'],
+	['marathoncheat.org', 'marvelrivalscheats.org'],
+	['www.marathoncheat.org', 'www.marvelrivalscheats.org'],
+	['bestmarathoncheats.com', 'marvelrivalscheats.org'],
+	['www.bestmarathoncheats.com', 'www.marvelrivalscheats.org'],
 	['marathon-cheats-org', 'marvel-rivals-cheats-org'],
 	['marathon-cheats-.org', 'marvel-rivals-cheats-org'],
 
@@ -582,7 +582,7 @@ async function renameImages() {
 }
 
 async function main() {
-	console.log('Adapting Marathon Cheats → Marvel Rivals Cheats (marvelrivals.org)...\n');
+	console.log('Adapting Marathon Cheats → Marvel Rivals Cheats (marvelrivalscheats.org)...\n');
 	await renamePageDirs();
 	await renameDataTs();
 	await renameScripts();

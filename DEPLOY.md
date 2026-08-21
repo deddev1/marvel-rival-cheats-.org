@@ -1,11 +1,11 @@
-# Deploy marvelrivals.org
+# Deploy marvelrivalscheats.org
 
-Step-by-step guide to deploy the Marvel Rivals Cheats static site to **marvelrivals.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
+Step-by-step guide to deploy the Marvel Rivals Cheats static site to **marvelrivalscheats.org** on Cloudflare Pages, configure DNS, and submit to Google Search Console.
 
 ## Prerequisites
 
 - Node.js **≥ 22.12.0**
-- Cloudflare account with access to **marvelrivals.org** DNS
+- Cloudflare account with access to **marvelrivalscheats.org** DNS
 - Wrangler CLI (included as dev dependency): `npx wrangler login`
 
 ## 1. Build and validate locally
@@ -45,14 +45,14 @@ If the build command is left empty, `package.json` `postinstall` still builds on
 
 ### Custom domain (after zone is on Cloudflare)
 
-Wrangler deploy **must not** declare `custom_domain` routes in `wrangler.toml` until `marvelrivals.org` exists as a proxied zone on your account. Otherwise deploy fails with:
+Wrangler deploy **must not** declare `custom_domain` routes in `wrangler.toml` until `marvelrivalscheats.org` exists as a proxied zone on your account. Otherwise deploy fails with:
 
-`Could not find zone for marvelrivals.org`
+`Could not find zone for marvelrivalscheats.org`
 
 Once the zone is active:
 
 1. **Workers & Pages** → `marvel-rival-cheats--org` → **Settings** → **Domains & Routes**
-2. **Add** → **Custom domain** → `marvelrivals.org` and `www.marvelrivals.org`
+2. **Add** → **Custom domain** → `marvelrivalscheats.org` and `www.marvelrivalscheats.org`
 3. Confirm DNS shows proxied (orange cloud) records
 
 The Worker middleware in `src/worker.ts` already enforces apex canonical host and legacy-domain redirects.
@@ -82,9 +82,9 @@ This matches `wrangler pages deploy dist --project-name=marvelrivals` (see `wran
 
 ## 3. Custom domain and DNS
 
-Add **marvelrivals.org** as the primary custom domain on the Pages project.
+Add **marvelrivalscheats.org** as the primary custom domain on the Pages project.
 
-### Apex (marvelrivals.org)
+### Apex (marvelrivalscheats.org)
 
 In **Cloudflare DNS** for the zone:
 
@@ -98,11 +98,11 @@ Cloudflare CNAME flattening handles apex records automatically.
 
 1. Add a DNS record for `www` pointing to the same Pages project (proxied CNAME or A record).
 2. In **Rules** → **Redirect Rules** (or Bulk Redirects), create:
-   - **Source:** `www.marvelrivals.org/*`
-   - **Target:** `https://marvelrivals.org/${1}`
+   - **Source:** `www.marvelrivalscheats.org/*`
+   - **Target:** `https://marvelrivalscheats.org/${1}`
    - **Status:** 301
 
-The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`marvelrivals.org`, `.net`, `.com`), and legacy path redirects.
+The deployed `functions/_middleware.js` also enforces apex canonical host, legacy domain redirects (`marvelrivalscheats.org`, `.net`, `.com`), and legacy path redirects.
 
 ### SSL / HTTPS
 
@@ -114,31 +114,31 @@ The deployed `functions/_middleware.js` also enforces apex canonical host, legac
 
 Verify these URLs return **200** with correct content:
 
-- `https://marvelrivals.org/`
-- `https://marvelrivals.org/es/`
-- `https://marvelrivals.org/marvel-rivals-cheats/`
-- `https://marvelrivals.org/marvel-rivals-aimbot/`
-- `https://marvelrivals.org/sitemap.xml`
-- `https://marvelrivals.org/robots.txt`
+- `https://marvelrivalscheats.org/`
+- `https://marvelrivalscheats.org/es/`
+- `https://marvelrivalscheats.org/marvel-rivals-cheats/`
+- `https://marvelrivalscheats.org/marvel-rivals-aimbot/`
+- `https://marvelrivalscheats.org/sitemap.xml`
+- `https://marvelrivalscheats.org/robots.txt`
 
 Verify redirects:
 
-- `http://marvelrivals.org` → `https://marvelrivals.org` (301)
-- `https://www.marvelrivals.org` → `https://marvelrivals.org` (301)
-- Legacy domains (e.g. `marvelrivals.org`) → `https://marvelrivals.org` (301)
+- `http://marvelrivalscheats.org` → `https://marvelrivalscheats.org` (301)
+- `https://www.marvelrivalscheats.org` → `https://marvelrivalscheats.org` (301)
+- Legacy domains (e.g. `marvelrivalscheats.org`) → `https://marvelrivalscheats.org` (301)
 - `/sitemap-index.xml` → `/sitemap.xml` (301)
 - Legacy paths (e.g. `/fortnite-hacks/`) → Marvel Rivals equivalents (301)
 
 ## 5. Google Search Console
 
 1. Go to [Google Search Console](https://search.google.com/search-console).
-2. **Add property** → choose **Domain** → enter `marvelrivals.org`.
+2. **Add property** → choose **Domain** → enter `marvelrivalscheats.org`.
 3. Verify ownership via the **DNS TXT record** Cloudflare provides (add in Cloudflare DNS, wait for propagation, then confirm in GSC).
 4. After verification, open **Sitemaps** and submit:
    ```
-   https://marvelrivals.org/sitemap.xml
+   https://marvelrivalscheats.org/sitemap.xml
    ```
-   Remove any legacy submissions (`sitemap-index.xml`, old `marvelrivals.org` URLs).
+   Remove any legacy submissions (`sitemap-index.xml`, old `marvelrivalscheats.org` URLs).
 5. Use **URL Inspection** to request indexing for:
    - Homepage (`/`)
    - Pillar page (`/marvel-rivals-cheats/`)
@@ -160,11 +160,11 @@ Verify redirects:
 
 - [ ] `npm run build:validate` passes locally
 - [ ] Cloudflare Pages project attached to this repo
-- [ ] Custom domain `marvelrivals.org` attached and active
+- [ ] Custom domain `marvelrivalscheats.org` attached and active
 - [ ] `www` redirects to apex
-- [ ] Legacy domains 301 to `marvelrivals.org`
+- [ ] Legacy domains 301 to `marvelrivalscheats.org`
 - [ ] Always Use HTTPS enabled
-- [ ] `robots.txt` and sitemaps serve from `https://marvelrivals.org`
+- [ ] `robots.txt` and sitemaps serve from `https://marvelrivalscheats.org`
 - [ ] Google Search Console domain verified
 - [ ] `sitemap.xml` submitted in GSC
 - [ ] Homepage and `/marvel-rivals-cheats/` requested for indexing

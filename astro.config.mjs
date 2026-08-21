@@ -8,7 +8,7 @@ import { brandStudioPlugin } from './scripts/brand-studio/vite-plugin.mjs';
 // Do not add @astrojs/cloudflare; sitemaps and HTML must emit to dist/ root.
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://marvelrivals.org',
+	site: 'https://marvelrivalscheats.org',
 	trailingSlash: 'always',
 	compressHTML: true,
 	devToolbar: { enabled: false },

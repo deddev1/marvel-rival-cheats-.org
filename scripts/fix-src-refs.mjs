@@ -28,7 +28,7 @@ const REPLACEMENTS = [
 	['Marvel Rivals', 'Marvel Rivals'],
 	['NetEase Anti-Cheat', 'NetEase Anti-Cheat'],
 	['neac', 'neac'],
-	['marvelrivals.org', 'marvelrivals.org'],
+	['marvelrivalscheats.org', 'marvelrivalscheats.org'],
 	['operatorEsp', 'dinoEsp'],
 	['objectiveFight', 'ambushFight'],
 	['alMazrah', 'survivalIsland'],

@@ -1,12 +1,14 @@
 import CANNIBAL_REDIRECTS from './cannibal-redirects.json';
 import PATH_REDIRECTS from './path-redirects.json';
 
-const CANONICAL_ORIGIN = 'https://marvelrivals.org';
-const APEX_HOST = 'marvelrivals.org';
-const WWW_HOST = 'www.marvelrivals.org';
+const CANONICAL_ORIGIN = 'https://marvelrivalscheats.org';
+const APEX_HOST = 'marvelrivalscheats.org';
+const WWW_HOST = 'www.marvelrivalscheats.org';
 
 /** Legacy domains → canonical apex (301). */
 const LEGACY_HOSTS = new Set([
+	'marvelrivals.org',
+	'www.marvelrivals.org',
 	'marathoncheats.org',
 	'www.marathoncheats.org',
 	'marathoncheat.org',

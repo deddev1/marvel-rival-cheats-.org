@@ -4,11 +4,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Correo al soporte',
 		readTerms: 'Leer términos',
 		readPrivacy: 'Leer privacidad',
-		introTopic: 'para marvelrivals.org y licencias de Marvel Rivals.',
+		introTopic: 'para marvelrivalscheats.org y licencias de Marvel Rivals.',
 		descFor: 'para Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Información que recopilamos', 'Cómo usamos los datos', 'Tus derechos'],
-			sec1p2: 'Los datos de pago se procesan en el checkout de Zadeyo — no se almacenan en marvelrivals.org.',
+			sec1p2: 'Los datos de pago se procesan en el checkout de Zadeyo — no se almacenan en marvelrivalscheats.org.',
 			sec2p1: 'Respuestas de soporte, resolución de pedidos y cumplimiento legal cuando sea necesario.',
 		},
 		refund: {
@@ -25,11 +25,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Contacter le support',
 		readTerms: 'Lire les conditions',
 		readPrivacy: 'Lire la confidentialité',
-		introTopic: 'pour marvelrivals.org et les licences Marvel Rivals.',
+		introTopic: 'pour marvelrivalscheats.org et les licences Marvel Rivals.',
 		descFor: 'pour Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informations collectées', 'Utilisation des données', 'Vos droits'],
-			sec1p2: 'Les détails de paiement sont traités par le checkout Zadeyo — non stockés sur marvelrivals.org.',
+			sec1p2: 'Les détails de paiement sont traités par le checkout Zadeyo — non stockés sur marvelrivalscheats.org.',
 			sec2p1: 'Réponses du support, résolution des commandes et conformité légale si requis.',
 		},
 		refund: {
@@ -46,11 +46,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Support per E-Mail',
 		readTerms: 'Nutzungsbedingungen',
 		readPrivacy: 'Datenschutz lesen',
-		introTopic: 'für marvelrivals.org und Marvel Rivals-Lizenzen.',
+		introTopic: 'für marvelrivalscheats.org und Marvel Rivals-Lizenzen.',
 		descFor: 'für Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Erhobene Daten', 'Datennutzung', 'Ihre Rechte'],
-			sec1p2: 'Zahlungsdaten werden über Zadeyo-Checkout verarbeitet — nicht auf marvelrivals.org gespeichert.',
+			sec1p2: 'Zahlungsdaten werden über Zadeyo-Checkout verarbeitet — nicht auf marvelrivalscheats.org gespeichert.',
 			sec2p1: 'Support-Antworten, Auftragsabwicklung und rechtliche Compliance bei Bedarf.',
 		},
 		refund: {
@@ -67,11 +67,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'E-mail ao suporte',
 		readTerms: 'Ler termos',
 		readPrivacy: 'Ler privacidade',
-		introTopic: 'para marvelrivals.org e licenças Marvel Rivals.',
+		introTopic: 'para marvelrivalscheats.org e licenças Marvel Rivals.',
 		descFor: 'para Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informações que coletamos', 'Como usamos os dados', 'Seus direitos'],
-			sec1p2: 'Detalhes de pagamento são processados pelo checkout Zadeyo — não armazenados em marvelrivals.org.',
+			sec1p2: 'Detalhes de pagamento são processados pelo checkout Zadeyo — não armazenados em marvelrivalscheats.org.',
 			sec2p1: 'Respostas de suporte, resolução de pedidos e conformidade legal quando necessário.',
 		},
 		refund: {
@@ -88,11 +88,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Email al supporto',
 		readTerms: 'Leggi i termini',
 		readPrivacy: 'Leggi la privacy',
-		introTopic: 'per marvelrivals.org e licenze Marvel Rivals.',
+		introTopic: 'per marvelrivalscheats.org e licenze Marvel Rivals.',
 		descFor: 'per Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informazioni raccolte', 'Uso dei dati', 'I tuoi diritti'],
-			sec1p2: 'I dati di pagamento sono elaborati dal checkout Zadeyo — non memorizzati su marvelrivals.org.',
+			sec1p2: 'I dati di pagamento sono elaborati dal checkout Zadeyo — non memorizzati su marvelrivalscheats.org.',
 			sec2p1: 'Risposte di supporto, risoluzione ordini e conformità legale quando richiesto.',
 		},
 		refund: {
@@ -109,11 +109,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'E-mail support',
 		readTerms: 'Voorwaarden lezen',
 		readPrivacy: 'Privacy lezen',
-		introTopic: 'voor marvelrivals.org en Marvel Rivals-licenties.',
+		introTopic: 'voor marvelrivalscheats.org en Marvel Rivals-licenties.',
 		descFor: 'voor Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informatie die we verzamelen', 'Hoe we gegevens gebruiken', 'Uw rechten'],
-			sec1p2: 'Betalingsgegevens worden verwerkt via Zadeyo checkout — niet opgeslagen op marvelrivals.org.',
+			sec1p2: 'Betalingsgegevens worden verwerkt via Zadeyo checkout — niet opgeslagen op marvelrivalscheats.org.',
 			sec2p1: 'Supportreacties, orderafhandeling en wettelijke naleving indien vereist.',
 		},
 		refund: {
@@ -130,11 +130,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'E-mail do supportu',
 		readTerms: 'Przeczytaj warunki',
 		readPrivacy: 'Przeczytaj politykę prywatności',
-		introTopic: 'dla marvelrivals.org i licencji Marvel Rivals.',
+		introTopic: 'dla marvelrivalscheats.org i licencji Marvel Rivals.',
 		descFor: 'dla Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informacje, które zbieramy', 'Jak wykorzystujemy dane', 'Twoje prawa'],
-			sec1p2: 'Dane płatności są przetwarzane przez checkout Zadeyo — nie przechowywane na marvelrivals.org.',
+			sec1p2: 'Dane płatności są przetwarzane przez checkout Zadeyo — nie przechowywane na marvelrivalscheats.org.',
 			sec2p1: 'Odpowiedzi wsparcia, rozwiązywanie zamówień i zgodność prawna w razie potrzeby.',
 		},
 		refund: {
@@ -151,11 +151,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Написать в поддержку',
 		readTerms: 'Читать условия',
 		readPrivacy: 'Читать политику конфиденциальности',
-		introTopic: 'для marvelrivals.org и лицензий Marvel Rivals.',
+		introTopic: 'для marvelrivalscheats.org и лицензий Marvel Rivals.',
 		descFor: 'для Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Информация, которую мы собираем', 'Как мы используем данные', 'Ваши права'],
-			sec1p2: 'Платёжные данные обрабатываются через checkout Zadeyo — не хранятся на marvelrivals.org.',
+			sec1p2: 'Платёжные данные обрабатываются через checkout Zadeyo — не хранятся на marvelrivalscheats.org.',
 			sec2p1: 'Ответы поддержки, решение заказов и соблюдение законодательства при необходимости.',
 		},
 		refund: {
@@ -172,11 +172,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Destek e-postası',
 		readTerms: 'Şartları oku',
 		readPrivacy: 'Gizliliği oku',
-		introTopic: 'marvelrivals.org ve Marvel Rivals lisansları için.',
+		introTopic: 'marvelrivalscheats.org ve Marvel Rivals lisansları için.',
 		descFor: 'Marvel Rivals Cheats — ESP wallhack, Aimbot için',
 		privacy: {
 			h2: ['Topladığımız bilgiler', 'Verileri nasıl kullanıyoruz', 'Haklarınız'],
-			sec1p2: 'Ödeme bilgileri Zadeyo checkout ile işlenir — marvelrivals.org\'da saklanmaz.',
+			sec1p2: 'Ödeme bilgileri Zadeyo checkout ile işlenir — marvelrivalscheats.org\'da saklanmaz.',
 			sec2p1: 'Destek yanıtları, sipariş çözümü ve gerektiğinde yasal uyum.',
 		},
 		refund: {
@@ -193,11 +193,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'مراسلة الدعم',
 		readTerms: 'اقرأ الشروط',
 		readPrivacy: 'اقرأ الخصوصية',
-		introTopic: 'لـ marvelrivals.org وتراخيص Marvel Rivals.',
+		introTopic: 'لـ marvelrivalscheats.org وتراخيص Marvel Rivals.',
 		descFor: 'لـ Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['المعلومات التي نجمعها', 'كيف نستخدم البيانات', 'حقوقك'],
-			sec1p2: 'تُعالَج تفاصيل الدفع عبر checkout Zadeyo — ولا تُخزَّن على marvelrivals.org.',
+			sec1p2: 'تُعالَج تفاصيل الدفع عبر checkout Zadeyo — ولا تُخزَّن على marvelrivalscheats.org.',
 			sec2p1: 'ردود الدعم وحل الطلبات والامتثال القانوني عند الحاجة.',
 		},
 		refund: {
@@ -214,11 +214,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'サポートにメール',
 		readTerms: '利用規約を読む',
 		readPrivacy: 'プライバシーを読む',
-		introTopic: 'marvelrivals.orgおよびMarvel Rivalsライセンス向け。',
+		introTopic: 'marvelrivalscheats.orgおよびMarvel Rivalsライセンス向け。',
 		descFor: 'Marvel Rivals Cheats — ESP wallhack、Aimbot向け',
 		privacy: {
 			h2: ['収集する情報', 'データの利用方法', 'あなたの権利'],
-			sec1p2: '支払い情報はZadeyo checkoutで処理され、marvelrivals.orgには保存されません。',
+			sec1p2: '支払い情報はZadeyo checkoutで処理され、marvelrivalscheats.orgには保存されません。',
 			sec2p1: 'サポート対応、注文処理、必要時の法的遵守。',
 		},
 		refund: {
@@ -235,11 +235,11 @@ export const LEGAL_I18N = {
 		emailSupport: '지원 이메일',
 		readTerms: '이용 약관 읽기',
 		readPrivacy: '개인정보 읽기',
-		introTopic: 'marvelrivals.org 및 Marvel Rivals 라이선스용.',
+		introTopic: 'marvelrivalscheats.org 및 Marvel Rivals 라이선스용.',
 		descFor: 'Marvel Rivals Cheats — ESP wallhack, Aimbot용',
 		privacy: {
 			h2: ['수집하는 정보', '데이터 사용 방법', '귀하의 권리'],
-			sec1p2: '결제 정보는 Zadeyo checkout에서 처리되며 marvelrivals.org에 저장되지 않습니다.',
+			sec1p2: '결제 정보는 Zadeyo checkout에서 처리되며 marvelrivalscheats.org에 저장되지 않습니다.',
 			sec2p1: '지원 응답, 주문 해결 및 필요 시 법적 준수.',
 		},
 		refund: {
@@ -256,11 +256,11 @@ export const LEGAL_I18N = {
 		emailSupport: '邮件支持',
 		readTerms: '阅读使用条款',
 		readPrivacy: '阅读隐私政策',
-		introTopic: '适用于 marvelrivals.org 和 Marvel Rivals 许可证。',
+		introTopic: '适用于 marvelrivalscheats.org 和 Marvel Rivals 许可证。',
 		descFor: 'Marvel Rivals Cheats — ESP wallhack、Aimbot',
 		privacy: {
 			h2: ['我们收集的信息', '数据使用方式', '您的权利'],
-			sec1p2: '支付详情由 Zadeyo checkout 处理 — 不存储在 marvelrivals.org。',
+			sec1p2: '支付详情由 Zadeyo checkout 处理 — 不存储在 marvelrivalscheats.org。',
 			sec2p1: '支持回复、订单处理及必要时的法律合规。',
 		},
 		refund: {
@@ -277,11 +277,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'सहायता ईमेल',
 		readTerms: 'शर्तें पढ़ें',
 		readPrivacy: 'गोपनीयता पढ़ें',
-		introTopic: 'marvelrivals.org और Marvel Rivals लाइसेंस के लिए।',
+		introTopic: 'marvelrivalscheats.org और Marvel Rivals लाइसेंस के लिए।',
 		descFor: 'Marvel Rivals Cheats — ESP wallhack, Aimbot के लिए',
 		privacy: {
 			h2: ['हम जो जानकारी एकत्र करते हैं', 'हम डेटा का उपयोग कैसे करते हैं', 'आपके अधिकार'],
-			sec1p2: 'भुगतान विवरण Zadeyo checkout द्वारा संसाधित — marvelrivals.org पर संग्रहीत नहीं।',
+			sec1p2: 'भुगतान विवरण Zadeyo checkout द्वारा संसाधित — marvelrivalscheats.org पर संग्रहीत नहीं।',
 			sec2p1: 'सहायता प्रतिक्रिया, ऑर्डर समाधान और आवश्यकता पर कानूनी अनुपालन।',
 		},
 		refund: {
@@ -298,11 +298,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Email dukungan',
 		readTerms: 'Baca syarat',
 		readPrivacy: 'Baca privasi',
-		introTopic: 'untuk marvelrivals.org dan lisensi Marvel Rivals.',
+		introTopic: 'untuk marvelrivalscheats.org dan lisensi Marvel Rivals.',
 		descFor: 'untuk Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informasi yang kami kumpulkan', 'Cara kami menggunakan data', 'Hak Anda'],
-			sec1p2: 'Detail pembayaran diproses oleh checkout Zadeyo — tidak disimpan di marvelrivals.org.',
+			sec1p2: 'Detail pembayaran diproses oleh checkout Zadeyo — tidak disimpan di marvelrivalscheats.org.',
 			sec2p1: 'Respons dukungan, penyelesaian pesanan, dan kepatuhan hukum jika diperlukan.',
 		},
 		refund: {
@@ -319,11 +319,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'อีเมลฝ่ายสนับสนุน',
 		readTerms: 'อ่านข้อกำหนด',
 		readPrivacy: 'อ่านนโยบายความเป็นส่วนตัว',
-		introTopic: 'สำหรับ marvelrivals.org และใบอนุญาต Marvel Rivals',
+		introTopic: 'สำหรับ marvelrivalscheats.org และใบอนุญาต Marvel Rivals',
 		descFor: 'สำหรับ Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['ข้อมูลที่เราเก็บ', 'การใช้ข้อมูล', 'สิทธิของคุณ'],
-			sec1p2: 'รายละเอียดการชำระเงินประมวลผลผ่าน checkout Zadeyo — ไม่เก็บบน marvelrivals.org',
+			sec1p2: 'รายละเอียดการชำระเงินประมวลผลผ่าน checkout Zadeyo — ไม่เก็บบน marvelrivalscheats.org',
 			sec2p1: 'การตอบกลับฝ่ายสนับสนุน การแก้ไขคำสั่งซื้อ และการปฏิบัติตามกฎหมายเมื่อจำเป็น',
 		},
 		refund: {
@@ -340,11 +340,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Email hỗ trợ',
 		readTerms: 'Đọc điều khoản',
 		readPrivacy: 'Đọc quyền riêng tư',
-		introTopic: 'cho marvelrivals.org và giấy phép Marvel Rivals.',
+		introTopic: 'cho marvelrivalscheats.org và giấy phép Marvel Rivals.',
 		descFor: 'cho Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Thông tin chúng tôi thu thập', 'Cách chúng tôi sử dụng dữ liệu', 'Quyền của bạn'],
-			sec1p2: 'Chi tiết thanh toán được xử lý qua checkout Zadeyo — không lưu trên marvelrivals.org.',
+			sec1p2: 'Chi tiết thanh toán được xử lý qua checkout Zadeyo — không lưu trên marvelrivalscheats.org.',
 			sec2p1: 'Phản hồi hỗ trợ, giải quyết đơn hàng và tuân thủ pháp lý khi cần.',
 		},
 		refund: {
@@ -361,11 +361,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Написати в підтримку',
 		readTerms: 'Читати умови',
 		readPrivacy: 'Читати конфіденційність',
-		introTopic: 'для marvelrivals.org та ліцензій Marvel Rivals.',
+		introTopic: 'для marvelrivalscheats.org та ліцензій Marvel Rivals.',
 		descFor: 'для Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Інформація, яку ми збираємо', 'Як ми використовуємо дані', 'Ваші права'],
-			sec1p2: 'Платіжні дані обробляються через checkout Zadeyo — не зберігаються на marvelrivals.org.',
+			sec1p2: 'Платіжні дані обробляються через checkout Zadeyo — не зберігаються на marvelrivalscheats.org.',
 			sec2p1: 'Відповіді підтримки, вирішення замовлень та правова відповідність за потреби.',
 		},
 		refund: {
@@ -382,11 +382,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'E-mail podpoře',
 		readTerms: 'Přečíst podmínky',
 		readPrivacy: 'Přečíst soukromí',
-		introTopic: 'pro marvelrivals.org a licence Marvel Rivals.',
+		introTopic: 'pro marvelrivalscheats.org a licence Marvel Rivals.',
 		descFor: 'pro Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informace, které shromažďujeme', 'Jak používáme data', 'Vaše práva'],
-			sec1p2: 'Platební údaje zpracovává checkout Zadeyo — neukládají se na marvelrivals.org.',
+			sec1p2: 'Platební údaje zpracovává checkout Zadeyo — neukládají se na marvelrivalscheats.org.',
 			sec2p1: 'Odpovědi podpory, vyřizování objednávek a právní soulad v případě potřeby.',
 		},
 		refund: {
@@ -403,11 +403,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'Email suport',
 		readTerms: 'Citește termenii',
 		readPrivacy: 'Citește confidențialitatea',
-		introTopic: 'pentru marvelrivals.org și licențe Marvel Rivals.',
+		introTopic: 'pentru marvelrivalscheats.org și licențe Marvel Rivals.',
 		descFor: 'pentru Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Informații pe care le colectăm', 'Cum folosim datele', 'Drepturile tale'],
-			sec1p2: 'Detaliile de plată sunt procesate prin checkout Zadeyo — nu sunt stocate pe marvelrivals.org.',
+			sec1p2: 'Detaliile de plată sunt procesate prin checkout Zadeyo — nu sunt stocate pe marvelrivalscheats.org.',
 			sec2p1: 'Răspunsuri suport, rezolvarea comenzilor și conformitate legală când este necesar.',
 		},
 		refund: {
@@ -424,11 +424,11 @@ export const LEGAL_I18N = {
 		emailSupport: 'E-posta support',
 		readTerms: 'Läs villkor',
 		readPrivacy: 'Läs integritet',
-		introTopic: 'för marvelrivals.org och Marvel Rivals-licenser.',
+		introTopic: 'för marvelrivalscheats.org och Marvel Rivals-licenser.',
 		descFor: 'för Marvel Rivals Cheats — ESP wallhack, Aimbot',
 		privacy: {
 			h2: ['Information vi samlar in', 'Hur vi använder data', 'Dina rättigheter'],
-			sec1p2: 'Betalningsuppgifter behandlas via Zadeyo checkout — lagras inte på marvelrivals.org.',
+			sec1p2: 'Betalningsuppgifter behandlas via Zadeyo checkout — lagras inte på marvelrivalscheats.org.',
 			sec2p1: 'Supportssvar, orderlösning och juridisk efterlevnad vid behov.',
 		},
 		refund: {

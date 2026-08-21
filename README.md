@@ -1,6 +1,6 @@
 # Marvel Rivals Cheats — Marketing Site
 
-Static Astro 7 site for [marvelrivals.org](https://marvelrivals.org). Primary SEO keyword: **marvel rivals cheats** (secondary: marvel rivals hacks, marvel rivals aimbot, marvel rivals ESP).
+Static Astro 7 site for [marvelrivalscheats.org](https://marvelrivalscheats.org). Primary SEO keyword: **marvel rivals cheats** (secondary: marvel rivals hacks, marvel rivals aimbot, marvel rivals ESP).
 
 ## Stack
 
@@ -44,7 +44,7 @@ npm run build:validate
 1. Create a Cloudflare Workers project named **marvelrivals**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
-4. Custom domains: **marvelrivals.org** (apex) and **www.marvelrivals.org** (redirect → apex)
+4. Custom domains: **marvelrivalscheats.org** (apex) and **www.marvelrivalscheats.org** (redirect → apex)
 5. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -60,4 +60,4 @@ npm run deploy
 
 ## License
 
-Private — for marvelrivals.org deployment only.
+Private — for marvelrivalscheats.org deployment only.
