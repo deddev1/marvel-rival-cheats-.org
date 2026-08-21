@@ -72,6 +72,36 @@ export const homeShowcaseImages: ShowcaseImage[] = [
 		title: 'Marvel Rivals ESP objective markers',
 		caption: 'Marvel Rivals ESP highlighting enemies near contested objectives',
 	},
+	{
+		src: shot('marvel-rivals-aimbot-sniper-view'),
+		alt: 'Marvel Rivals aimbot sniper view with FOV ring and enemy ESP at range',
+		title: 'Marvel Rivals aimbot sniper view',
+		caption: 'Marvel Rivals soft aim assist with long-range ESP on Windows PC',
+	},
+	{
+		src: shot('marvel-rivals-cheats-hero-combat-esp'),
+		alt: 'Marvel Rivals hero combat with ESP skeleton overlays and soft aim reticle',
+		title: 'Marvel Rivals hero combat ESP',
+		caption: 'Marvel Rivals cheats ESP and aimbot during hero ability combat',
+	},
+	{
+		src: shot('marvel-rivals-undetected-cheats-gameplay'),
+		alt: 'Undetected Marvel Rivals cheats gameplay with ESP, radar, and soft aim active',
+		title: 'Undetected Marvel Rivals cheats gameplay',
+		caption: 'Undetected marvel rivals cheats package running ESP wallhack and radar in match',
+	},
+	{
+		src: shot('marvel-rivals-cheats-match-overview'),
+		alt: 'Marvel Rivals match overview with ESP player boxes across the map on Windows PC',
+		title: 'Marvel Rivals cheats match overview',
+		caption: 'Marvel Rivals cheats full-match ESP overview with multiple enemy tags',
+	},
+	{
+		src: shot('marvel-rivals-esp-player-names-health'),
+		alt: 'Marvel Rivals ESP showing player names, health bars, and skeleton outlines',
+		title: 'Marvel Rivals ESP player names and health',
+		caption: 'Marvel Rivals ESP wallhack with hero names, health bars, and bone ESP',
+	},
 ];
 
 export const homeShowcaseFeatured = homeShowcaseImages[0];

@@ -1,7 +1,9 @@
 /**
  * Build SEO-named Marvel Rivals cheat showcase images.
- * 1. Prefer PNG/JPG drops in scripts/assets/product-screenshots/
- * 2. Otherwise download IGN Marvel Rivals gameplay + composite ESP/aimbot overlays
+ * 1. Supabase user screenshots (primary)
+ * 2. PNG/JPG drops in scripts/assets/product-screenshots/
+ * 3. IGN gameplay fallback with overlays (last resort)
+ * Does NOT modify homepage hero assets (marvel-rivals-cheats-hero-*).
  */
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
@@ -122,6 +124,30 @@ export const SHOWCASE_MANIFEST = [
 	},
 ];
 
+const SUPABASE_SOURCES = [
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173007.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173015.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173022.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173029.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173044.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173049.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173055.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173101.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173117.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173129.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173146.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173152.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173157.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173203.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173213.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173219.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173258.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173309.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173316.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173340.png',
+	'https://boqgsoiwnpbisvrxulbe.supabase.co/storage/v1/object/public/marvel%20rivals/Screenshot%202026-08-20%20173345.png',
+];
+
 const IGN_SOURCES = [
 	'https://sm.ign.com/t/ign_pk/gallery/m/marvel-riv/marvel-rivals-screenshots_rcjq.1400.jpg',
 	'https://sm.ign.com/t/ign_fr/gallery/m/marvel-riv/marvel-rivals-screenshots_jd9r.1400.jpg',
@@ -178,6 +204,23 @@ async function loadUserDrops() {
 	return buffers;
 }
 
+async function loadSupabaseSources() {
+	const buffers = [];
+	for (const url of SUPABASE_SOURCES) {
+		try {
+			buffers.push(await fetchBuffer(url));
+			console.log(`✓ downloaded ${decodeURIComponent(url.split('/').pop() ?? url)}`);
+		} catch (err) {
+			console.warn(`✗ skip ${url}: ${err.message}`);
+		}
+	}
+	return buffers;
+}
+
+async function toWebp(source) {
+	return sharp(source).resize({ width: 1920, withoutEnlargement: true }).webp(WEBP).toBuffer();
+}
+
 async function loadIgnBases() {
 	const bases = [];
 	for (const url of IGN_SOURCES) {
@@ -205,22 +248,24 @@ async function writeVariants(baseName, webpBuffer) {
 
 await mkdir(imagesDir, { recursive: true });
 
-const userBuffers = await loadUserDrops();
-const ignBases = userBuffers.length ? [] : await loadIgnBases();
-const sourcePool = userBuffers.length ? userBuffers : ignBases;
+const supabaseBuffers = await loadSupabaseSources();
+const userBuffers = supabaseBuffers.length ? [] : await loadUserDrops();
+const ignBases = supabaseBuffers.length || userBuffers.length ? [] : await loadIgnBases();
+const sourcePool = supabaseBuffers.length ? supabaseBuffers : userBuffers.length ? userBuffers : ignBases;
+const useRawSources = supabaseBuffers.length > 0 || userBuffers.length > 0;
 
 console.log(
-	userBuffers.length
-		? `Using ${userBuffers.length} user images from scripts/assets/product-screenshots/`
-		: `Using ${ignBases.length} IGN bases with cheat overlays`,
+	supabaseBuffers.length
+		? `Using ${supabaseBuffers.length} Supabase screenshots (hero untouched)`
+		: userBuffers.length
+			? `Using ${userBuffers.length} user images from scripts/assets/product-screenshots/`
+			: `Using ${ignBases.length} IGN bases with cheat overlays`,
 );
 
 for (let i = 0; i < SHOWCASE_MANIFEST.length; i += 1) {
 	const item = SHOWCASE_MANIFEST[i];
 	const source = sourcePool[i % sourcePool.length];
-	const webp = userBuffers.length
-		? await sharp(source).resize({ width: 1920, withoutEnlargement: true }).webp(WEBP).toBuffer()
-		: await composeFromBase(source, item.overlay);
+	const webp = useRawSources ? await toWebp(source) : await composeFromBase(source, item.overlay);
 
 	await writeVariants(item.slug, webp);
 
