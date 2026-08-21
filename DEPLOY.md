@@ -43,6 +43,20 @@ If the build command is left empty, `package.json` `postinstall` still builds on
 
 `npm run deploy` matches `npm run build && wrangler deploy` for one-step CLI deploys.
 
+### Custom domain (after zone is on Cloudflare)
+
+Wrangler deploy **must not** declare `custom_domain` routes in `wrangler.toml` until `marvelrivals.org` exists as a proxied zone on your account. Otherwise deploy fails with:
+
+`Could not find zone for marvelrivals.org`
+
+Once the zone is active:
+
+1. **Workers & Pages** → `marvel-rival-cheats--org` → **Settings** → **Domains & Routes**
+2. **Add** → **Custom domain** → `marvelrivals.org` and `www.marvelrivals.org`
+3. Confirm DNS shows proxied (orange cloud) records
+
+The Worker middleware in `src/worker.ts` already enforces apex canonical host and legacy-domain redirects.
+
 ## 3. Cloudflare Pages project (legacy option)
 
 ### Option A — Git-connected Pages

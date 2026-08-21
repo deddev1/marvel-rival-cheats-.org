@@ -1,16 +1,12 @@
-# CI Workers Builds project name (repo: marvel-rivals-cheats-org → Worker: marvel-rivals-cheats-org)
-name = "marvelrivals"
+# CI Workers Builds project name (repo: marvel-rivals-cheats-org)
+name = "marvel-rival-cheats--org"
 compatibility_date = "2026-01-01"
 main = "src/worker.ts"
 
-# Attach apex + www to this Worker on deploy (Cloudflare creates proxied DNS when the zone is on the account).
-[[routes]]
-pattern = "marvelrivals.org"
-custom_domain = true
-
-[[routes]]
-pattern = "www.marvelrivals.org"
-custom_domain = true
+# Custom domains (marvelrivals.org / www) are attached in the Cloudflare dashboard
+# after the zone is on your account: Worker → Settings → Domains & Routes → Add.
+# Do NOT declare [[routes]] with custom_domain here — wrangler deploy fails with
+# "Could not find zone" when the domain is not yet proxied on the account.
 
 # Local/CLI deploy: Wrangler matches this before upload. Workers Builds also uses postinstall.
 [build]
