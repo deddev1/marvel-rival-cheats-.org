@@ -13,7 +13,7 @@ const featuredSrcSet = contentSrcSet(featured.src);
 			id="home-showcase-featured"
 			src={featured.src}
 			srcset={featuredSrcSet}
-			sizes="(max-width: 860px) 100vw, 420px"
+			sizes="(max-width: 860px) 100vw, 340px"
 			alt={featured.alt}
 			width="960"
 			height="540"
@@ -39,7 +39,7 @@ const featuredSrcSet = contentSrcSet(featured.src);
 							aria-label={image.alt}
 							aria-pressed={index === 0 ? 'true' : 'false'}
 						>
-							<img src={thumbSrc} alt="" width="160" height="90" loading="lazy" decoding="async" />
+							<img src={thumbSrc} alt="" width="92" height="52" loading="lazy" decoding="async" />
 						</button>
 					);
 				})
