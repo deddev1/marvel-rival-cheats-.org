@@ -5,7 +5,7 @@ import Hero from '../components/Hero.astro';
 import HomeReviews from '../components/HomeReviews.astro';
 import HomeSeo from '../components/HomeSeo.astro';
 import HomeAboutApp from '../components/react/HomeAbout';
-import HomeAboutVideo from '../components/HomeAboutVideo.astro';
+import HomeAboutGallery from '../components/HomeAboutGallery.astro';
 import ExternalResources from '../components/ExternalResources.astro';
 import { externalUrls } from '../data/external-resources';
 import SiteFooter from '../components/SiteFooter.astro';
@@ -118,7 +118,7 @@ const extraGraph: Record<string, unknown>[] = [
 						<section class="shell home__prose home__prose--en" aria-labelledby="home-about-title">
 							<div class="home__about-grid">
 								<HomeAboutApp client:visible locale={locale} />
-								<HomeAboutVideo />
+								<HomeAboutGallery />
 							</div>
 						</section>
 						<HomeSeo locale={locale} />
@@ -233,16 +233,21 @@ const extraGraph: Record<string, unknown>[] = [
 
 	.home__about-grid {
 		display: grid;
-		grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+		grid-template-columns: minmax(0, 1fr) minmax(280px, 440px);
 		gap: clamp(1.25rem, 3vw, 2.25rem);
-		align-items: center;
+		align-items: start;
 	}
 
-	.home__about-media {
-		position: relative;
+	.home__about-showcase {
+		display: grid;
+		gap: 0.75rem;
 		width: 100%;
-		max-width: 360px;
+		max-width: 440px;
 		margin-inline: auto;
+	}
+
+	.home__about-featured {
+		margin: 0;
 		aspect-ratio: 16 / 9;
 		border-radius: var(--radius-md);
 		overflow: hidden;
@@ -251,102 +256,89 @@ const extraGraph: Record<string, unknown>[] = [
 		box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 	}
 
-	.home__about-video {
+	.home__about-featured-img {
 		display: block;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
-		background: #000;
 	}
 
-	.home__about-video-play {
+	.home__about-scroll-wrap {
+		position: relative;
+		overflow: hidden;
+		border-radius: var(--radius-sm);
+	}
+
+	.home__about-scroll-wrap::before,
+	.home__about-scroll-wrap::after {
+		content: '';
 		position: absolute;
-		inset: 0;
-		z-index: 2;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 0.55rem;
-		padding: 1rem;
-		border: 0;
-		background: linear-gradient(
-			180deg,
-			rgba(5, 5, 6, 0.08) 0%,
-			rgba(5, 5, 6, 0.42) 100%
-		);
-		color: #fff;
-		cursor: pointer;
-		transition:
-			background 0.2s ease,
-			transform 0.2s ease;
-	}
-
-	.home__about-video-play:hover {
-		background: linear-gradient(
-			180deg,
-			rgba(5, 5, 6, 0.12) 0%,
-			rgba(5, 5, 6, 0.52) 100%
-		);
-	}
-
-	.home__about-video-play:focus-visible {
-		outline: 2px solid var(--magenta);
-		outline-offset: 3px;
-	}
-
-	.home__about-video-play-icon {
-		display: grid;
-		place-items: center;
-		width: 3.25rem;
-		height: 3.25rem;
-		border-radius: 999px;
-		background: color-mix(in srgb, var(--magenta) 88%, #000);
-		box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-	}
-
-	.home__about-video-play-icon svg {
-		width: 1.35rem;
-		height: 1.35rem;
-		margin-left: 0.15rem;
-	}
-
-	.home__about-video-play-label {
-		font-size: 0.8125rem;
-		font-weight: 700;
-		letter-spacing: 0.04em;
-		text-transform: uppercase;
-	}
-
-	.home__about-video-loading {
-		position: absolute;
-		inset: 0;
-		display: grid;
-		place-items: center;
-		margin: 0;
-		padding: 1rem;
-		font-size: 0.8125rem;
-		font-weight: 600;
-		color: #fff;
-		background: rgba(5, 5, 6, 0.55);
+		top: 0;
+		bottom: 0;
+		width: 1.25rem;
+		z-index: 1;
 		pointer-events: none;
 	}
 
-	.home__about-video-error {
-		position: absolute;
-		inset: auto 0 0 0;
-		margin: 0;
-		padding: 0.55rem 0.75rem;
-		font-size: 0.75rem;
-		line-height: 1.4;
-		color: #fff;
-		background: rgba(5, 5, 6, 0.82);
+	.home__about-scroll-wrap::before {
+		left: 0;
+		background: linear-gradient(90deg, var(--bg-panel), transparent);
 	}
 
-	.home__about-video-error a {
-		color: var(--magenta-soft);
-		font-weight: 600;
-		text-decoration: underline;
+	.home__about-scroll-wrap::after {
+		right: 0;
+		background: linear-gradient(270deg, var(--bg-panel), transparent);
+	}
+
+	.home__about-scroll {
+		display: flex;
+		gap: 0.55rem;
+		overflow-x: auto;
+		padding: 0.15rem 0.1rem 0.35rem;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: thin;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.home__about-scroll::-webkit-scrollbar {
+		height: 6px;
+	}
+
+	.home__about-thumb {
+		flex: 0 0 auto;
+		width: 7.5rem;
+		padding: 0;
+		border: 2px solid transparent;
+		border-radius: calc(var(--radius-sm) - 2px);
+		background: var(--bg);
+		cursor: pointer;
+		overflow: hidden;
+		scroll-snap-align: start;
+		transition:
+			border-color 0.2s ease,
+			transform 0.2s ease,
+			box-shadow 0.2s ease;
+	}
+
+	.home__about-thumb img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+	}
+
+	.home__about-thumb:hover {
+		border-color: color-mix(in srgb, var(--magenta) 45%, var(--line));
+	}
+
+	.home__about-thumb.is-active {
+		border-color: var(--magenta);
+		box-shadow: 0 0 0 1px color-mix(in srgb, var(--magenta) 35%, transparent);
+	}
+
+	.home__about-thumb:focus-visible {
+		outline: 2px solid var(--magenta);
+		outline-offset: 2px;
 	}
 
 	@media (max-width: 860px) {
@@ -354,8 +346,8 @@ const extraGraph: Record<string, unknown>[] = [
 			grid-template-columns: 1fr;
 		}
 
-		.home__about-media {
-			max-width: min(100%, 420px);
+		.home__about-showcase {
+			max-width: min(100%, 520px);
 		}
 	}
 

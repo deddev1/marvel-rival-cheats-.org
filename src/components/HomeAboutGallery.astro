@@ -1,0 +1,51 @@
+---
+import { homeShowcaseImages } from '../data/product-showcase';
+import { contentSrcSet } from '../lib/responsive-images';
+
+const featured = homeShowcaseImages[0];
+const featuredSrcSet = contentSrcSet(featured.src);
+---
+
+<div class="home__about-showcase" data-home-showcase>
+	<figure class="home__about-featured media-frame">
+		<img
+			class="home__about-featured-img"
+			id="home-showcase-featured"
+			src={featured.src}
+			srcset={featuredSrcSet}
+			sizes="(max-width: 860px) 100vw, 420px"
+			alt={featured.alt}
+			width="960"
+			height="540"
+			loading="lazy"
+			decoding="async"
+			fetchpriority="low"
+		/>
+	</figure>
+
+	<div class="home__about-scroll-wrap">
+		<div class="home__about-scroll" data-home-showcase-track role="list" aria-label="Marvel Rivals Cheats screenshots">
+			{
+				homeShowcaseImages.map((image, index) => {
+					const thumbSrc = image.src.replace(/\.webp$/, '-480w.webp');
+					return (
+						<button
+							type="button"
+							class:list={['home__about-thumb', index === 0 && 'is-active']}
+							role="listitem"
+							data-showcase-src={image.src}
+							data-showcase-srcset={contentSrcSet(image.src)}
+							data-showcase-alt={image.alt}
+							aria-label={image.alt}
+							aria-pressed={index === 0 ? 'true' : 'false'}
+						>
+							<img src={thumbSrc} alt="" width="160" height="90" loading="lazy" decoding="async" />
+						</button>
+					);
+				})
+			}
+		</div>
+	</div>
+</div>
+
+<script is:inline src="/scripts/home-about-gallery.js" defer></script>

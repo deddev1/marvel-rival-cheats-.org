@@ -25,6 +25,7 @@
 		"fetch:hero": "node scripts/fetch-marvel-rivals-hero.mjs",
 		"fetch:steam-hero": "node scripts/fetch-steam-hero.mjs",
 		"fetch:screenshots": "node scripts/import-marvel-rivals-screenshots.mjs",
+		"fetch:showcase": "node scripts/import-showcase-screenshots.mjs",
 		"generate:brand": "node scripts/generate-brand-assets.mjs",
 		"preview": "astro preview --host 0.0.0.0 --port 3000",
 		"preview:4321": "astro preview --host 0.0.0.0 --port 4321",

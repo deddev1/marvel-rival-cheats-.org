@@ -19,11 +19,13 @@ const galleryAlts = [
 	ui.images.aimbotCombat,
 	ui.images.headerArt,
 	ui.images.packFight,
+	ui.images.dinoEsp,
 ] as const;
 
-const galleryImages = marvelRivalsImages.gallery.slice(0, 4).map((image, index) => ({
+const galleryImages = marvelRivalsImages.gallery.map((image, index) => ({
 	src: image.src,
 	alt: galleryAlts[index] ?? image.alt,
+	featured: image.featured === true,
 }));
 ---
 
@@ -31,10 +33,10 @@ const galleryImages = marvelRivalsImages.gallery.slice(0, 4).map((image, index) 
 	<h2 id="gallery-title" class="gallery__title">{gallery.title}</h2>
 	<p class="gallery__sub">{gallery.subtitle}</p>
 
-	<div class="gallery__grid">
+	<div class="gallery__track" role="list">
 		{
 			galleryImages.map((image) => (
-				<figure class="gallery__item media-frame">
+				<figure class:list={['gallery__item', 'media-frame', image.featured && 'is-featured']} role="listitem">
 					<img
 						src={image.src}
 						srcset={contentSrcSet(image.src)}
@@ -66,20 +68,34 @@ const galleryImages = marvelRivalsImages.gallery.slice(0, 4).map((image, index) 
 		max-width: 36rem;
 	}
 
-	.gallery__grid {
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+	.gallery__track {
+		display: flex;
 		gap: 0.75rem;
+		overflow-x: auto;
+		padding-bottom: 0.35rem;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: thin;
 	}
 
 	.gallery__item {
 		margin: 0;
+		flex: 0 0 min(78vw, 320px);
 		aspect-ratio: 16 / 10;
+		scroll-snap-align: start;
 	}
 
-	@media (max-width: 560px) {
-		.gallery__grid {
-			grid-template-columns: 1fr;
+	.gallery__item.is-featured {
+		flex-basis: min(88vw, 420px);
+	}
+
+	@media (min-width: 900px) {
+		.gallery__item {
+			flex-basis: 280px;
+		}
+
+		.gallery__item.is-featured {
+			flex-basis: 360px;
 		}
 	}
 </style>
