@@ -7,7 +7,6 @@ import { absoluteFaqUrl, faqBasePath, getFaqCrawlImage, getFaqPath, getRelatedFa
 import { getSelfHreflangAlternates } from '../../../data/i18n/routing';
 import { contentSrcSet, productMainSizes } from '../../../lib/responsive-images';
 import RelatedPages from '../../../components/RelatedPages.astro';
-import { externalUrls } from '../../../data/external-resources';
 import ExternalGuidePills from '../../../components/ExternalGuidePills.astro';
 import ExternalResources from '../../../components/ExternalResources.astro';
 
@@ -104,13 +103,6 @@ const extraGraph: Record<string, unknown>[] = [
 					<a href={siteConfig.checkoutUrl} class="faq-detail__buy" rel="noopener noreferrer">
 						Buy {siteConfig.name} — ${productInfo.plans[0].price}
 					</a>
-					<a href={externalUrls.steamNews} class="faq-detail__link" target="_blank" rel="noopener noreferrer">
-						Official patch notes
-					</a>
-					<a href={externalUrls.wiki} class="faq-detail__link" target="_blank" rel="noopener noreferrer">
-						Marvel Rivals Wiki
-					</a>
-					<a href="/support/" class="faq-detail__link">Contact support</a>
 				</div>
 			</article>
 

@@ -9,7 +9,6 @@ import { marvelRivalsImages } from '../data/marvel-rivals';
 import { simplePageCopy } from '../data/i18n/simple-pages';
 import { getT } from '../i18n/server';
 import { getPageCrawlImage } from '../data/page-images';
-import { getExternalSecondaryCta } from '../data/external-resources';
 
 interface Props {
 	locale: LocaleCode;
@@ -33,8 +32,6 @@ const heading = simple?.h1 ?? page.h1;
 const intro = simple?.intro ?? page.intro;
 const sections = simple?.sections ?? page.sections;
 const ctaPrimaryLabel = simple?.ctaPrimary ?? page.ctaPrimary;
-const ctaSecondaryLabel = simple?.ctaSecondary ?? page.ctaSecondary;
-const ctaSecondaryPath = simple?.ctaSecondaryHref ?? page.ctaSecondaryHref;
 const rawGalleryTitle = simple?.galleryTitle ?? page.galleryTitle ?? t('common.inGameLook');
 const galleryTitle =
 	normalizeLabel(rawGalleryTitle) === normalizeLabel(heading)
@@ -81,16 +78,6 @@ const faqSchema =
 
 const extraGraph = faqSchema ? [faqSchema] : [];
 
-const ctaSecondaryHref = ctaSecondaryPath
-	? localizeInternalHref(ctaSecondaryPath, locale)
-	: ctaSecondaryLabel
-		? siteConfig.checkoutUrl
-		: getLocalizedPath('features', locale);
-
-const externalSecondary = locale === 'en' ? getExternalSecondaryCta(pageId) : undefined;
-const resolvedSecondaryLabel = externalSecondary?.label ?? ctaSecondaryLabel;
-const resolvedSecondaryHref = externalSecondary?.href ?? ctaSecondaryHref;
-
 const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo.plans[0];
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];
 const showStorePlans = pageId === 'pricing' && locale === 'en';
@@ -116,11 +103,6 @@ const eyebrow = pageId === 'hacks' && locale === 'en' ? t('nav.preview') : undef
 	extraGraph={extraGraph}
 	showExternalResources={!['privacy', 'refund', 'terms'].includes(pageId)}
 	ctaPrimary={{ href: siteConfig.checkoutUrl, label: ctaPrimaryLabel, edit: 'ctaBuy' }}
-	ctaSecondary={
-		resolvedSecondaryLabel
-			? { href: resolvedSecondaryHref, label: resolvedSecondaryLabel }
-			: undefined
-	}
 >
 	{/* JSON-LD is emitted via PageLayout → Layout extraGraph */}
 
