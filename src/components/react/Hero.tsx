@@ -5,8 +5,6 @@ type Props = {
 	locale: string;
 	siteName: string;
 	checkoutUrl: string;
-	gameUrl: string;
-	gameName: string;
 	monthlyPrice: number;
 	heroSrc: string;
 	heroSrcSet: string;
@@ -71,8 +69,6 @@ function ChipIcon({ icon }: { icon: string }) {
 function HeroInner({
 	siteName,
 	checkoutUrl,
-	gameUrl,
-	gameName,
 	monthlyPrice,
 	heroSrc,
 	heroSrcSet,
@@ -92,25 +88,17 @@ function HeroInner({
 	return (
 		<section className="hero" aria-label={title}>
 			<div className="hero__media">
-				<a
-					className="hero__game-link"
-					href={gameUrl}
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label={`${gameName} on Steam`}
-				>
-					<img
-						src={heroSrc}
-						srcSet={heroSrcSet}
-						sizes={heroSizes}
-						alt={imageAlt}
-						width={heroWidth}
-						height={heroHeight}
-						fetchPriority="high"
-						loading="eager"
-						decoding="async"
-					/>
-				</a>
+				<img
+					src={heroSrc}
+					srcSet={heroSrcSet}
+					sizes={heroSizes}
+					alt={imageAlt}
+					width={heroWidth}
+					height={heroHeight}
+					fetchPriority="high"
+					loading="eager"
+					decoding="async"
+				/>
 			</div>
 			<div className="hero__veil" aria-hidden="true" />
 			<div className="shell hero__content">
