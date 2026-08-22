@@ -1,46 +1,45 @@
 #!/usr/bin/env node
+/**
+ * Ensures every <img> in built HTML has a non-empty alt attribute.
+ * Run after build: npm run validate:img-alts
+ */
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const dist = path.resolve('dist');
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const dist = path.join(ROOT, 'dist');
 const issues = [];
 
 function walk(dir) {
 	for (const name of readdirSync(dir)) {
 		const full = path.join(dir, name);
 		if (statSync(full).isDirectory()) walk(full);
-		else if (name === 'index.html' || name.endsWith('.html')) {
+		else if (name.endsWith('.html')) {
 			const html = readFileSync(full, 'utf8');
-			const imgs = [...html.matchAll(/<img\b[^>]*>/gi)];
-			for (const m of imgs) {
+			for (const m of html.matchAll(/<img\b[^>]*>/gi)) {
 				const tag = m[0];
 				const alt = tag.match(/\balt=("([^"]*)"|'([^']*)')/i);
 				const src = tag.match(/\bsrc=("([^"]*)"|'([^']*)')/i);
 				const altVal = alt ? alt[2] ?? alt[3] ?? '' : null;
 				const srcVal = src ? src[2] ?? src[3] ?? '' : '';
-				if (altVal === null) issues.push({ file: full, kind: 'missing-alt', src: srcVal });
-				else if (!altVal.trim()) issues.push({ file: full, kind: 'empty-alt', src: srcVal });
+				if (altVal === null) issues.push({ kind: 'missing-alt', src: srcVal, file: full });
+				else if (!altVal.trim()) issues.push({ kind: 'empty-alt', src: srcVal, file: full });
 			}
 		}
 	}
 }
 
 walk(dist);
-console.log('issues', issues.length);
-for (const i of issues.slice(0, 40)) {
-	console.log(i.kind, i.src, '→', path.relative(dist, i.file));
+
+if (issues.length === 0) {
+	console.log('✓ All images in dist HTML have non-empty alt attributes.');
+	process.exit(0);
 }
 
-const home = readFileSync(path.join(dist, 'index.html'), 'utf8');
-const og = home.match(/property="og:image"\s+content="([^"]+)"/);
-const ogAlt = home.match(/property="og:image:alt"\s+content="([^"]+)"/);
-const schemaImg = home.match(/"primaryImageOfPage"[\s\S]*?"url"\s*:\s*"([^"]+)"/);
-const productImg = home.match(/"@type"\s*:\s*"Product"[\s\S]*?"image"\s*:\s*"([^"]+)"/);
-console.log('\nHOME og:image', og?.[1]);
-console.log('HOME og:image:alt', ogAlt?.[1]);
-console.log('HOME primaryImageOfPage', schemaImg?.[1]);
-console.log('HOME Product.image', productImg?.[1]);
-
-const sm = readFileSync(path.join(dist, 'sitemap-en.xml'), 'utf8');
-const homeBlock = sm.split('<url>').find((b) => b.includes(`${process.env.SITE || 'https://marvelrivalscheats.org'}/</loc>`) || b.includes('marvelrivalscheats.org/</loc>'));
-console.log('\nSITEMAP HOME BLOCK:\n', homeBlock?.slice(0, 600));
+console.error(`✗ ${issues.length} image(s) missing or empty alt in built HTML:\n`);
+for (const i of issues.slice(0, 40)) {
+	console.error(`  ${i.kind} ${i.src} → ${path.relative(dist, i.file)}`);
+}
+if (issues.length > 40) console.error(`  … and ${issues.length - 40} more`);
+process.exit(1);

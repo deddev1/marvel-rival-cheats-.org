@@ -39,7 +39,7 @@ const featuredSrcSet = contentSrcSet(featured.src);
 							aria-label={image.alt}
 							aria-pressed={index === 0 ? 'true' : 'false'}
 						>
-							<img src={thumbSrc} alt="" width="92" height="52" loading="lazy" decoding="async" />
+							<img src={thumbSrc} alt={image.alt} width="92" height="52" loading="lazy" decoding="async" />
 						</button>
 					);
 				})
